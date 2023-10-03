@@ -107,6 +107,10 @@ German:
 * Ganz Paris träumt von der Liebe
 * Wenn es Nacht wird in Paris
 
+
+Arabic:
+* سالمة يا سلامة - Dalida
+
 French:
 * La Derniere Valse - Mireille Mathieu
 * La Vie En Rose - Edith Piaf
