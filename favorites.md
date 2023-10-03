@@ -110,7 +110,9 @@ German:
 
 Arabic:
 * سالمة يا سلامة - Dalida
-
+* حلوة يا بلدي - Dalida
+* Dalida is the only one whom I listen to that sings Arabic
+  
 French:
 * La Derniere Valse - Mireille Mathieu
 * La Vie En Rose - Edith Piaf
