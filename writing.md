@@ -37,6 +37,7 @@ I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 year
 * [Add-on Badges](https://support.mozilla.org/en-US/kb/add-on-badges)
 * [What happened to my Live Bookmarks?](https://support.mozilla.org/en-US/kb/live-bookmarks-migration)
 * [How to restore a browsing session from backup](https://support.mozilla.org/en-US/kb/how-restore-browsing-session-backup)
+* [Utilizing Screeners for Your Trading Portfolio](https://marketmapper.io/post/utilizing-screeners-for-your-trading-portfolio)
 
 
 ### Browser Security Related
