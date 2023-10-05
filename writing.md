@@ -8,6 +8,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 ## Blog Posts
 
+* [Nostr - Decentralized Social Network](https://devargnes.github.io/2023-05-27-nostr)
 * [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
 * [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
 * [UTXO & Account Models](https://devargnes.github.io/UTXO-and-Account-Models)
