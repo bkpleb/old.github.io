@@ -1,0 +1,79 @@
+---
+layout: page
+title: Writing 
+---
+
+## Mining 
+
+1. Mining is the process of creating a block of transactions to be added to the Ethereum blockchain.
+
+2. Peers in the mining process are called "miners"
+   
+   a. To network
+
+   b. Miners provide processing power to network in exchange for chance to get rewarded (incentivized)
+  
+4. Mining is just an automated software that people run.
+
+   a. There is no human element to mining except setup + maintenance
+
+It's funny how when I first learning about mining in crypto, I was thinking someone was literally mining the coins in some way or maybe it was like one of those clicker games!
+
+
+
+## Functions
+
+Mining has two main functions, the first being the enforcement of consensus rules and the second is currency issuance. I cannot stress enough however on how important enforcement of consensus rules is. 
+
+Enforcement of consensus rules: Signet block signature validation, transaction information related validation, block size, etc. 
+
+
+
+## Process
+
+When a miner mines a block, the mining software will continuously hash a block (containing transactions) until a hash is found that meets a target difficulty.
+
+1. Take current block's block header
+2. Append a nonce, starting at nonce = 0
+3. Hash data from #1 and #2
+4. Check hash versus target (provided by protocol)
+5. If hash < target, puzzle is solved and the miner get rewarded.
+6. Else, we'll go back to the second step but increment nonce. 
+
+
+
+## Proof of Work 
+
+It is a consensus mechanism on how decentralized networks like Bitcoin and Ethereum decide what blocks/transactions are considered “valid” and who gets to add new blocks to the chain.
+
+There is another consensus mechanism, proof-of-stake. ETH uses PoS while BTC uses PoW.
+
+In PoW, in order to add a block and receive a reward, a miner must present some type of proof that they spent significant resources securing the network. The proof of work is the solution to the mining process. This is by repeatedly hashing until we find a hash lower than the target difficulty. Keep in mind, miners compete to find a valid proof of work every 10 minutes. 
+
+Because it is a consensus mechanism, decentralized networks will need to agree on things like account balances and the order of transactions. This ensures "double spending" one's coins is prevented and that everyone is following the rules, making proof-of-work-based networks resistant to attack. Seeing from a security point of view, the consensus mechanism provides security to a blockchain network because it demands that everyone follow the consensus rules if they want to participate!
+
+
+## Hashing
+
+It amazes me everyday of how all of this just works.
+
+Proof of Work is an extremely essential component to Bitcoin and it gives us insights on how it works for Bitcoin. The solution to a computationally expensive challenge for computers is proof of work in a very short explanation. For example, we could program a computer to search for a hash starting with three 5's. This will certaining take some time guessing.
+
+
+sha256("0"); // 5feceb…
+
+sha256("1"); // 6b86b2…
+
+sha256("2"); // d4735e…
+
+sha256("5118"); // 555850…
+
+
+As you can see, a real complex mathematical problem will just eat up the computer's processing resources. In the above scenario, The difficulty to come up with this input gets exponentially harder the more 5s we require the output hash to start with.
+
+_What does PoW solve?_ It first and foremost prevents spamming due to how computationally expensive it to spam. This is also insuring that there are requirements to make each hash unique. 
+
+_What role does it play in the Bitcoin system?_ Proof of Work is essentially the security of the Bitcoin system.
+
+_I've heard of a 51% attack, what is it?_ Well this is a very interesting concept. In order to overpower this network and force your own version of the truth, you would need to come up with more computing power than all the nodes in the entire system. **But** you need to have 51% of the total hashing power in the network.
+
