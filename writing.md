@@ -6,6 +6,11 @@ title: Writing
 This page is a collection of my pieces of writing including full pieces and contributions as well as writings for leisure. This page will keep updating and hopefully no link rot will occur. A blog post page will be created as soon as possible. Will need to migrate my old blog post site.
 
 
+## Blog Posts
+
+* [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
+
+
 ## TA & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
 
