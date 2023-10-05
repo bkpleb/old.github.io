@@ -9,6 +9,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 ## Blog Posts
 
 * [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
+* [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
 
 
 ## TA & Trading
