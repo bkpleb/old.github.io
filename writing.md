@@ -10,8 +10,9 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 * [Nostr - Decentralized Social Network](https://devargnes.github.io/2023-05-27-nostr)
 * [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
-* [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
 * [UTXO & Account Models](https://devargnes.github.io/UTXO-and-Account-Models)
+* [Solidity/ETH Related Tools For CTFs](https://devargnes.github.io/solidity-tools)
+* [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
 
 ## TA & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
