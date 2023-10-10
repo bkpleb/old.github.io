@@ -32,6 +32,8 @@ Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal
 * [Is Crypto Trading Profitable?](https://marketmapper.io/post/is-crypto-trading-profitable)
 * [Are You a Lone-Wolf Trader? It’s Time to Leverage the Trading Community Power to Your Advantage](https://marketmapper.io/post/are-you-a-lone-wolf-trader-it-s-time-to-leverage-the-trading-community-power-to-your-advantage)
 * [Utilizing Screeners for Your Trading Portfolio](https://marketmapper.io/post/utilizing-screeners-for-your-trading-portfolio)
+* [Importance of Bitcoin Halving](https://marketmapper.io/post/bitcoin-halving-impacts)
+* [Management of Sorts: How Risk and Money Management Play a Key Role](https://marketmapper.io/post/management-of-sorts-how-risk-and-money-management-play-a-key-role)
 
 ## Firefox 
 I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 years where I did knowledge base writing and support (was [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)). Some may say I'm mentally ill but don't worry. I like what I do. For the entire list of docs, visit [here](https://support.mozilla.org/en-US/user/VintageMind/documents).
