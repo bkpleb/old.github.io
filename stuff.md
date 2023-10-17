@@ -3,7 +3,7 @@ layout: page
 title: Stuff
 ---
 
-This page is a collection of stuff I've done or made in a miscellaneous sense. 
+This page is a collection of stuff I've done or made in a miscellaneous sense. Unfortunately the majority or almost all of high school I rarely created projects. I remember doing projects but I've never documentated them hence I technically lost them.
 
 
 ## Projects
