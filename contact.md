@@ -5,6 +5,7 @@ title: Contact
 
 Please, when contacting, state who you are, what you want, etc. I can't keep guessing and will most likely block you.
 
+## DM:
 
 Telegram: [vintagemind](https://t.me/vintagemind)
 
@@ -32,7 +33,7 @@ Discord: vintagemind#2025
 Matrix: @vintagemind:mozilla.org 
 
 
-Other places where I dwell:
+## Other places where I dwell:
 
 
 [Pentesterlab](https://pentesterlab.com/profile/vintagemind)
