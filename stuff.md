@@ -16,6 +16,5 @@ This page is a collection of stuff I've done or made in a miscellaneous sense. U
 
 Making indicators with PineScript and publish them on TradingView ofc. 
 
-### Moving Average Indicators:
-[Two SMAs Simulatenously](https://www.tradingview.com/script/ltZt1zrj-Two-SMAs/) - Code made public
+[Two SMAs Simulatenously](https://www.tradingview.com/script/ltZt1zrj-Two-SMAs/)
 
