@@ -8,6 +8,8 @@ This page is a collection of stuff I've done or made in a miscellaneous sense. U
 
 ## Projects
 
+**Upcoming:** An automated crypto trading bot and crypto terminal/dashboard.
+
 [Technically Right Podcast](https://open.spotify.com/show/4hZQIBzJhR5wSNiGpKBcDj) - A podcast I set up for fun at Market Mapper since why not? (>_･ )ｸﾞ
 
 [Mozilla TCP/ETP Project](https://wiki.mozilla.org/Support/TCP-ETP) - Identify and track site breakage issues caused by TCP/ETP and to collaborate with the product team on resolving them.
