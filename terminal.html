@@ -1,75 +1,1940 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162707774-3"></script>
-    <script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171991414-1"></script>
+  <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-162707774-3');
-    </script>
+      gtag('config', 'UA-171991414-1');
+  </script>
 
-    <!-- Rollbar -->
-    <script>
-      var nodeEnv = '%NODE_ENV%';
-      var _rollbarConfig = {
-        accessToken: "ee83c9305f6944df8b62155c3d5973d9",
-        captureUncaught: true,
-        captureUnhandledRejections: true,
-        enabled: (nodeEnv === 'production'),
-        payload: { environment: "production" }
-      }
-      !function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.19.3/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
-    </script>
-    <meta charset="utf-8" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="og:type" content="website" />
+  <!-- Website info -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Crypto Market Dashboard</title>
+	<!-- core:css -->
+	<link rel="stylesheet" href="/static/assets/vendors/core/core.css">
+	<!-- endinject -->
+  <!-- plugin css for this page -->
+	<link rel="stylesheet" href="/static/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+	<!-- end plugin css for this page -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/static/assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="/static/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="/static/assets/css/demo_2/style.css">
+  <link rel="stylesheet" href="/static/assets/css/demo_2/added_styles.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="/static/assets/images/favicon.ico" />
 
-    <title>Parsec - DeFi & NFT, Pro Analytics</title>
-    <meta name="description" content="Pro Terminal For Onchain Markets, DeFi And NFT Traders" data-react-helmet="true" />
+  <link rel="stylesheet" href="/static/assets/vendors/select2/select2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
-    <meta name="og:image" content="https://app.parsec.finance/logo_2to1.png" data-react-helmet="true" />
-    <meta name="og:title" content="Parsec - DeFi & NFT, Pro Analytics" data-react-helmet="true" />
-    <meta name="og:description" content="Pro Terminal For Onchain Markets, DeFi And NFT Traders" data-react-helmet="true" />
+</head>
+<body class="sidebar-folded dark-theme">
+	<div class="main-wrapper">
+		  <!-- partial:partials/_sidebar.html -->
 
-    <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
-    <meta name="twitter:image" content="https://app.parsec.finance/logo_2to1.png" data-react-helmet="true" />
-    <meta name="twitter:title" content="Parsec - DeFi & NFT, Pro Analytics"  data-react-helmet="true" />
-    <meta name="twitter:description" content="Pro Terminal For Onchain Markets, DeFi And NFT Traders" data-react-helmet="true" />
+<nav class="sidebar">
+	<div class="sidebar-header">
+		<a href="/" class="sidebar-brand">
+			<!--Noble<span>UI</span>-->
+			<!--<img width="50px" src="/static/assets/images/white_icon.png">-->
+			<h4 class='text-bold'>Tradytics</h4>
+		</a>
+		<div class="sidebar-toggler not-active">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="sidebar-body">
+		<ul class="nav">
+			<li class="nav-item nav-category">Market Dashboard</li>
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="/manifest.json" />
-    <!--
-      Notice the use of  in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+				
+			<li class="nav-item">
+				<a href="charts" class="nav-link">
+					
+						<i class="link-icon" data-feather="bar-chart-2"></i>
+						<span class="link-title">Charts</span>
+					
+				</a>
+			</li>
+			
 
-      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" 
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin src="/assets/index-aa47b779.js"></script>
-    <link rel="stylesheet" href="/assets/index-8e53f9b5.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
+				
+			<li class="nav-item">
+				<a href="overall-market" class="nav-link">
+					
+						<i class="link-icon" data-feather="activity"></i>
+						<span class="link-title">Stocks</span>
+					
+				</a>
+			</li>
+			
+
+
+			
+			<li class="nav-item">
+				<a href="options-market" class="nav-link">
+					
+						<i class="link-icon" data-feather="chevrons-right"></i>
+						<span class="link-title">Options</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="darkpool-market" class="nav-link">
+					
+						<i class="link-icon" data-feather="cloud-drizzle"></i>
+						<span class="link-title">Darkpool</span>
+					
+				</a>
+			</li>
+			
+
+			<!--
+			<li class="nav-item">
+				<a href="crypto-market" class="nav-link">
+					
+						<i class="link-icon active-navbar" data-feather="key"></i>
+						<span class="link-title active-navbar">Crypto</span>
+					
+				</a>
+			</li>
+			-->
+
+			<!--<li class="nav-item">
+				<a href="chatter" class="nav-link">
+					
+						<i class="link-icon" data-feather="volume-1"></i>
+						<span class="link-title">Chatters</span>
+					
+				</a>
+			</li>-->
+
+			
+			
+			<li class="nav-item nav-category">Ticker Dashboards</li>
+
+			
+			<li class="nav-item">
+				<a href="stocks-dashboard" class="nav-link">
+					
+						<i class="link-icon" data-feather="bar-chart"></i>
+						<span class="link-title">Stocks</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="options-dashboard" class="nav-link">
+					
+						<i class="link-icon" data-feather="layers"></i>
+						<span class="link-title">Options</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="darkpool-ticker" class="nav-link">
+					
+						<i class="link-icon" data-feather="cloud"></i>
+						<span class="link-title">Darkpool</span>
+					
+				</a>
+			</li>
+			
+
+			<!--
+			<li class="nav-item">
+				<a href="crypto-dashboard" class="nav-link">
+					
+						<i class="link-icon" data-feather="cpu"></i>
+						<span class="link-title">Cryptos</span>
+					
+				</a>
+			</li>
+			-->
+
+			
+
+			
+			<li class="nav-item nav-category">Flow</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="live-options-flow" class="nav-link">
+					
+						<i class="link-icon" data-feather="loader"></i>
+						<span class="link-title">Live Options Flow</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="trady-flow" class="nav-link">
+					
+						<i class="link-icon" data-feather="dribbble"></i>
+						<span class="link-title">Trady Flow</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="flowline" class="nav-link">
+					
+						<i class="link-icon" data-feather="user"></i>
+						<span class="link-title">Flowline</span>
+					
+				</a>
+			</li>
+			
+
+			
+
+			<!--<li class="nav-item">
+				<a href="dark-flow" class="nav-link">
+					
+						<i class="link-icon" data-feather="cloud-drizzle"></i>
+						<span class="link-title">Dark Flow</span>
+					
+				</a>
+			</li>-->
+
+			<li class="nav-item nav-category">Swing AI</li>
+
+			
+			<li class="nav-item">
+				<a href="stock-prophet" class="nav-link">
+					
+						<i class="link-icon" data-feather="box"></i>
+						<span class="link-title">Prophet</span>
+					
+				</a>
+			</li>
+			
+
+			<!--
+			<li class="nav-item">
+				<a href="cryptonite" class="nav-link">
+					
+						<i class="link-icon" data-feather="dollar-sign"></i>
+						<span class="link-title">Cryptonite</span>
+					
+				</a>
+			</li>
+			-->
+
+
+			<!--<li class="nav-item">
+				<a href="options-psychic" class="nav-link">
+					
+						<i class="link-icon" data-feather="moon"></i>
+						<span class="link-title">Options Psychic</span>
+					
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="options-droid" class="nav-link">
+					
+						<i class="link-icon" data-feather="crosshair"></i>
+						<span class="link-title">Options Droid</span>
+					
+				</a>
+			</li>-->
+			
+			
+			
+			<li class="nav-item nav-category">Intraday AI</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="bullseye" class="nav-link">
+					
+						<i class="link-icon" data-feather="target"></i>
+						<span class="link-title">Bullseye</span>
+					
+				</a>
+			</li>
+			
+
+			<!--<li class="nav-item">
+				<a href="continuation-clairvoyant" class="nav-link">
+					
+						<i class="link-icon" data-feather="send"></i>
+						<span class="link-title">Clairvoyant</span>
+					
+				</a>
+			</li>-->
+			
+
+			<li class="nav-item nav-category">Scanners</li>
+
+			
+			<li class="nav-item">
+				<a href="scany" class="nav-link">
+					
+						<i class="link-icon" data-feather="map"></i>
+						<span class="link-title">Scany</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="flash" class="nav-link">
+					
+						<i class="link-icon" data-feather="zap"></i>
+						<span class="link-title">Flash</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="opintra" class="nav-link">
+					
+						<i class="link-icon" data-feather="filter"></i>
+						<span class="link-title">Opintra</span>
+					
+				</a>
+			</li>
+			
+			
+			<!--
+			<li class="nav-item">
+				<a href="crypto-scan" class="nav-link">
+					
+						<i class="link-icon" data-feather="thermometer"></i>
+						<span class="link-title">Crypto Scan</span>
+					
+				</a>
+			</li>
+			-->
+			
+			
+
+			
+			<li class="nav-item nav-category">Portfolios</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="ai-portfolios" class="nav-link">
+					
+						<i class="link-icon" data-feather="command"></i>
+						<span class="link-title">Stocks</span>
+					
+				</a>
+			</li>
+			
+
+			<!--
+			<li class="nav-item">
+				<a href="crypto-portfolios" class="nav-link">
+					
+						<i class="link-icon" data-feather="cpu"></i>
+						<span class="link-title">Crypto</span>
+					
+				</a>
+			</li>
+			-->
+			
+			<li class="nav-item nav-category">Research</li>
+
+			<li class="nav-item">
+	            <a class="nav-link" data-toggle="collapse" href="#senate" role="button" aria-expanded="false" aria-controls="senate">
+	              <i class="link-icon" data-feather="user"></i>
+	              <span class="link-title">Polytics</span>
+	              <i class="link-arrow" data-feather="chevron-down"></i>
+	            </a>
+	            <div class="collapse" id="senate">
+	              <ul class="nav sub-menu">
+	                <li class="nav-item">
+	                
+	                	<a href="senate-market" class="nav-link">Congress & Markets</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="senate-etf" class="nav-link">Congress Alpha</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="senate-individual" class="nav-link">Individual Dashboard</a>
+	                
+	                </li>
+	              </ul>
+	            </div>
+	        </li>
+
+			
+			<li class="nav-item">
+	            <a class="nav-link" data-toggle="collapse" href="#hedgies" role="button" aria-expanded="false" aria-controls="hedgies">
+	              <i class="link-icon" data-feather="home"></i>
+	              <span class="link-title">Hedgies</span>
+	              <i class="link-arrow" data-feather="chevron-down"></i>
+	            </a>
+	            <div class="collapse" id="hedgies">
+	              <ul class="nav sub-menu">
+	                <li class="nav-item">
+	                
+	                	<a href="hedgies-market" class="nav-link">Markets</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="hedgies-company" class="nav-link">Stocks</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="hedgies-fund" class="nav-link">Funds</a>
+	                
+	                </li>
+	              </ul>
+	            </div>
+	        </li>
+	        
+
+	        
+	        <li class="nav-item">
+				<a href="peekaboo" class="nav-link">
+					
+						<i class="link-icon" data-feather="inbox"></i>
+						<span class="link-title">Peekaboo</span>
+					
+				</a>
+			</li>
+			
+
+			
+			
+			<!--<li class="nav-item">
+	            <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
+	              <i class="link-icon" data-feather="volume-1"></i>
+	              <span class="link-title">Chatters</span>
+	              <i class="link-arrow" data-feather="chevron-down"></i>
+	            </a>
+	            <div class="collapse" id="emails">
+	              <ul class="nav sub-menu">
+	              	<li class="nav-item">
+
+	                
+	                	<a href="social-market" class="nav-link">Overall Market</a>
+	                
+	                </li>
+
+	                <li class="nav-item">
+	                
+	                	<a href="social-stock" class="nav-link">Stock Search</a>
+	                
+	                </li>
+
+	                <li class="nav-item">
+	                
+	                	<a href="wsb-chatter" class="nav-link">/r/Wallstreetbets</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="spacs-chatter" class="nav-link">/r/SPACs</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="investing-chatter" class="nav-link">/r/Investing</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="pennystocks-chatter" class="nav-link">/r/Pennystocks</a>
+	                
+	                </li>
+	                <li class="nav-item">
+	                
+	                	<a href="thetagang-chatter" class="nav-link">/r/Thetagang</a>
+	                
+	                </li>
+
+	                <li class="nav-item">
+	                
+	                	<a href="twitter-chatter" class="nav-link">Twitter</a>
+	                
+	                </li>
+
+	                <li class="nav-item">
+	                
+	                	<a href="investorhub-chatter" class="nav-link">Investorhub</a>
+	                
+	                </li>
+	                
+	              </ul>
+	            </div>
+	        </li>-->
+	        
+
+			
+			<!--
+			<li class="nav-item">
+				<a href="crypto-categories" class="nav-link">
+					
+						<i class="link-icon" data-feather="framer"></i>
+						<span class="link-title">Sectors</span>
+					
+				</a>
+			</li>
+			-->
+
+			<!--<li class="nav-item">
+				<a href="trade-sent" class="nav-link">
+					
+						<i class="link-icon" data-feather="clock"></i>
+						<span class="link-title">Trade Sent</span>
+					
+				</a>
+			</li>-->
+
+
+			<li class="nav-item nav-category" id="complex-tools-heading">Complex Tools</li>
+			<div id="complex-tools-nav">
+			<!--<li class="nav-item">
+				<a href="hercules" class="nav-link">
+					
+						<i class="link-icon" data-feather="cloud-lightning"></i>
+						<span class="link-title">Hercules</span>
+					
+				</a>
+			</li>-->
+			<!--<li class="nav-item">
+				<a href="equity-monster" class="nav-link">
+					
+						<i class="link-icon" data-feather="eye"></i>
+						<span class="link-title">Monster</span>
+					
+				</a>
+			</li>-->
+
+			
+			<li class="nav-item">
+				<a href="gambit" class="nav-link">
+					
+						<i class="link-icon" data-feather="crop"></i>
+						<span class="link-title">Gambit</span>
+					
+				</a>
+			</li>
+			
+
+			<!--
+			<li class="nav-item">
+				<a href="eiten" class="nav-link">
+					
+						<i class="link-icon" data-feather="shield"></i>
+						<span class="link-title">Eiten</span>
+					
+				</a>
+			</li>
+			-->
+
+			
+			<li class="nav-item">
+				<a href="yinyang" class="nav-link">
+					
+						<i class="link-icon" data-feather="compass"></i>
+						<span class="link-title">Yinyang</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="backtester" class="nav-link">
+					
+						<i class="link-icon" data-feather="rewind"></i>
+						<span class="link-title">Back Tester</span>
+					
+				</a>
+			</li>
+			
+
+			
+
+			<!--
+			<li class="nav-item">
+				<a href="tradytics-dashboard" class="nav-link">
+					
+						<i class="link-icon" data-feather="heart"></i>
+						<span class="link-title">Tradytics AI</span>
+					
+				</a>
+			</li>
+			-->
+
+			</div>
+			
+			<li class="nav-item nav-category">Help</li>
+
+			
+			<li class="nav-item">
+				<a href="performance" class="nav-link">
+					
+						<i class="link-icon" data-feather="trending-up"></i>
+						<span class="link-title">Performance</span>
+					
+				</a>
+			</li>
+			
+
+			
+			<li class="nav-item">
+				<a href="watchlist" class="nav-link">
+				
+					<i class="link-icon" data-feather="file-text"></i>
+					<span class="link-title">Watchlist</span>
+				
+				</a>
+			</li>
+			
+
+			<li class="nav-item">
+				<a href="discord-bots" class="nav-link">
+					
+						<i class="link-icon" data-feather="share-2"></i>
+						<span class="link-title">Discord Bots</span>
+					
+					
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="educational-material" class="nav-link">
+					
+						<i class="link-icon" data-feather="book-open"></i>
+						<span class="link-title">Education</span>
+					
+					
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="support" class="nav-link">
+					
+						<i class="link-icon" data-feather="hash"></i>
+						<span class="link-title">FAQs</span>
+					
+					
+				</a>
+			</li>
+		</ul>
+
+		<!--<div class='row justify-content-center pb-5'>
+		
+		<a href='crypto-market'><button class='btn btn-primary btn-sm p-1'>Crypto</button></a>
+		
+		</div>-->
+
+		<!--<div class="text-center complex-tools">
+		<p class="link-title text-muted tx-12 mb-2">Complex Tools</p>
+		<label class="switch mt--5 text-center">
+            <input type="checkbox" name="complex_tools" id="complex_tools_checkbox" onclick="toggle_complex_tools()"> <span class="slider round"></span>
+        </label>
+		<div>-->
+	
+	</div>
+</nav>
+
+
+
+<nav class="settings-sidebar">
+	<div class="sidebar-body sidebar-body align-items-center flex-column d-flex">
+	  <!--<a href="#" class="settings-sidebar-toggler">
+		<i class="fa-solid fa-circle-left tx-18"></i>
+	  </a>-->
+	
+	<!-- profile -->
+	<span class="nav-item dropdown nav-profile dropleft">
+			<a class="nav-link" href="#" id="profileDropdown" role="button"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="smaller-profile">
+					<p class="smaller-profile-text">T</p>
+				</div>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="profileDropdown">
+				<div class="dropdown-header d-flex flex-column align-items-center">
+					<div class="mb-3">
+						<h3 class='text-right text-primary text-bold'><a href="/">Tradytics</a></h3>
+					</div>
+					<div class="info text-center">
+
+						<div id="header_top_info">
+							<p id="header_name" class="name font-weight-bold mb-0"></p>
+							<p id="header_email" class="email text-muted mb-1"></p>
+							<p id="header_premium" class="mb-3"></p>
+						</div>
+
+					</div>
+				</div>
+				<div class="dropdown-body">
+					<ul class="profile-nav p-0 pt-3" id="user_logged_in">
+						<span class="nav-item">
+							<a href="profile" class="nav-link tx-14">
+								<i class="fa-solid fa-user mr-1"></i>
+								<span class="text-white">Profile</span>
+							</a>
+						</span>
+						<span class="nav-item">
+							<a href="journal" class="nav-link tx-14">
+								<i class="fa-brands fa-readme mr-1"></i>
+								<span class="text-white">Journal</span>
+							</a>
+						</span>
+						<span class="nav-item">
+							<a href="https://discord.com/invite/QuvE2Z8" class="nav-link tx-14">
+								<i class="fa-brands fa-discord mr-1"></i>
+								<span class="text-white">Discord Community</span>
+							</a>
+						</span>
+						<span class="nav-item">
+							<a href="subscription" class="nav-link tx-14">
+								<i class="fa-solid fa-star mr-1"></i>
+								<span class="text-white">Get Premium</span>
+							</a>
+						</span>
+						<span class="nav-item">
+							<a href="watchlist" class="nav-link tx-14">
+								<i class="fa-solid fa-list mr-1"></i>
+								<span class="text-white">Watchlists</span>
+							</a>
+						</span>
+						<span class="nav-item">
+							<a href="referrals" class="nav-link tx-14">
+								<i class="fa-solid fa-user-group mr-1"></i>
+								<span class="text-white">Referrals</span>
+							</a>
+						</span>
+						<span class="nav-item">
+							<a href="logout" class="nav-link tx-14">
+								<i class="fa-solid fa-square-up-right mr-1"></i>
+								<span class="text-white">Logout</span>
+							</a>
+						</span>
+
+					</ul>
+					<ul class="profile-nav p-0 pt-3" id="user_logged_out">
+						<li class="nav-item">
+							<a href="https://discord.com/invite/QuvE2Z8" class="nav-link" target="_blank">
+								<i data-feather="box"></i>
+								<span>Discord</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="login" class="nav-link">
+								<i data-feather="user"></i>
+								<span>Login</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="signup" class="nav-link">
+								<i data-feather="log-out"></i>
+								<span>Signup</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</span>
+
+	<hr class="bg-color w-100">
+
+	<!-- screenshot -->
+	<span class="nav-item nav-notifications cursor-pointer" onclick="take_screenshot()">
+		<a class="nav-link" href="#" role="button" >
+				<i class="fa-solid fa-camera tx-16" data-toggle="tooltip"
+				title="Take screenshot"></i>
+		</a>
+	</span>
+
+	<!-- trady skins -->
+	<span class="nav-item dropdown nav-notifications dropleft" id="skinstoolbar">
+		<a class="nav-link" href="#" id="themeDropdown" role="button" data-toggle="dropdown"
+			aria-haspopup="true" aria-expanded="false">
+				<i class="fa-solid fa-palette tx-16 " data-toggle="tooltip"
+				title="Change the color schemes of the website"></i>
+		</a>
+		<div class="dropdown-menu notifications-dropdown" aria-labelledby="themeDropdown"
+			style="min-width: 300px; max-height: 600px; min-height: 10px; overflow: auto;">
+			<div class="dropdown-header d-flex align-items-center justify-content-between"
+				style="padding-bottom: 5px !important;">
+
+
+				<i data-feather="camera" class="icon-lg text-white font-white mr-1"></i>
+				<span class="tx-22 active-navbar mb-0">Trady Skins</span>
+			</div>
+
+			<div class="dropdown-body justify-content-center" style="margin-top: 2px; display: flex;">
+
+				<div class="form-group col-12">
+					<label class="tx-16">Select Theme</label>
+					<select id="theme_selector" class="w-100 selector-class" data-width="100%"
+						onchange="change_theme(this.value);">
+
+						<option value="" selected disabled>Choose here</option>
+						<option value="dark-theme">Default/Dark</option>
+						<option value="light-theme">Light</option>
+						<option value="purple-theme">Purple</option>
+						<option value="blue-theme">Blue</option>
+						<option value="red-theme">Red</option>
+						<option value="green-theme">Green</option>
+						<option value="gray-theme">Gray</option>
+
+					</select>
+				</div>
+
+			</div>
+			<hr class='separator mb-0 mt-1'>
+		</div>
+	</span>
+
+	<span class="nav-item dropdown nav-notifications dropleft" id="whaletrackertoolbar">
+		<a class="nav-link " href="#" id="priceNotificationDropdown" role="button"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+			<i class="fa-solid fa-eye tx-16 " data-toggle="tooltip"
+				title="Follow and track how smart money is trading an options contract over time" onclick="whale_tracker_clicked()"></i>
+
+			
+		</a>
+		<div class="dropdown-menu notifications-dropdown" aria-labelledby="priceNotificationDropdown"
+			style="min-width: 300px; max-height: 600px; min-height: 10px; overflow: auto;">
+			<div class="dropdown-header d-flex align-items-center justify-content-between"
+				style="padding-bottom: 5px !important;">
+
+
+				<i data-feather="eye" class="icon-lg text-white font-white mr-1"></i>
+				<span class="tx-22 active-navbar mb-0">Whale Tracker</span>
+			</div>
+
+			<div class="dropdown-body justify-content-center" style="margin-top: 2px; display: flex;">
+				<button class='btn btn-primary' onclick="track_a_contract()"
+					style="border: 0px; font-size: 12px; margin-left: 3px;">Track a Contract</button>
+
+
+			</div>
+			<hr class='separator mb-0 mt-1'>
+			<div class="dropdown-body" id="notifications_dropdown_whales">
+			</div>
+
+		</div>
+	</span>
+
+
+	<span class="nav-item dropdown nav-notifications dropleft"  id="journaltoolbar">
+		<a class="nav-link" href="#" id="priceNotificationDropdown" role="button"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+			<i class="fa-brands fa-readme tx-16 " data-toggle="tooltip"
+				title="Your trading journal - add trades, analyze performance, and get better" onclick="trading_journal_clicked()"></i>
+
+
+		</a>
+		<div class="dropdown-menu notifications-dropdown" aria-labelledby="priceNotificationDropdown"
+			style="min-width: 300px; max-height: 600px; min-height: 500px; overflow: auto;">
+			<div class="dropdown-header d-flex align-items-center justify-content-between"
+				style="padding-bottom: 5px !important;">
+
+
+				<i data-feather="book-open" class="icon-lg text-white font-white mr-1"></i>
+				<span class="tx-22 active-navbar mb-0">Your Trading Joural</span>
+			</div>
+
+			<div class="dropdown-body justify-content-between" style="margin-top: 2px; display: flex;">
+				<button onclick="show_journal_modal()" class='btn btn-sm btn-secondary p-05'
+					style="font-size: 12px; margin-left: 3px;">Add a Trade</button>
+
+				<a href="journal"><button onclick="show_journal_modal()"
+						class='btn btn-sm btn-secondary p-05' style="font-size: 12px; margin-right: 3px;">My
+						Dashboard</button></a>
+			</div>
+			<hr class='separator mb-0 mt-1'>
+
+			<div class="dropdown-body" id="notifications_dropdown_journal">
+			</div>
+		</div>
+	</span>
+	
+	<span class="nav-item nav-notifications dropleft"  id="newsletterstoolbar">
+		<a class="nav-link" href="/#newsletter">
+
+
+			<i class="fa-solid fa-envelope tx-16 text-primary" data-toggle="tooltip"
+				title="Tradytics newsletters" ></i>
+
+
+		</a>
+		
+	</span>
+
+
+	</div>
+  </nav>
+
+
+
+<!-- partial -->
+<div class="page-wrapper">
+	<nav class="navbar mobiletopbar">
+		<a href="#" class="sidebar-toggler">
+			<i data-feather="menu"></i>
+		</a>
+		</nav>
+
+
+<!-- ######## TRADE ENTRY MODAL ------>
+<div class="modal fade" id="journal_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 700px !important;">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title text-center" id="exampleModalLabel3">Journal a New Trade</h4>
+			</div>
+			<div class="modal-body">
+				<div class="mb-3" style="display: flex; justify-content: space-between;">
+					<div>
+						<button onclick="set_entry_price('stock')" class="btn p-05 mr-2 btn-primary" id="stock_price_info_journal" >Get Symbol Info</button>
+						<button onclick="set_entry_price('option')" class="btn p-05 mr-2 btn-primary" id="option_contracts_info_journal" style="display: none;">Get Symbol Contracts</button>
+					</div>
+					<div>
+						<button id="stock_journal" class="btn btn-dribbble p-05 mr-2" onclick="change_journal_option('#stock_journal', '#option_journal')">Stock</button>
+						<button id="option_journal" class="btn btn-secondary p-05" onclick="change_journal_option('#option_journal', '#stock_journal')">Options</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Symbol</label>
+									<input name="journal_symbol" id="journal_symbol" type="text" class="form-control" placeholder="Stock ticker">
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Price</label>
+									<input id="journal_entry_price" name="journal_entry_price" type="text" class="form-control" placeholder="Entry Price">
+								</div>
+							</div>
+							<div class="col-sm-4" id="stock_type_journal">
+								<div class="form-group">
+									<label class="tx-16">Long/Short</label>
+									<select id="longshort_journal" class="js-example-basic w-100" data-width="100%">
+										<option value="long">Long</option>
+										<option value="short">Short</option>
+									</select>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row" id="option_contract_journal" style="display: none;">
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Strike</label>
+									<select id="journal_strikes" class="js-example-basic w-100" data-width="100%" onchange="adjust_strike_price(this);">
+										
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Expiration</label>
+									<select id="journal_expiration" class="js-example-basic w-100" data-width="100%" onchange="adjust_expiration_date(this);">
+										
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Call/Put</label>
+									<select id="call_put_journal" class="js-example-basic w-100" data-width="100%" onchange="adjust_call_puts_data(this);">
+										<option value="call">Call</option>
+										<option value="put">Put</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<div class="form-group">
+									<label class="tx-16">Setups</label>
+									<select id="setups_journal" class="js-example-basic-multiple w-100" multiple="multiple" data-width="100%">
+										<option value="earnings">Earnings</option>
+										<option value="breakout">Breakout</option>
+										<option value="breakdown">Breadown</option>
+										<option value="gapper">Gapper</option>
+										<option value="momentum">Momentum</option>
+										<option value="investment">Investment</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-5">
+								<div class="form-group">
+									<label class="tx-16">Tradytics Tools</label>
+									<select id="tradytics_tools_journal" class="js-example-basic-multiple w-100" multiple="multiple" data-width="100%">
+										<option value="algoflow">Algo Flow</option>
+										<option value="tradyflow">Trady Flow</option>
+										<option value="bullseye">Bullseye</option>
+										<option value="optionsflow">Options Flow</option>
+										<option value="flash">Flash</option>
+										<option value="opintra">Opintra</option>
+										<option value="scany">Scany</option>
+										<option value="prophet">Prophet</option>
+										<option value="crypto">Crypto</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="tx-16">Miscellaneous Comments</label>
+									<input id="extracomments_journal" type="text" class="form-control" placeholder="Extra comments" maxlength="512">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer justify-content-between">
+				<button type="button" class="btn btn-secondary" onclick="start_adding_new_setup()">Add a New Setup</button>
+				<button type="button" class="btn btn-secondary" onclick="add_journal_entry()">Add to Journal</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ########### TRADE EXIT MODAL ############# -->
+<div class="modal fade" id="journal_modal_exit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 700px !important;">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title text-center" id="exampleModalLabel3">Complete & Log Trade</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-sm-0" style="display: none;">
+								<div class="form-group">
+									<label class="tx-16">Uid</label>
+									<input name="journal_uid_exit" id="journal_uid_exit" type="text" class="form-control" placeholder="Stock ticker" readonly>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Symbol</label>
+									<input name="journal_symbol_exit" id="journal_symbol_exit" type="text" class="form-control" placeholder="Stock ticker" readonly>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Entry Price</label>
+									<input id="journal_entry_price_exit" name="journal_entry_price_exit" type="text" class="form-control" placeholder="Entry Price" readonly="">
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Exit Price</label>
+									<input id="journal_exit_price_exit" name="journal_exit_price_exit" type="text" class="form-control" placeholder="Exit Price">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="tx-16">Profit</label>
+									<input id="journal_profit_exit" name="journal_profit_exit" type="text" class="form-control" placeholder="Profit in %">
+								</div>
+							</div>
+
+							<div class="col-sm-8">
+								<div class="form-group">
+									<label class="tx-16">Exit Reason</label>
+									<select id="exit_reasons_journal" class="js-example-basic-multiple w-100" multiple="multiple" data-width="100%">
+										<option value="targethit">Target Hit</option>
+										<option value="partialprofit">Partial Profit Taking</option>
+										<option value="stoploss">Stoploss</option>
+										<option value="marketcrash">Fear of Market Crash</option>
+										<option value="marketcrash">FOMO</option>
+										<option value="marketcrash">Greed</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="tx-16">Exit Comments & Suggestions to Yourself</label>
+									<input id="extracomments_journal_exit" name="extracomments_journal_exit" type="text" class="form-control" placeholder="Exit comments">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-sm-12 text-center" id="trade_exit_congrats">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" onclick="close_journal_trade_final()">Alright, Let's Close the Trade</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ########### TRADE SETUP ADD MODAL ############# -->
+<div class="modal fade" id="journal_modal_setups" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px !important;">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title text-center" id="exampleModalLabel3">Add a new setup</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="tx-16">Setup Name</label>
+									<input name="setup_name_journal" id="setup_name_journal" type="text" class="form-control" placeholder="Trading Setup e.g Earnings Play">
+									<label class="mt-2 text-muted tx-12">Please make sure there are no spaces or special characters in the name</label>
+								</div>
+							</div>
+
+						</div>
+		
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" onclick="save_journal_setup()">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ########### PRICE TRIGGER ALERT ############# -->
+<div class="modal fade" id="price_trigger_alert_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px !important;">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title text-center" id="exampleModalLabel3">Add a Price Alert</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="tx-16">Symbol</label>
+									<input name="pricetrigger_symbol" id="pricetrigger_symbol" type="text" class="form-control" placeholder="Symbol">
+									
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="tx-16">Price</label>
+									<input name="pricetrigger_target" id="pricetrigger_target" type="number" step="any" min=0 class="form-control" placeholder="Price Target">
+									
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row">
+							
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="tx-16">Crossing</label>
+									<select id="above_below_pricetrigger" class="js-example-basic w-100" data-width="100%">
+										<option value="above">Above</option>
+										<option value="below">Below</option>
+									</select>
+									<label class="tx-14 text-muted mt-1">Where should the price go relative to the target to trigger this alert?</label>
+									
+								</div>
+							</div>
+
+						</div>
+		
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" onclick="add_price_trigger_alert()">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- ######## TRACK CONTRACT MODAL ------>
+<div class="modal fade" id="whale_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 900px !important;">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title text-center text-bold" id="exampleModalLabel3">Track Whales</h4>
+				<p class='text-muted'>Save & track whales for any options contract</p>
+			</div>
+			<div class="modal-body">
+				<div class="mb-3" style="display: flex; justify-content: space-between;">
+						
+						<button onclick="fill_symbol_contracts()" class="btn p-15 mr-2 btn-secondary" id="option_contracts_info_journal">Fill Symbol Contracts</button>
+
+						<button onclick="draw_whales_tracking_chart()" class="btn p-15 mr-2 btn-blue" id="option_contracts_info_journal">Track Whales</button>
+					
+					
+				</div>
+
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="form-group">
+									<label class="tx-16">Symbol</label>
+									<input name="whale_symbol" id="whale_symbol" type="text" class="form-control" placeholder="Stock ticker">
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-group">
+									<label class="tx-16">Call/Put</label>
+									<select id="call_put_whale" class="js-example-basic w-100" data-width="100%" onchange="adjust_call_puts_data_whale(this);">
+										<option value="call">Call</option>
+										<option value="put">Put</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-group">
+									<label class="tx-16">Expiration</label>
+									<select id="whale_expiration" class="js-example-basic w-100" data-width="100%" onchange="adjust_expiration_date_whale(this);">
+										
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-group">
+									<label class="tx-16">Strike</label>
+									<select id="whale_strikes" class="js-example-basic w-100" data-width="100%" onchange="adjust_strike_price_whale(this);">
+										
+									</select>
+								</div>
+							</div>
+							
+							
+							<div class="col-sm-3">
+								<div class="form-group">
+									<label class="tx-16">History (Days)</label>
+									<input name="whale_history" id="whale_history" type="text" class="form-control" placeholder="Lookback days">
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="card" style="padding-bottom: 2rem;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-1">
+                  <h6 class="card-title mb-0"><i data-feather="eye" class="icon-lg mb-1 icon-colors-default"></i> Whale Activity</h6>
+                </div>
+                <p class="text-muted mb-4">Total money being spent on buying or selling this contract. Click on Track Whales button above to populate this.</p>
+                <div class="flot-wrapper">
+                  <canvas id="buy_vs_sell_flow_whales" height = "120px"></canvas>
+                  <canvas id="buy_vs_sell_flow_whales_oi" class="mt-3" height = "60px"></canvas>
+                </div>
+              </div> 
+            </div>
+          
+
+
+			<div class="modal-footer justify-content-end">
+				<button type="button" class="btn btn-secondary" onclick="save_whale_contract()">Save this Contract</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade" id="whale_modal_v2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 900px !important;">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<h4 class="modal-title text-center text-bold" id="exampleModalLabel3">Track Whales</h4>
+				<p class='text-muted'>Save & track whales for any options contract</p>
+			</div>
+
+			<div class="modal-body">
+				
+			<div class="card" style="padding-bottom: 2rem;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-1">
+                  <h6 class="card-title mb-0"><i data-feather="eye" class="icon-lg mb-1 icon-colors-default"></i> Whale Activity</h6>
+                </div>
+                <p class="text-muted mb-4">Total money being spent on buying or selling this contract. Click on Track Whales button above to populate this.</p>
+                <div class="flot-wrapper">
+                  <canvas id="buy_vs_sell_flow_whales_v2" height = "120px"></canvas>
+                  <canvas id="buy_vs_sell_flow_whales_v2_oi" class="mt-3" height = "60px"></canvas>
+                </div>
+              </div> 
+            </div>
+          
+          	</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<!-- registration modal -->
+<div class="modal fade" id="free_registration_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px !important; pointer-events: auto !important;">
+	<div class="card gradientbg" style="box-shadow: 0px 0px 147px 1px rgba(31, 41, 219, 0.26);">
+		<div class="card-body p-0">
+			<div class="w-100 p-2 px-5 card-bg-color mb-2" style="position: absolute;">
+				<p style="font-size: 12px;" class="text-white"><i class="fa-solid fa-triangle-exclamation mr-1 text-danger"></i><span id="modalmessagefree">Without a free account, your data might be delayed and you'll miss out on many of our basic tools due to frequent popups. We invite you to join as a registered member.</span></p>
+			</div>
+
+			<div class="row pt-4">
+				<div class="col-7 px-5 pb-4 pt-5">
+					<h2 class="text-bold text-white-absolute">Register for Free</h2>
+					<p class="tx-16 mt-2 text-white-absolute">
+						<!--Unlock access to our basic tools by creating a free account.-->
+						Embark on your financial journey. A free account gives you the basic tools to start navigating the world of trading
+					</p>
+
+					<div class="d-flex flex-row mt-4 align-items-center">
+						<a href="signup" type="button" class="btn btn-light btn-lg  text-sbold" style="font-size: 1.25rem">Register</a>
+						<a href="login" type="button" class="ml-4 text-white-absolute" style="font-size: 1.0rem">Login</a>
+					</div>
+					
+				</div>
+
+				<div class="col-5 px-5 pb-4 pt-5">
+					<div class="checkpoints tx-16">
+						
+						<ul class="list-group list-group-flush mt-2 light-box-shadow">
+						<p class="list-group-item tx-16">Free account benefits</p>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Basic Tools</li>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Live Charts</li>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Introductory Analytics</li>
+						
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-100 p-2 mb-2 videoinmodal">
+				<!-- lock icon -->
+				<div class="lockicon"><i class="fa-solid fa-lock text-white-absolute tx-30"></i></div>
+
+				<div class="videodiv heavyshadow">
+					<video style="width:100%;" autoplay src="/static/assets/images/video.mp4"></video>
+				</div>
+			</div>
+
+			
+
+		</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- premium modal -->
+<div class="modal fade" id="premium_subscription_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true" >
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px !important; pointer-events: auto !important;">
+	<div class="card gradientbg" style="box-shadow: 0px 0px 147px 1px rgba(31, 41, 219, 0.26);">
+		<div class="card-body p-0">
+			<!--<div class="w-100 p-2 px-5 card-bg-color mb-2" style="position: absolute;">
+				<p style="font-size: 12px;" class="text-white"><i class="fa-solid fa-circle-exclamation mr-1 text-warning"></i><span id="modalmessageprem">Premium account gives you unlimited access to everything we offer.</span></p>
+			</div>-->
+
+			<div class="row pt-4">
+				<div class="col-12 col-md-7 col-lg-7 col-xl-7 px-5 pb-4 pt-5">
+					<h2 class="text-bold text-white-absolute">Upgrade Account</h2>
+					<p class="tx-16 mt-2 text-white-absolute">
+						<span id="modalmessageprem">Upgrade to premium, and let our AI and tools become your teammate in this trading journey. Together, we'll explore new possibilities</span>
+					</p>
+
+					<div class="d-flex flex-row mt-4 align-items-center">
+						<a href="subscription" type="button" class="btn btn-light btn-lg  text-sbold" style="font-size: 1.25rem">Upgrade</a>
+						<a href="signup" type="button" class="ml-4 text-white-absolute" style="font-size: 1.0rem">Create a free account</a>
+						
+					</div>
+					
+				</div>
+
+				<div class="col-12 col-md-5 col-lg-5 col-xl-5 px-5 pb-4 pt-3">
+					<div class="checkpoints tx-16">
+						<ul class="list-group list-group-flush mt-2 light-box-shadow">
+						<p class="list-group-item tx-16">Premium account benefits</p>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Dozen+ tools</li>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Live Premium Data</li>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Advanced AI Analytics</li>
+						<li class="list-group-item tx-16"><i class="fas fa-check-circle mr-1"></i>  Dedicated Discord Community</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-100 p-2 mb-2 videoinmodal">
+				<!-- lock icon -->
+				<div class="lockicon"><i class="fa-solid fa-lock text-white-absolute tx-30"></i></div>
+
+				<div class="videodiv heavyshadow">
+					<video style="width:100%;" autoplay src="/static/assets/images/video.mp4"></video>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+</div>
+			<div class="page-content">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+          <div>
+            <h4 class="mb-3 mb-md-0 tx-30 text-bold">Crypto Market Summary</h4>
+            <p class="text-muted mb-3 mb-md-0 tx-13">Daily prices of crypto symbols, biggest movers, new and trending coins, historical stats, and more.</p>
+            <p class="text-danger mb-3 mb-md-0" id="info_message"></p>
+          </div>
+          <div class="d-flex align-items-center flex-wrap text-nowrap">
+
+            <a class="btn btn-secondary btn-padding-sm mr-2" href="https://www.youtube.com/watch?v=l2skvIchBFg&list=PLvRaQtbyDleLIdNTU0QfrUOTgCZ9sX_Ib&index=6" target="_blank">
+               <i class="text-white ml-1 icon-md mr-1" data-feather="youtube"></i> Guide
+            </a>
+            
+            <div class="input-group date datepicker dashboard-date mr-2 mb-2 mb-md-0 d-md-none d-xl-flex" id="dashboardDate" data-date-format="yyyy-mm-dd">
+              <span class="input-group-addon bg-transparent"><i data-feather="calendar" class="text-primary"></i></span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row">
+
+          <!--<div class="col-12 col-md-6 col-lg-6 col-xl-6 grid-margin stretch-card">
+            <div class="card overflow-hidden">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-1">
+                  <h6 class="card-title mb-0"><i data-feather="bar-chart" class="icon-lg mb-1 icon-colors-default"></i> Top Coins</h6>
+                </div>
+                <div class="row align-items-start mb-2">
+                  <div class="col-md-12">
+                    <p class="text-muted tx-13 mb-3 mb-md-2">Hourly price of top cryptocurrencies like <span style='color: #7B62FF'>Bitcoin</span>, <span style='color: #93BCAE'>Ethereum</span>, and <span style='color: #F0B80D'>Solana</span>.</p>
+                  </div>
+                </div>
+
+                <div class="monthly-sales-chart-wrapper">
+                  <canvas id="top_crypto_market_prices"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>-->
+
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12 grid-margin stretch-card">
+            <div class="card overflow-hidden">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline">
+                  <h6 class="card-title mb-0"><i data-feather="bar-chart" class="icon-lg mb-0 icon-colors-default"></i> Global Metrics</h6>
+
+                  <div class="dropdown mb-1 ml-1">
+                    <button class="btn p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-lg text-success" data-feather="arrow-down-circle"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <button onclick="change_global_metrics('total_market_cap', 'Total Market Cap (Trillion)')" class="dropdown-item d-flex align-items-center"><i data-feather="activity" class="icon-sm mr-2"></i> <span class="">Market Cap</span></button>
+                      <button onclick="change_global_metrics('altcoin_market_cap', 'Altcoin Market Cap (Trillion)')" class="dropdown-item d-flex align-items-center"><i data-feather="shopping-cart" class="icon-sm mr-2"></i> <span class="">Altcoin Market Cap</span></button>
+                      <button onclick="change_global_metrics('total_volume_24h', 'Total Volume (Billion)')" class="dropdown-item d-flex align-items-center"><i data-feather="bar-chart-2" class="icon-sm mr-2"></i> <span class="">Total Volume</span></button>  
+                      <button onclick="change_global_metrics('altcoin_volume_24h', 'Altcoin Volume (Billion)')" class="dropdown-item d-flex align-items-center"><i data-feather="rotate-cw" class="icon-sm mr-2"></i> <span class="">Altcoin Volume</span></button>
+                      <button onclick="change_global_metrics('btc_dominance', 'Bitcoin Dominance')" class="dropdown-item d-flex align-items-center"><i data-feather="bar-chart" class="icon-sm mr-2"></i> <span class="">Bitcoin Dominance</span></button>
+                      <button onclick="change_global_metrics('active_cryptocurrencies', 'Active Cryptocurrencies')" class="dropdown-item d-flex align-items-center"><i data-feather="shield" class="icon-sm mr-2"></i> <span class="">Active Cryptocurrencies</span></button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row align-items-start mb-2">
+                  <div class="col-md-12">
+                    <p class="text-muted tx-13 mb-3 mb-md-2">How crypto markets have been growing over time.</p>
+                  </div>
+                </div>
+
+                <div class="monthly-sales-chart-wrapper">
+                  <canvas id="global_metrics"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+
+        </div> <!-- row -->
+
+        <div class="row">
+
+          <div class="col-lg-7 col-xl-7 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body" style="padding: 1.0rem 1.0rem !important;">
+                  <div class="d-flex justify-content-between align-items-baseline mb-1">
+                    <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="chevrons-up"></i> Most Trending</h6>
+                    
+                  </div>
+                  <div class="row align-items-start bottom-margin-2em">
+                    <div class="col-md-11">
+                      <p class="text-muted tx-13 mb-0 mb-md-0">Most trending cryptocurrencies today.</span></p>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0" id="most_trending_table" >
+                      <thead>
+                        <tr>
+                          <th class="pt-0">Rank</th> <!-- ticker, self.parse_large_value(minute_data["av"]), self.parse_large_value(prevDay["v"]), round(minute_data["av"]/prevDay["v"], 3), round(lastQuote["p"], 2), round(prevDay["c"], 2), round(change_percent, 2) -->
+                          <th class="pt-0">Coin</th>
+                          <th class="pt-0">Price</th>
+                          <th class="pt-0">1H%</th>
+                          <th class="pt-0">1D%</th>
+                          <th class="pt-0">Vol</th>
+                          <th class="pt-0">McapDil</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div> 
+              </div>
+          </div>
+
+          <div class="col-lg-5 col-xl-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body" style="padding: 1.0rem 1.0rem !important;">
+                  <div class="d-flex justify-content-between align-items-baseline mb-1">
+                    <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="chevrons-up"></i> Biggest Gainers</h6>
+                    
+                  </div>
+                  <div class="row align-items-start bottom-margin-2em">
+                    <div class="col-md-11">
+                      <p class="text-muted tx-13 mb-0 mb-md-0">Biggest gainers today.</span></p>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0" id="movers_table_gainers" >
+                      <thead>
+                        <tr>
+                          <th class="pt-0">Rank</th> <!-- ticker, self.parse_large_value(minute_data["av"]), self.parse_large_value(prevDay["v"]), round(minute_data["av"]/prevDay["v"], 3), round(lastQuote["p"], 2), round(prevDay["c"], 2), round(change_percent, 2) -->
+                          <th class="pt-0">Coin</th>
+                          <th class="pt-0">Price</th>
+                          <th class="pt-0">1H%</th>
+                          <th class="pt-0">1D%</th>
+                          <th class="pt-0">Vol</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div> 
+              </div>
+          </div>
+
+        </div>
+
+         <div class="row">
+            
+          <div class="col-lg-12 col-xl-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-baseline mb-1">
+                    <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="message-circle"></i> Market Sentiment</h6>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col-md-11">
+                      <p class="text-muted tx-13 mb-0 mb-md-0">A visual summary of the crypto market.</p>
+                    </div>
+                  </div>
+                  <div id="market_overview">
+                  </div>
+                </div> 
+              </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-6 grid-margin stretch-card">
+            <div class="card overflow-hidden">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-1">
+                  <h6 class="card-title mb-0"><i data-feather="bar-chart" class="icon-lg mb-1 icon-colors-default"></i> Largest Marketcap Categories</h6>
+                </div>
+                <div class="row align-items-start mb-2">
+                  <div class="col-md-12">
+                    <p class="text-muted tx-13 mb-3 mb-md-2">Categories with the largest marketcap.</p>
+                  </div>
+                </div>
+
+                <div>
+                  <canvas height='350' id="largest_marketcap_category"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-6 grid-margin stretch-card">
+            <div class="card overflow-hidden">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-1">
+                  <h6 class="card-title mb-0"><i data-feather="bar-chart" class="icon-lg mb-1 icon-colors-default"></i> Largest Price Change Categories</h6>
+                </div>
+                <div class="row align-items-start mb-2">
+                  <div class="col-md-12">
+                    <p class="text-muted tx-13 mb-3 mb-md-2">Categories with the largest average change in their holdings.</p>
+                  </div>
+                </div>
+
+                <div>
+                  <canvas height='350' id="largest_vol_category"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+          <div class="col-lg-4 col-xl-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-1">
+                  <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="zap"></i> Market Prediction</h6>
+                </div>
+                <p class="text-muted mb-4">Market predictions from our AI tool Cryptonite.</p>
+                
+                <div class="d-flex flex-column" id="marketpredictions">
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-xl-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-1">
+                  <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="zap"></i> Ongoing Airdrops</h6>
+                </div>
+                <p class="text-muted mb-2">Crypto with ongoing airdrops.</p>
+                <div class="d-flex flex-column" id="airdrops">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-xl-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-1">
+                  <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="zap"></i> Top Exchanges</h6>
+                </div>
+                <p class="text-muted mb-2">Top exchanges based on volume and tradeable tickers.</p>
+                <div class="d-flex flex-column" id="top_exchanges">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+       
+
+        
+
+        <div class="row">
+            
+          <div class="col-lg-12 col-xl-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-baseline mb-2">
+                    <h6 class="card-title mb-0"><i class="icon-lg highlighted-text" data-feather="message-circle"></i> Latest News</h6>
+                  </div>
+                  <div class="row align-items-start bottom-margin-2em">
+                    <div class="col-md-11">
+                      <p class="text-muted tx-13 mb-0 mb-md-0">Keep your self up to date with the latest news in the crypto space.</p>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0" id="dataTableNews">
+                      <thead>
+                        <tr>
+                          <th class="pt-0">Time</th>
+                          <th class="pt-0">Title</th>
+                          <th class="pt-0">Categories</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            
+        </div>
+
+
+
+			</div>
+
+			<!-- partial:partials/_footer.html -->
+			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<p class="text-muted text-center text-md-left">Copyright © 2022 <a href="https://www.tradytics.com/" target="_blank">Tradytics</a>. All rights reserved. Market Data by TradeAlert and IEXCloud.</p>
+				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
+			</footer>
+			<!-- partial -->
+		
+		</div>
+	</div>
+
+	<!-- core:js -->
+	<script src="/static/assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="/static/assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="/static/assets/vendors/jquery.flot/jquery.flot.js"></script>
+  <script src="/static/assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="/static/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="/static/assets/vendors/apexcharts/apexcharts.min.js"></script>
+  <script src="/static/assets/vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="/static/assets/vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="/static/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+	<!-- end plugin js for this page -->
+	<!-- inject:js -->
+  <script src="/static/assets/vendors/feather-icons/feather.min.js"></script>
+  <script src="/static/assets/js/template.js"></script>
+
+	<!-- endinject -->
+  <!-- custom js for this page -->
   
-<script async id="netlify-rum-container" src="https://netlify-rum.netlify.app/netlify-rum.js" data-netlify-rum-site-id="ef263e05-36c2-4f05-8946-5838ce395100" data-netlify-deploy-branch="master" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiZWYyNjNlMDUtMzZjMi00ZjA1LTg5NDYtNTgzOGNlMzk1MTAwIiwiYWNjb3VudF9pZCI6IjVlMmY0NDAyMWVjYzkyYjNiOWMwNmE3MyIsImRlcGxveV9pZCI6IjY1MmVkMGUwNjBlOTVkMDAwOGQwY2YyYSIsImlzc3VlciI6Im5mc2VydmVyIn0.R8-4lIGAsOtAD874JKCKQMmdZ75sfxC9V5vpWF17Ws4"></script></body>
-</html>
+  <script src="/static/assets/js/dashboard.js"></script>
+  <script src="/static/assets/js/datepicker.js"></script>
+  <script src="/static/assets/js/journal.js"></script>
+  <script src="/static/assets/js/crypto-market-v2.js"></script>
+  
+  <script src="/static/assets/js/chatbot.js"></script>
+  <script src="/static/assets/js/pricealerts.js"></script>
+  <script src="/static/assets/js/announcements.js"></script>
+  <script src="/static/assets/vendors/select2/select2.min.js"></script>
+  <script src="/static/assets/js/select2.js"></script>
+  <script src="/static/assets/js/crypto-treemaps.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
 
+
+	<!-- end custom js for this page -->
+
+  <script>
+
+    /*************** Date handling *******************/
+    try{
+        var url_string = window.location.href; //
+        var url = new URL(url_string);
+        var date_parameter = url.searchParams.get("date");
+        if (date_parameter != null){
+          $('#dashboardDate').datepicker('setDate', convert_string_to_date(date_parameter));
+        }
+        else{
+          var date = new Date();
+          var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+          $('#dashboardDate').datepicker('setDate', today);
+        }
+      }
+      catch(e){
+        console.log(e);
+      }
+      // Date change
+      $('#dashboardDate').datepicker().on('changeDate', function(e) {
+        try{
+          let date_to_use = $("#dashboardDate").data('datepicker').getFormattedDate('yyyy-mm-dd');
+          var newUrl = location.protocol + '//' + location.host + location.pathname + "?date=" + date_to_use;
+          window.location.href = newUrl;
+        }
+        catch(e){
+          console.log(e);
+          var newUrl = location.protocol + '//' + location.host + location.pathname;
+          window.location.href = newUrl;
+        }
+        
+    });
+
+      
+    /*************** Data handling *******************/
+    let crypto_market_dashboard_data = {"top_symbol_prices": {"BTC": {}, "ETH": {}, "SOL": {}}, "global_metrics": [["2023-04-16", {"total_market_cap": 1.2688739410478025, "total_volume_24h": 33.75092989233, "altcoin_volume_24h": 22.432864032265776, "altcoin_market_cap": 0.6833543239128703, "btc_dominance": 46.14482166, "active_cryptocurrencies": 9190}], ["2023-04-17", {"total_market_cap": 1.269910814374347, "total_volume_24h": 40.81690886181, "altcoin_volume_24h": 26.034008034693063, "altcoin_market_cap": 0.6897247743566066, "btc_dominance": 45.68714853, "active_cryptocurrencies": 9196}], ["2023-04-18", {"total_market_cap": 1.2534131980635155, "total_volume_24h": 43.366130993540004, "altcoin_volume_24h": 26.723478652971014, "altcoin_market_cap": 0.6833786586809384, "btc_dominance": 45.47858123, "active_cryptocurrencies": 9218}], ["2023-04-19", {"total_market_cap": 1.2733700664162277, "total_volume_24h": 45.988657537559995, "altcoin_volume_24h": 26.869973188197516, "altcoin_market_cap": 0.6890326363900324, "btc_dominance": 45.88905028, "active_cryptocurrencies": 9230}], ["2023-04-20", {"total_market_cap": 1.213792199281313, "total_volume_24h": 63.92296825031, "altcoin_volume_24h": 38.28247592054145, "altcoin_market_cap": 0.6540624720338408, "btc_dominance": 46.1141312, "active_cryptocurrencies": 9252}], ["2023-04-21", {"total_market_cap": 1.196452426759025, "total_volume_24h": 50.531026965440006, "altcoin_volume_24h": 30.05665155506062, "altcoin_market_cap": 0.647891003962578, "btc_dominance": 45.84899579, "active_cryptocurrencies": 9280}], ["2023-04-22", {"total_market_cap": 1.156114524496872, "total_volume_24h": 50.3001913762, "altcoin_volume_24h": 30.015237537350146, "altcoin_market_cap": 0.627300529437418, "btc_dominance": 45.74062378, "active_cryptocurrencies": 9298}], ["2023-04-23", {"total_market_cap": 1.1655075062220999, "total_volume_24h": 31.21404438518, "altcoin_volume_24h": 17.793870182691276, "altcoin_market_cap": 0.6320477059276436, "btc_dominance": 45.77060186, "active_cryptocurrencies": 9299}], ["2023-04-24", {"total_market_cap": 1.1699010557044836, "total_volume_24h": 31.352100825759997, "altcoin_volume_24h": 17.578639118830043, "altcoin_market_cap": 0.6320986516782494, "btc_dominance": 45.96990501, "active_cryptocurrencies": 9296}], ["2023-04-25", {"total_market_cap": 1.152436641945062, "total_volume_24h": 36.54797545484, "altcoin_volume_24h": 19.919920326640003, "altcoin_market_cap": 0.6229455524983275, "btc_dominance": 45.94535354, "active_cryptocurrencies": 9337}], ["2023-04-26", {"total_market_cap": 1.182301827529525, "total_volume_24h": 40.584682709910005, "altcoin_volume_24h": 22.27892760776019, "altcoin_market_cap": 0.6342106060941516, "btc_dominance": 46.35797803, "active_cryptocurrencies": 9370}], ["2023-04-27", {"total_market_cap": 1.196443373702117, "total_volume_24h": 70.31698021567999, "altcoin_volume_24h": 35.379171649887255, "altcoin_market_cap": 0.6368542287558225, "btc_dominance": 46.77105137, "active_cryptocurrencies": 9389}], ["2023-04-28", {"total_market_cap": 1.2084787942859188, "total_volume_24h": 48.13196284281, "altcoin_volume_24h": 24.139491199260085, "altcoin_market_cap": 0.6386116791369993, "btc_dominance": 47.15573975, "active_cryptocurrencies": 9425}], ["2023-04-29", {"total_market_cap": 1.207755798208426, "total_volume_24h": 37.65797262886, "altcoin_volume_24h": 21.21274983093404, "altcoin_market_cap": 0.6391104244056909, "btc_dominance": 47.0828105, "active_cryptocurrencies": 9438}], ["2023-04-30", {"total_market_cap": 1.2023879589052802, "total_volume_24h": 24.3043240313, "altcoin_volume_24h": 13.88360700602824, "altcoin_market_cap": 0.6371078501336394, "btc_dominance": 47.01312123, "active_cryptocurrencies": 9419}], ["2023-05-01", {"total_market_cap": 1.1809697727971138, "total_volume_24h": 37.53383964923, "altcoin_volume_24h": 20.310390375984912, "altcoin_market_cap": 0.6275058106287409, "btc_dominance": 46.86520984, "active_cryptocurrencies": 9422}], ["2023-05-02", {"total_market_cap": 1.163390962393734, "total_volume_24h": 35.97239195695, "altcoin_volume_24h": 19.50394611985652, "altcoin_market_cap": 0.6206053243541734, "btc_dominance": 46.65548002, "active_cryptocurrencies": 9434}], ["2023-05-03", {"total_market_cap": 1.1758721630789457, "total_volume_24h": 35.22662102167, "altcoin_volume_24h": 18.746116051804037, "altcoin_market_cap": 0.6240102760192336, "btc_dominance": 46.93213296, "active_cryptocurrencies": 9448}], ["2023-05-04", {"total_market_cap": 1.196854670974874, "total_volume_24h": 42.44001465168, "altcoin_volume_24h": 23.213024145729744, "altcoin_market_cap": 0.6334750459638288, "btc_dominance": 47.07168202, "active_cryptocurrencies": 9463}], ["2023-05-05", {"total_market_cap": 1.1968101323554716, "total_volume_24h": 33.990320160610004, "altcoin_volume_24h": 17.31880320414754, "altcoin_market_cap": 0.6311414272737516, "btc_dominance": 47.26469887, "active_cryptocurrencies": 9476}], ["2023-05-06", {"total_market_cap": 1.2115593513131684, "total_volume_24h": 43.857911634029996, "altcoin_volume_24h": 26.365945611544515, "altcoin_market_cap": 0.6420972330174066, "btc_dominance": 47.00241203, "active_cryptocurrencies": 9510}], ["2023-05-07", {"total_market_cap": 1.185086951248425, "total_volume_24h": 37.31073367675, "altcoin_volume_24h": 22.14939101381765, "altcoin_market_cap": 0.6260737450430679, "btc_dominance": 47.17064901, "active_cryptocurrencies": 9529}], ["2023-05-08", {"total_market_cap": 1.1618161907151054, "total_volume_24h": 32.356196582959996, "altcoin_volume_24h": 19.40374029282334, "altcoin_market_cap": 0.6151425383697594, "btc_dominance": 47.0533684, "active_cryptocurrencies": 9525}], ["2023-05-09", {"total_market_cap": 1.140109315584873, "total_volume_24h": 42.26990978682, "altcoin_volume_24h": 24.481662460922266, "altcoin_market_cap": 0.6048682834004618, "btc_dominance": 46.946466, "active_cryptocurrencies": 9577}], ["2023-05-10", {"total_market_cap": 1.1417281423933736, "total_volume_24h": 31.68281224362, "altcoin_volume_24h": 17.66524194117093, "altcoin_market_cap": 0.6053717547292703, "btc_dominance": 46.97759193, "active_cryptocurrencies": 9606}], ["2023-05-11", {"total_market_cap": 1.1360010299568952, "total_volume_24h": 50.19664566729, "altcoin_volume_24h": 29.370055251629516, "altcoin_market_cap": 0.6035171453373965, "btc_dominance": 46.87353889, "active_cryptocurrencies": 9640}], ["2023-05-12", {"total_market_cap": 1.1026162019244148, "total_volume_24h": 38.833746546760004, "altcoin_volume_24h": 21.54842202416898, "altcoin_market_cap": 0.5865151817397806, "btc_dominance": 46.80695053, "active_cryptocurrencies": 9644}], ["2023-05-13", {"total_market_cap": 1.118415232434232, "total_volume_24h": 39.34599695382, "altcoin_volume_24h": 21.051063146466664, "altcoin_market_cap": 0.598780725923606, "btc_dominance": 46.46168001, "active_cryptocurrencies": 9656}], ["2023-05-14", {"total_market_cap": 1.123125624457531, "total_volume_24h": 22.04085375632, "altcoin_volume_24h": 12.32610025777464, "altcoin_market_cap": 0.6028814230369147, "btc_dominance": 46.32110515, "active_cryptocurrencies": 9652}], ["2023-05-15", {"total_market_cap": 1.136525155840387, "total_volume_24h": 25.32945871684, "altcoin_volume_24h": 13.911872870475891, "altcoin_market_cap": 0.6094908833412269, "btc_dominance": 46.37242474, "active_cryptocurrencies": 9664}], ["2023-05-16", {"total_market_cap": 1.1321167471471318, "total_volume_24h": 29.76087994796, "altcoin_volume_24h": 15.996295157165212, "altcoin_market_cap": 0.6064177831363866, "btc_dominance": 46.4350488, "active_cryptocurrencies": 9672}], ["2023-05-17", {"total_market_cap": 1.1317087964763966, "total_volume_24h": 27.8237068038, "altcoin_volume_24h": 15.653462233682408, "altcoin_market_cap": 0.6072290927834944, "btc_dominance": 46.34405117, "active_cryptocurrencies": 9687}], ["2023-05-18", {"total_market_cap": 1.1390488713743496, "total_volume_24h": 33.54993808807, "altcoin_volume_24h": 18.5499262251403, "altcoin_market_cap": 0.609057217922558, "btc_dominance": 46.52931641, "active_cryptocurrencies": 9705}], ["2023-05-19", {"total_market_cap": 1.122706573591662, "total_volume_24h": 31.76787839365, "altcoin_volume_24h": 16.68336712151084, "altcoin_market_cap": 0.602657060250538, "btc_dominance": 46.32105357, "active_cryptocurrencies": 9698}], ["2023-05-20", {"total_market_cap": 1.1247004365824667, "total_volume_24h": 24.18288435174, "altcoin_volume_24h": 13.520931901458251, "altcoin_market_cap": 0.6039802633098628, "btc_dominance": 46.29856594, "active_cryptocurrencies": 9726}], ["2023-05-21", {"total_market_cap": 1.1326826212443677, "total_volume_24h": 17.32301502932, "altcoin_volume_24h": 9.960784666670927, "altcoin_market_cap": 0.6058446538122715, "btc_dominance": 46.51240847, "active_cryptocurrencies": 9731}], ["2023-05-22", {"total_market_cap": 1.1147048107804884, "total_volume_24h": 21.432216575709997, "altcoin_volume_24h": 12.031643530665205, "altcoin_market_cap": 0.5981506580428447, "btc_dominance": 46.33999492, "active_cryptocurrencies": 9772}], ["2023-05-23", {"total_market_cap": 1.145052003040489, "total_volume_24h": 28.69346705655, "altcoin_volume_24h": 16.033906312310975, "altcoin_market_cap": 0.6137828918173722, "btc_dominance": 46.39694178, "active_cryptocurrencies": 9901}], ["2023-05-24", {"total_market_cap": 1.120487388800078, "total_volume_24h": 28.69792158859, "altcoin_volume_24h": 16.028293189778534, "altcoin_market_cap": 0.6017629145965792, "btc_dominance": 46.29453927, "active_cryptocurrencies": 9975}], ["2023-05-25", {"total_market_cap": 1.0990276916124118, "total_volume_24h": 36.59509859637, "altcoin_volume_24h": 20.051854063405493, "altcoin_market_cap": 0.5920196067536561, "btc_dominance": 46.1324213, "active_cryptocurrencies": 9996}], ["2023-05-26", {"total_market_cap": 1.1098881932472668, "total_volume_24h": 27.81029540591, "altcoin_volume_24h": 15.03371102543077, "altcoin_market_cap": 0.5973821896203225, "btc_dominance": 46.17636324, "active_cryptocurrencies": 10051}], ["2023-05-27", {"total_market_cap": 1.1231860438708245, "total_volume_24h": 26.3760481949, "altcoin_volume_24h": 14.218499021846895, "altcoin_market_cap": 0.6043329280974842, "btc_dominance": 46.19476164, "active_cryptocurrencies": 10093}], ["2023-05-28", {"total_market_cap": 1.1392995962987975, "total_volume_24h": 20.872983167770002, "altcoin_volume_24h": 11.661002336535505, "altcoin_market_cap": 0.6105748849190716, "btc_dominance": 46.40787314, "active_cryptocurrencies": 10084}], ["2023-05-29", {"total_market_cap": 1.1621448718387928, "total_volume_24h": 32.24585205927, "altcoin_volume_24h": 16.615280114571213, "altcoin_market_cap": 0.619947842500389, "btc_dominance": 46.65485711, "active_cryptocurrencies": 10014}], ["2023-05-30", {"total_market_cap": 1.1598527625773205, "total_volume_24h": 28.52152900175, "altcoin_volume_24h": 15.329537585153293, "altcoin_market_cap": 0.6198384375015586, "btc_dominance": 46.55886872, "active_cryptocurrencies": 10106}], ["2023-05-31", {"total_market_cap": 1.155797492932168, "total_volume_24h": 30.42715620897, "altcoin_volume_24h": 17.24102307775645, "altcoin_market_cap": 0.6197560450348126, "btc_dominance": 46.37849201, "active_cryptocurrencies": 10228}], ["2023-06-01", {"total_market_cap": 1.1289336202464149, "total_volume_24h": 35.69780787347, "altcoin_volume_24h": 18.428609498746013, "altcoin_market_cap": 0.6092564396977422, "btc_dominance": 46.03257191, "active_cryptocurrencies": 10325}], ["2023-06-02", {"total_market_cap": 1.1382262594602204, "total_volume_24h": 28.89028226713, "altcoin_volume_24h": 14.862562814978247, "altcoin_market_cap": 0.6149486616488148, "btc_dominance": 45.97307376, "active_cryptocurrencies": 10330}], ["2023-06-03", {"total_market_cap": 1.1451230132740646, "total_volume_24h": 28.53150147906, "altcoin_volume_24h": 15.360262826105552, "altcoin_market_cap": 0.6189883325358959, "btc_dominance": 45.94569096, "active_cryptocurrencies": 10354}], ["2023-06-04", {"total_market_cap": 1.1439745554595935, "total_volume_24h": 19.371782365349997, "altcoin_volume_24h": 11.06044828853385, "altcoin_market_cap": 0.6191249283572164, "btc_dominance": 45.87948435, "active_cryptocurrencies": 10356}], ["2023-06-05", {"total_market_cap": 1.1351131530139777, "total_volume_24h": 24.95667364383, "altcoin_volume_24h": 14.078375977424008, "altcoin_market_cap": 0.6139394536102063, "btc_dominance": 45.91381027, "active_cryptocurrencies": 10347}], ["2023-06-06", {"total_market_cap": 1.089870377350898, "total_volume_24h": 46.64433962109, "altcoin_volume_24h": 25.908935085517058, "altcoin_market_cap": 0.5906107739454018, "btc_dominance": 45.80908095, "active_cryptocurrencies": 10377}], ["2023-06-07", {"total_market_cap": 1.1247920775750693, "total_volume_24h": 46.27284308021, "altcoin_volume_24h": 22.77884948011373, "altcoin_market_cap": 0.6028197822884953, "btc_dominance": 46.40611413, "active_cryptocurrencies": 10381}], ["2023-06-08", {"total_market_cap": 1.0985490832344145, "total_volume_24h": 37.86989757382, "altcoin_volume_24h": 20.16064108301201, "altcoin_market_cap": 0.5868735634662602, "btc_dominance": 46.57739263, "active_cryptocurrencies": 10413}], ["2023-06-09", {"total_market_cap": 1.1015086074026104, "total_volume_24h": 26.08064474493, "altcoin_volume_24h": 14.139202928632036, "altcoin_market_cap": 0.5879183290549488, "btc_dominance": 46.62607944, "active_cryptocurrencies": 10440}], ["2023-06-10", {"total_market_cap": 1.0867251381461909, "total_volume_24h": 27.99159247241, "altcoin_volume_24h": 16.876768505682243, "altcoin_market_cap": 0.5756692614415173, "btc_dominance": 47.02715146, "active_cryptocurrencies": 10427}], ["2023-06-11", {"total_market_cap": 1.0493686224958911, "total_volume_24h": 51.64519252454, "altcoin_volume_24h": 32.48451660394618, "altcoin_market_cap": 0.5504528457327259, "btc_dominance": 47.54437726, "active_cryptocurrencies": 10418}], ["2023-06-12", {"total_market_cap": 1.0463275033896473, "total_volume_24h": 26.706512016610002, "altcoin_volume_24h": 15.167573076939211, "altcoin_market_cap": 0.5463334845456276, "btc_dominance": 47.7856137, "active_cryptocurrencies": 10410}], ["2023-06-13", {"total_market_cap": 1.0577713900264578, "total_volume_24h": 29.06643039136, "altcoin_volume_24h": 17.49824355663093, "altcoin_market_cap": 0.5527306963954528, "btc_dominance": 47.74573205, "active_cryptocurrencies": 10438}], ["2023-06-14", {"total_market_cap": 1.059436838759738, "total_volume_24h": 31.712410887529998, "altcoin_volume_24h": 18.503973761893498, "altcoin_market_cap": 0.5553631180002436, "btc_dominance": 47.57940278, "active_cryptocurrencies": 10451}], ["2023-06-15", {"total_market_cap": 1.023734264224303, "total_volume_24h": 34.127057183169995, "altcoin_volume_24h": 19.536585902069664, "altcoin_market_cap": 0.5383105139626346, "btc_dominance": 47.41696817, "active_cryptocurrencies": 10450}], ["2023-06-16", {"total_market_cap": 1.0364865028081083, "total_volume_24h": 36.0104308064, "altcoin_volume_24h": 20.47113939604658, "altcoin_market_cap": 0.540693994807385, "btc_dominance": 47.83395699, "active_cryptocurrencies": 10443}], ["2023-06-17", {"total_market_cap": 1.05931124734593, "total_volume_24h": 31.918504831259998, "altcoin_volume_24h": 15.746612495393197, "altcoin_market_cap": 0.5501756318600679, "btc_dominance": 48.0628915, "active_cryptocurrencies": 10442}], ["2023-06-18", {"total_market_cap": 1.069666585680667, "total_volume_24h": 23.46459746171, "altcoin_volume_24h": 12.673970001805799, "altcoin_market_cap": 0.5547751214356054, "btc_dominance": 48.13569678, "active_cryptocurrencies": 10409}], ["2023-06-19", {"total_market_cap": 1.0649580167233212, "total_volume_24h": 20.69967432091, "altcoin_volume_24h": 11.049595658203534, "altcoin_market_cap": 0.5524212822317988, "btc_dominance": 48.1274122, "active_cryptocurrencies": 10376}], ["2023-06-20", {"total_market_cap": 1.0763419379213328, "total_volume_24h": 27.80020366685, "altcoin_volume_24h": 13.646554206855667, "altcoin_market_cap": 0.5541718700346888, "btc_dominance": 48.51339983, "active_cryptocurrencies": 10393}], ["2023-06-21", {"total_market_cap": 1.1309398952913148, "total_volume_24h": 44.50743243371, "altcoin_volume_24h": 19.60351920418932, "altcoin_market_cap": 0.5741101769089354, "btc_dominance": 49.2360134, "active_cryptocurrencies": 10375}], ["2023-06-22", {"total_market_cap": 1.1855589814398555, "total_volume_24h": 59.36478262691001, "altcoin_volume_24h": 27.779514806494443, "altcoin_market_cap": 0.5976195392568364, "btc_dominance": 49.59174966, "active_cryptocurrencies": 10375}], ["2023-06-23", {"total_market_cap": 1.1707041762533763, "total_volume_24h": 40.04579511741, "altcoin_volume_24h": 20.94883833081866, "altcoin_market_cap": 0.5877173487769707, "btc_dominance": 49.79796257, "active_cryptocurrencies": 10360}], ["2023-06-24", {"total_market_cap": 1.1915034480669018, "total_volume_24h": 47.81625970697, "altcoin_volume_24h": 23.29440079034158, "altcoin_market_cap": 0.5957418355165984, "btc_dominance": 50.00082992, "active_cryptocurrencies": 10344}], ["2023-06-25", {"total_market_cap": 1.1958604035036384, "total_volume_24h": 30.58865480286, "altcoin_volume_24h": 18.951889622251706, "altcoin_market_cap": 0.5967752251159852, "btc_dominance": 50.09658123, "active_cryptocurrencies": 10310}], ["2023-06-26", {"total_market_cap": 1.178402301231501, "total_volume_24h": 33.36796983266, "altcoin_volume_24h": 19.41138362745518, "altcoin_market_cap": 0.5900540196399191, "btc_dominance": 49.92762497, "active_cryptocurrencies": 10305}], ["2023-06-27", {"total_market_cap": 1.1789581049221325, "total_volume_24h": 36.756955564879995, "altcoin_volume_24h": 21.482121737550983, "altcoin_market_cap": 0.589635912711143, "btc_dominance": 49.98669501, "active_cryptocurrencies": 10330}], ["2023-06-28", {"total_market_cap": 1.1783129433089603, "total_volume_24h": 36.1491367665, "altcoin_volume_24h": 19.44018522003192, "altcoin_market_cap": 0.587168456638724, "btc_dominance": 50.16871707, "active_cryptocurrencies": 10351}], ["2023-06-29", {"total_market_cap": 1.1630813403867588, "total_volume_24h": 32.1455919978, "altcoin_volume_24h": 18.40357209889294, "altcoin_market_cap": 0.5774763842397734, "btc_dominance": 50.34944125, "active_cryptocurrencies": 10335}], ["2023-06-30", {"total_market_cap": 1.1900831716699396, "total_volume_24h": 33.88271112309, "altcoin_volume_24h": 19.338162862010513, "altcoin_market_cap": 0.5928776172114236, "btc_dominance": 50.18183339, "active_cryptocurrencies": 10325}], ["2023-07-01", {"total_market_cap": 1.1913493017553167, "total_volume_24h": 62.827604814050005, "altcoin_volume_24h": 36.93770941089183, "altcoin_market_cap": 0.6008724766026436, "btc_dominance": 49.56370263, "active_cryptocurrencies": 10330}], ["2023-07-02", {"total_market_cap": 1.1934234212686579, "total_volume_24h": 27.211303705259997, "altcoin_volume_24h": 18.42215155872804, "altcoin_market_cap": 0.6011676707091465, "btc_dominance": 49.62662371, "active_cryptocurrencies": 10322}], ["2023-07-03", {"total_market_cap": 1.2105651810501772, "total_volume_24h": 29.95057283222, "altcoin_volume_24h": 19.246210512585876, "altcoin_market_cap": 0.6127667615466139, "btc_dominance": 49.38176224, "active_cryptocurrencies": 10307}], ["2023-07-04", {"total_market_cap": 1.2207817069924094, "total_volume_24h": 37.94212471901, "altcoin_volume_24h": 22.246458583360415, "altcoin_market_cap": 0.6150405485645765, "btc_dominance": 49.6191215, "active_cryptocurrencies": 10316}]], "gainers_losers": [[469, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/7486.png'> RGT", 2.685, 93.8, 184.1, 469013.08], [1289, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3742.png'> BNANA", 0.049422, 74.4, 106.5, 143554.44], [3935, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/26690.png'> SGO", 84.464, 52.9, -4.3, 55238.19], [3752, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27304.png'> PEPE 3.0", 0.0, 28.8, 71.3, 71295.09], [3097, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23075.png'> ACRIA", 0.017312, 25.1, -1.0, 283141.83], [512, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/11222.png'> WNCG", 0.094484, 24.4, 38.8, 2911854.28], [3920, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/16100.png'> CRF", 0.00135, 21.2, 19.8, 56206.19], [3414, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/18829.png'> DUSD", 0.709, 19.7, -6.1, 127904.38], [3099, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27314.png'> MONG 2.0", 0.0, 19.4, 64.3, 281468.9], [3507, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27387.png'> LDIME", 0.0, 19.2, 22.0, 106766.41], [2157, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3956.png'> BOMB", 0.107, 19.2, -2.8, 163665.79], [3807, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/20463.png'> GGT", 6.265, 17.3, -2.8, 66299.67], [2830, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/26340.png'> PPRNI", 1e-06, 17.0, 137.6, 788856.97], [2768, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27309.png'> SHIB2.0", 0.001242, 16.6, -29.3, 1154802.42], [2341, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2286.png'> AMM", 0.002403, 15.8, -8.4, 102943.27], [2956, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/26552.png'> ONLINE", 0.004525, 14.4, 103.9, 462696.1], [3983, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/25177.png'> $TOAD", 0.0, 13.0, 11.1, 50270.6], [3859, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/19458.png'> MLD", 1.4e-05, 12.0, 5.3, 61244.22], [2986, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27171.png'> $L", 3e-06, 11.6, 6.8, 406766.86], [3585, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/25427.png'> $BANK", 0.000113, 11.0, 46.0, 93201.35], [3311, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/26795.png'> FXY", 0.010976, 10.9, 11.5, 162588.81], [3731, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/11805.png'> STF", 0.006271, 10.5, 17.3, 73372.45], [2990, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27212.png'> SHS", 6e-06, 10.2, 28.7, 400946.08], [2699, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/22000.png'> PALM", 0.887, 9.8, -25.5, 2242005.22], [3293, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27195.png'> XNA", 0.000249, 9.5, 72.4, 171770.08], [1042, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3142.png'> BAAS", 0.000585, 8.9, 4.4, 273158.34], [3052, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23972.png'> MUSK", 0.000554, 8.7, -3.4, 332193.38], [2644, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/24552.png'> BOBO", 0.0, 8.2, 172.4, 5366038.91], [3879, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23960.png'> BTCVB", 1.688, 7.9, 1.8, 58878.18], [2694, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/25045.png'> VMPX", 0.14, 7.4, -0.7, 2419971.95], [3823, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/18299.png'> SKUY", 3e-06, 6.8, 59.2, 64746.96], [3709, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/12082.png'> GOLD", 0.009075, 6.7, 3.8, 76051.76], [1588, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/19229.png'> PRIMATE", 0.004405, 6.6, 1.1, 247187.92], [2116, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/24746.png'> ENG", 0.008509, 6.6, -18.5, 143363.53], [2624, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27322.png'> PEPE2.0", 0.0, 6.6, 83.9, 19033940.71], [779, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5423.png'> DSLA", 0.001827, 6.5, 20.2, 336521.33], [371, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3673.png'> ASD", 0.075683, 6.4, 35.7, 2478647.46], [2799, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23509.png'> CARMIN", 0.090825, 6.3, 6.0, 951696.56], [3586, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/22865.png'> IGUP", 0.004366, 6.2, 3.7, 93199.31], [2901, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/13211.png'> ALGB", 0.014115, 6.2, 8.0, 555848.74], [3399, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/7545.png'> JNTR", 0.03012, 5.9, 15.8, 130711.72], [856, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/13916.png'> OMAX", 0.000873, 5.6, -4.4, 217358.78], [797, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/4647.png'> NEWS", 0.004597, 5.5, -0.2, 695627.21], [868, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/21706.png'> GRND", 0.166, 5.4, 9.0, 314555.98], [3884, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/27256.png'> FORE", 0.050019, 5.3, -1.8, 58491.98], [1541, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/6209.png'> SPH", 0.005544, 5.2, -2.2, 85932.52], [3897, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/21075.png'> HTT", 0.000198, 5.1, 0.2, 57376.38], [3155, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/24532.png'> BIDZ", 0.014974, 4.9, 6.1, 239871.05], [223, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23246.png'> TOMI", 4.191, 4.8, 0.2, 26760410.76], [2660, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23846.png'> LAI", 0.022021, 4.8, 20.9, 4258603.24]], "trending_stocks": [[62, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/25289.png'> PEPE", 2e-06, -0.3, 15.7, 368430597.44, 767434651.3], [1, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'> BTC", 31280.753, 0.5, 2.0, 15611104395.84, 656895804872.12], [9, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2.png'> LTC", 106.051, -0.9, -6.8, 1105136207.04, 8908315064.57], [14, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/1831.png'> BCH", 283.781, -0.5, -5.1, 789548270.75, 5959400979.9], [240, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/19642.png'> MAV", 0.444, 1.1, 4.3, 29386707.0, 888020619], [81, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5692.png'> COMP", 61.635, -1.6, -9.3, 157310879.82, 616347015.79], [2, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'> ETH", 1953.31, 0.0, 0.4, 7824840823.7, 234825436563.35], [189, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/693.png'> XVG", 0.007005, -2.7, 76.5, 504164402.5, 115965414.36], [35, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/938.png'> ARB", 1.163, -0.2, -0.1, 193785837.88, 11626424300.79], [79, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png'> LUNC", 8.8e-05, -0.4, 0.8, 33104192.26, 601243928.67], [64, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/10791.png'> XEC", 3.6e-05, 3.1, -1.7, 93983588.68, 752161085.49], [13, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png'> MATIC", 0.709, -0.5, 3.5, 352505017.17, 7092709932.23], [40, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/6719.png'> GRT", 0.129, -3.1, 6.7, 231649036.67, 1380150544.01], [6, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/52.png'> XRP", 0.487, -0.5, 1.1, 1051815240.17, 48722697761.52], [63, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/4558.png'> FLOW", 0.674, -1.2, -9.7, 213818890.1, 971621539.7], [18, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png'> SHIB", 8e-06, -0.2, 0.8, 111075002.74, 4560948750.74], [30, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2280.png'> FIL", 4.654, -1.4, 12.1, 684217051.41, 9130615671.05], [104, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5567.png'> CELO", 0.611, -1.3, 7.0, 214441693.66, 611489150.82], [166, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5647.png'> KDA", 0.635, -1.1, 5.5, 3362407.52, 634929822.75], [56, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/10603.png'> IMX", 0.755, -1.2, -0.6, 20890638.92, 1510948433.55], [88, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/7501.png'> WOO", 0.263, -0.5, 2.9, 22240099.73, 592440249.89], [143, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5665.png'> HNT", 1.401, 0.5, 3.0, 869872.94, 312497254.75], [121, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/1168.png'> DCR", 16.867, -0.1, 6.5, 2280636.96, 354204789.73], [131, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5034.png'> KSM", 26.159, -1.3, -2.0, 11590956.81, 252467425.58], [159, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5370.png'> HIVE", 0.336, -0.2, 1.2, 2311657.99, 168568290.17], [38, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/6535.png'> NEAR", 1.432, -1.3, -2.8, 58171562.64, 1432409908.33], [139, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5488.png'> JST", 0.022869, -0.4, 1.3, 8984345.74, 226404614.24], [101, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2424.png'> AGIX", 0.258, -2.0, 3.5, 50050517.44, 516241179.36], [43, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/8886.png'> USDP", 1.006, -0.0, -0.1, 4019861.09, 944036791.06], [100, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2130.png'> ENJ", 0.316, -1.6, 0.9, 12397363.65, 316250278.04], [16, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3717.png'> WBTC", 31194.647, 0.2, 1.6, 139767026.33, 4899944314.37], [169, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3029.png'> FLUX", 0.461, -0.3, 0.8, 10859387.89, 202716756.24], [67, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/6538.png'> CRV", 0.782, -0.6, 0.7, 35714274.82, 2581912166.68], [29, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3897.png'> OKB", 44.667, -0.2, 0.4, 7152274.33, 13400029039.15], [93, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/23251.png'> TWT", 0.88, -0.3, 0.6, 10963584.48, 879944517.53], [48, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/11500.png'> BIT", 0.496, -0.0, 10.8, 26972446.14, 4955704855.14], [182, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/15610.png'> USTC", 0.01282, 0.4, 2.7, 6470148.16, 125615119.79], [84, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/6953.png'> FXS", 6.374, -0.6, 8.5, 36685974.12, 635393395.37], [95, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2694.png'> NEXO", 0.635, -0.1, 0.0, 3117761.76, 634998942.92], [249, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/8368.png'> XNO", 0.741, -0.3, 2.0, 1371559.15, 98687569.14], [172, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/11396.png'> JOE", 0.413, -0.7, 1.2, 10882575.1, 206620221.92], [176, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5691.png'> SKL", 0.028867, -0.8, 1.9, 5837133.76, 202069686.72], [185, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/7878.png'> MOB", 0.629, 1.8, 7.6, 5039540.76, 157154830.61], [269, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/6945.png'> AMP", 0.002107, -0.4, 2.8, 6304807.93, 209557691.49], [36, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png'> VET", 0.020228, -1.4, -2.6, 36229135.66, 1754020851.35], [188, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/5444.png'> CTSI", 0.159, -1.1, -0.2, 8025835.53, 158782917.4], [83, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/8646.png'> MINA", 0.51, -1.3, 2.7, 13715911.69, 535029561.03], [157, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/8119.png'> SFP", 0.479, -1.2, 1.6, 6598368.39, 239342036.26], [87, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/2634.png'> XDC", 0.033071, -0.4, 0.6, 1885323.96, 1246955375.62], [181, "<img style='width: 18px; height: 18px; margin-right: 3px; margin-left: 3px;' src='https://s2.coinmarketcap.com/static/img/coins/64x64/18934.png'> STG", 0.617, 0.1, 5.7, 45622709.6, 617317827.27]], "categories_largest_mcap": [{"id": "63feda8ad0a19758f3bde124", "name": "Bitcoin Ecosystem", "title": "Bitcoin Ecosystem", "description": "Bitcoin Ecosystem", "num_tokens": 54, "avg_price_change": 4.273661965000001, "market_cap": 622325118992.8901, "market_cap_change": 0.6334386363636364, "volume": 17026210056.645956, "volume_change": 64.91621818181818, "last_updated": "2023-05-09T09:39:28.238Z"}, {"id": "620a2bac3ee27777ad05bdaa", "name": "Injective Ecosystem", "title": "Injective Ecosystem", "description": "Injective Ecosystem", "num_tokens": 123, "avg_price_change": 1.0146216405405404, "market_cap": 353299386322.0602, "market_cap_change": 1.1286522522522522, "volume": 36131186208.13641, "volume_change": 78.28625315315314, "last_updated": "2022-02-14T10:15:43.933Z"}, {"id": "6433de7df79a2653906cd680", "name": "Layer 1", "title": "Layer 1", "description": "Layer 1", "num_tokens": 27, "avg_price_change": -0.06893998111111109, "market_cap": 320434327729.07, "market_cap_change": 0.43386666666666646, "volume": 11003154608.360077, "volume_change": 11.360933333333334, "last_updated": "2023-04-12T11:40:58.142Z"}, {"id": "604f2752ebccdd50cd175fc0", "name": "Smart Contracts", "title": "Smart Contracts", "description": "Smart Contracts", "num_tokens": 166, "avg_price_change": 1.6397717105769227, "market_cap": 317807631006.5203, "market_cap_change": 0.9434076923076924, "volume": 10728023056.297523, "volume_change": 18.60069294871795, "last_updated": "2021-11-10T11:25:53.431Z"}, {"id": "618c0beeb7dd913155b462f9", "name": "Ethereum Ecosystem", "title": "Ethereum Ecosystem", "description": "Ethereum Ecosystem", "num_tokens": 339, "avg_price_change": 4.417271853228072, "market_cap": 247354414128.91016, "market_cap_change": 2.462546666666667, "volume": 8683730941.359167, "volume_change": 82.88099789473685, "last_updated": "2022-08-16T06:02:53.534Z"}, {"id": "60308028d2088f200c58a005", "name": "BNB Chain Ecosystem", "title": "Top BNB Chain Tokens by Market Capitalization", "description": "BNB Chain dual-chain architecture will empower its users to build their decentralized apps and digital assets on one blockchain and take advantage of the fast trading to exchange on the other.", "num_tokens": 1996, "avg_price_change": 674772.4134325511, "market_cap": 191791669229.90982, "market_cap_change": 0.7284371575342465, "volume": 34649165347.48938, "volume_change": 271.11703681506856, "last_updated": "2022-02-28T09:24:12.374Z"}, {"id": "6171122402ece807e8a9d3ed", "name": "Arbitrum Ecosystem", "title": "Arbitrum Ecosystem", "description": "Arbitrum Ecosystem", "num_tokens": 238, "avg_price_change": 1.3825778349771696, "market_cap": 138347512657.75, "market_cap_change": 1.4057369863013702, "volume": 34673096888.0272, "volume_change": 310.405887214612, "last_updated": "2022-08-12T07:39:40.204Z"}, {"id": "61d923d341de9958121165fb", "name": "Moonriver Ecosystem", "title": "Moonriver Ecosystem", "description": "Moonriver Ecosystem", "num_tokens": 25, "avg_price_change": 0.5798725621739129, "market_cap": 137131063262.35002, "market_cap_change": 0.5853956521739131, "volume": 33452818910.535645, "volume_change": 57.627152173913046, "last_updated": "2022-01-08T05:41:35.308Z"}, {"id": "63c53f177e9034437b2a93bc", "name": "Optimism Ecosystem", "title": "Optimism Ecosystem", "description": "Optimism Ecosystem", "num_tokens": 77, "avg_price_change": 1.622383275890411, "market_cap": 135585837257.95004, "market_cap_change": 0.34331232876712325, "volume": 34598288581.60159, "volume_change": 306.33621232876715, "last_updated": "2023-01-17T06:25:12.399Z"}, {"id": "604f2753ebccdd50cd175fc1", "name": "Stablecoin", "title": "Stablecoin", "description": "Stablecoin", "num_tokens": 146, "avg_price_change": -0.20363128530303043, "market_cap": 123259039114.41998, "market_cap_change": -0.2760666666666666, "volume": 34809037579.823326, "volume_change": 111.6297643939394, "last_updated": "2021-11-10T11:25:48.501Z"}, {"id": "625d04fa57c0560770d004e1", "name": "USD Stablecoin", "title": "USD Stablecoin", "description": "USD Stablecoin", "num_tokens": 35, "avg_price_change": 0.43292737499999995, "market_cap": 122142485694.72, "market_cap_change": -0.22385312499999993, "volume": 34790176360.83144, "volume_change": 8.936743749999998, "last_updated": "2022-04-18T06:39:26.948Z"}, {"id": "64928c41e3f98f1180d39e9c", "name": "SEC Security Token", "title": "SEC Security Token", "description": "SEC Security Token", "num_tokens": 29, "avg_price_change": 6.9979079996551725, "market_cap": 111216439135.66005, "market_cap_change": 6.996751724137931, "volume": 4015238723.1997004, "volume_change": 29.359817241379307, "last_updated": "2023-06-21T05:43:18.519Z"}, {"id": "6051bc098a9b3f285eec4d40", "name": "Avalanche Ecosystem", "title": "Avalanche Ecosystem", "description": "Avalanche Ecosystem", "num_tokens": 273, "avg_price_change": 1.5813223660317457, "market_cap": 102236510478.24, "market_cap_change": 0.2790051587301589, "volume": 29287991580.03157, "volume_change": 11216.439516666667, "last_updated": "2021-11-16T03:17:38.555Z"}, {"id": "60521ff1df5d3f36b84fbb61", "name": "Solana Ecosystem", "title": "Solana Ecosystem", "description": "Solana Ecosystem", "num_tokens": 205, "avg_price_change": 0.8515838319553071, "market_cap": 98483065948.66003, "market_cap_change": 1.0693916201117317, "volume": 27386068494.51249, "volume_change": 88.50408324022347, "last_updated": "2021-04-28T03:04:46.665Z"}, {"id": "604f2735ebccdd50cd175faa", "name": "Centralized Exchange (CEX) Token", "title": "Centralized Exchange (CEX) Token", "description": "Centralized Exchange (CEX) Token", "num_tokens": 79, "avg_price_change": 242.59607843066658, "market_cap": 51163134269.929985, "market_cap_change": 242.4517733333334, "volume": 791243145.665307, "volume_change": 15.85038, "last_updated": "2022-11-14T10:46:31.242Z"}], "categories_data_vol": [{"id": "61dbdb5541de995812116695", "name": "Spartan Group", "title": "Spartan Group", "description": "Spartan Group", "num_tokens": 48, "avg_price_change": 422.64107158549996, "market_cap": 12010569449.789997, "market_cap_change": 421.1084499999999, "volume": 869171372.0033548, "volume_change": 258.3737550000001, "last_updated": "2022-01-10T07:08:15.711Z"}, {"id": "618c0c528cd62978a89e554a", "name": "TRON Ecosystem", "title": "TRON Ecosystem", "description": "TRON Ecosystem", "num_tokens": 19, "avg_price_change": 340.83795818789474, "market_cap": 7869631764.83, "market_cap_change": 0.6850684210526317, "volume": 193697587.9415605, "volume_change": -4.940957894736843, "last_updated": "2022-08-08T15:08:54.949Z"}, {"id": "604f2735ebccdd50cd175faa", "name": "Centralized Exchange (CEX) Token", "title": "Centralized Exchange (CEX) Token", "description": "Centralized Exchange (CEX) Token", "num_tokens": 79, "avg_price_change": 242.59607843066658, "market_cap": 51163134269.929985, "market_cap_change": 242.4517733333334, "volume": 791243145.665307, "volume_change": 15.85038, "last_updated": "2022-11-14T10:46:31.242Z"}, {"id": "6053dde66be1bf5c15e865eb", "name": "Tourism", "title": "Tourism", "description": "Tourism", "num_tokens": 21, "avg_price_change": 100.87556507062502, "market_cap": 30605115.729999993, "market_cap_change": -0.08022500000000012, "volume": 4324337.983964549, "volume_change": 52.010099999999994, "last_updated": "2021-03-23T08:38:29.722Z"}, {"id": "6053dd976be1bf5c15e865ea", "name": "DeFi Index", "title": "DeFi Index", "description": "DeFi Index", "num_tokens": 18, "avg_price_change": 14.295401698333333, "market_cap": 46555877.63, "market_cap_change": -0.20045000000000002, "volume": 324809.45312831, "volume_change": 31.07177222222222, "last_updated": "2021-03-23T08:38:29.717Z"}, {"id": "63ff40541701313dc2e81ead", "name": "Generative AI", "title": "Generative AI", "description": "Generative AI", "num_tokens": 24, "avg_price_change": 12.5717633085, "market_cap": 126753966.69000001, "market_cap_change": -0.373995, "volume": 8846845.23033681, "volume_change": 70.84549999999999, "last_updated": "2023-03-11T05:48:43.505Z"}, {"id": "6053df7b6be1bf5c15e865ed", "name": "Wrapped Tokens", "title": "Wrapped Tokens", "description": "Wrapped Tokens", "num_tokens": 23, "avg_price_change": 9.722757887368422, "market_cap": 5648085495.27, "market_cap_change": 0.39408947368421055, "volume": 297848124.92550176, "volume_change": 95.92215789473684, "last_updated": "2021-03-23T08:38:29.749Z"}, {"id": "60a5f6765abd81761fe58688", "name": "Polygon Ecosystem", "title": "Polygon Ecosystem", "description": "Polygon Ecosystem", "num_tokens": 213, "avg_price_change": 9.277722636224496, "market_cap": 24291870383.559998, "market_cap_change": 9.410478571428573, "volume": 1630613608.206133, "volume_change": 27.312206632653048, "last_updated": "2021-05-20T06:11:54.475Z"}, {"id": "635634b93e16136f3bb2ee9e", "name": "Aptos Ecosystem", "title": "Aptos Ecosystem", "description": "Aptos Ecosystem", "num_tokens": 12, "avg_price_change": 8.813244883636363, "market_cap": 2029976870.88, "market_cap_change": 2.0959818181818184, "volume": 204673119.63194847, "volume_change": 39.68422727272727, "last_updated": "2022-10-24T06:46:17.004Z"}, {"id": "6437284985f6a3507d5fd57d", "name": "FTX Bankruptcy Estate ", "title": "FTX Bankruptcy Estate ", "description": "FTX Bankruptcy Estate ", "num_tokens": 18, "avg_price_change": 8.51636431125, "market_cap": 8746347379.179998, "market_cap_change": 8.320443749999997, "volume": 389730325.9754273, "volume_change": 491.22333749999996, "last_updated": "2023-04-13T22:38:37.315Z"}, {"id": "6051a81466fc1b42617d6daf", "name": "Real Estate", "title": "Real Estate", "description": "Real Estate", "num_tokens": 18, "avg_price_change": 7.891473059375, "market_cap": 37596801.41000001, "market_cap_change": 2.54915625, "volume": 3502880.0547434604, "volume_change": 160511.3415875, "last_updated": "2021-11-10T10:39:30.318Z"}, {"id": "604f2747ebccdd50cd175fb8", "name": "Masternodes", "title": "Masternodes", "description": "Masternodes", "num_tokens": 143, "avg_price_change": 7.7583281606504135, "market_cap": 1242817012.2200005, "market_cap_change": 8.918669918699196, "volume": 143363827.6344546, "volume_change": 310.38438292682935, "last_updated": "2021-11-10T11:26:08.171Z"}, {"id": "6051a80066fc1b42617d6d96", "name": "Marketing", "title": "Marketing", "description": "Marketing", "num_tokens": 26, "avg_price_change": 7.185245448333333, "market_cap": 435658172.5899999, "market_cap_change": 6.113429166666667, "volume": 17957087.61377096, "volume_change": 22.62997916666667, "last_updated": "2021-11-10T10:49:48.043Z"}, {"id": "604f276cebccdd50cd175fd4", "name": "Yield Aggregator", "title": "Yield Aggregator", "description": "Yield Aggregator", "num_tokens": 40, "avg_price_change": 7.065004288108108, "market_cap": 906881948.52, "market_cap_change": 6.897189189189191, "volume": 68677890.70322976, "volume_change": 196.85913783783786, "last_updated": "2021-11-10T10:50:57.537Z"}, {"id": "64928c41e3f98f1180d39e9c", "name": "SEC Security Token", "title": "SEC Security Token", "description": "SEC Security Token", "num_tokens": 29, "avg_price_change": 6.9979079996551725, "market_cap": 111216439135.66005, "market_cap_change": 6.996751724137931, "volume": 4015238723.1997004, "volume_change": 29.359817241379307, "last_updated": "2023-06-21T05:43:18.519Z"}], "news": [["<span class='text-muted' style='font-size: 13px;'>2023-01-24 11:06</span>", "Binance Held Token Collateral And Customer Funds In The Same Wallet <a target='_blank' href='https://en.ethereumworldnews.com/binance-held-token-collateral-and-customer-funds-in-the-same-wallet/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn btn-primary p-05 mb-1 mr-1'>ICO</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 11:03</span>", "Web3 media consultant Digital Distro removes web3 from services as bear market trudges on <a target='_blank' href='https://www.theblock.co/post/205081/web3-media-consultant-digital-distro-removes-web3-from-services-as-bear-market-trudges-on?utm_source=cryptocompare&utm_medium=rss'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>REGULATION</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 11:01</span>", "Twitch Co-Founder\u2019s Solana Gaming Platform Fractal Expands to Polygon <a target='_blank' href='https://decrypt.co/119895/twitch-co-founder-solana-fractal-polygon'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MATIC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SOL</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 11:00</span>", "Twitch Co-Founder\u2019s Gaming NFT Marketplace Expands to Polygon Network <a target='_blank' href='https://www.coindesk.com/web3/2023/01/24/twitch-co-founders-gaming-nft-marketplace-expands-to-polygon-network/?utm_medium=referral&utm_source=rss&utm_campaign=headlines'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MATIC</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 11:00</span>", "Today in Crypto: Genesis Creditors Sue DCG and Barry Silbert, Binance Kept Some Collateral in Same Wallet as Customer Funds, Binance Processed $346M for Bitzlato <a target='_blank' href='https://cryptonews.com/news/today-in-crypto-genesis-creditors-sue-dcg-and-barry-silbert-binance-kept-some-collateral-in-same-wallet-as-customer-funds-binance-processed-346m-for-bitzlato.htm'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>AAVE</button><button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn btn-warning p-05 mb-1 mr-1'>ETH</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>REGULATION</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 11:00</span>", "Hedgeye CEO Mocks Crypto Bulls. Troubled Times Ahead? <a target='_blank' href='https://u.today/hedgeye-ceo-mocks-crypto-bulls-troubled-times-ahead'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>CRV</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:59</span>", "Lawyer Clarifies the Flaws in SEC\u2019s Claim that XRP Is a Security <a target='_blank' href='https://coinedition.com/lawyer-clarifies-the-flaws-in-secs-claim-that-xrp-is-a-security/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BLOCKCHAIN</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn btn-primary p-05 mb-1 mr-1'>ICO</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>REGULATION</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>XRP</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:58</span>", "Bitcoin Depot expands retail footprint with new partnerships <a target='_blank' href='https://seekingalpha.com/news/3927223-bitcoin-depot-expands-retail-footprint-with-new-partnerships?utm_source=cryptocompare.com&utm_medium=referral'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:50</span>", "LDO Price Makes Another Spike, Lido\u2019s Dominance In DeFi Hits 17% <a target='_blank' href='https://u.today/ldo-price-makes-another-spike-lidos-defi-dominance-hits-17'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>ETH</button><button class='btn btn-primary p-05 mb-1 mr-1'>ICO</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:39</span>", "Bitcoin revs up its racing engine after massive breakout \u2013 $46k incoming? <a target='_blank' href='https://finbold.com/bitcoin-revs-up-its-racing-engine-after-massive-breakout-46k-incoming/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:38</span>", "Solana (SOL) Network On Hyperdrive As TVL And NFT Trade Volume Soars <a target='_blank' href='https://newsbtc.com/news/solana-network-on-hyperdrive/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SOL</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SPONSORED</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:36</span>", "Bitcoin (BTC) Price Analysis for January 24 <a target='_blank' href='https://u.today/bitcoin-btc-price-analysis-for-january-24'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:34</span>", "7 people who could be Bitcoin creator Satoshi Nakamoto <a target='_blank' href='https://cointelegraph.com/news/7-people-who-could-be-bitcoin-creator-satoshi-nakamoto'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:33</span>", "SEC delays approval for crypto companies eyeing to go public - report <a target='_blank' href='https://seekingalpha.com/news/3927209-sec-delays-approval-for-crypto-companies-eyeing-to-go-public-report?utm_source=cryptocompare.com&utm_medium=referral'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>REGULATION</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:32</span>", "Hundreds of Millions of XRP Wired As XRP Sees Large Inflows This Year <a target='_blank' href='https://u.today/hundreds-of-millions-of-xrp-wired-as-xrp-sees-large-inflows-this-year'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>XRP</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:30</span>", "Ethereum-Based Gaming Altcoin Suddenly Erupts Ahead of $60,000,000 Token Unlock <a target='_blank' href='https://dailyhodl.com/2023/01/24/ethereum-based-gaming-altcoin-suddenly-erupts-ahead-of-60000000-token-unlock/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>ALTCOIN</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>AXS</button><button class='btn btn-warning p-05 mb-1 mr-1'>ETH</button><button class='btn btn-primary p-05 mb-1 mr-1'>ICO</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:30</span>", "Your Algorand [ALGO] holdings might suffer a drop in value because of this <a target='_blank' href='https://ambcrypto.com/your-algorand-algo-holdings-might-suffer-a-drop-in-value-because-of-this/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>ALGO</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>ALTCOIN</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:30</span>", "Washington Townhome Tied to Disgraced FTX Co-Founder Listed for $3.28 Million Amid Controversy and Bankruptcy <a target='_blank' href='https://news.bitcoin.com/washington-townhome-tied-to-disgraced-ftx-co-founder-listed-for-3-28-million-amid-controversy-and-bankruptcy/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:30</span>", "RPL Rallies Above $35.17 Support Level as Bullish Sentiment Builds <a target='_blank' href='https://coinedition.com/rpl-rallies-above-35-17-support-level-as-bullish-sentiment-builds/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:30</span>", "SushiSwap passes 100% fee relocation, 10.9M SUSHI clawback proposals <a target='_blank' href='https://cointelegraph.com/news/sushiswap-passes-100-fee-relocation-10-9m-sushi-clawback-proposals'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BLOCKCHAIN</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>REGULATION</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SUSHI</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:27</span>", "Avalanche price analysis: AVAX gain strength at $18.12 as the market turns bullish <a target='_blank' href='https://www.cryptopolitan.com/avalanche-price-analysis-2023-01-24/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>AVAX</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:23</span>", "China Unveils Ripple\u2019s Competitor for Stablecoins and CBDC Payments <a target='_blank' href='https://zycrypto.com/china-unveils-ripples-competitor-for-stablecoins-and-cbdc-payments-in-davos/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>ASIA</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>LINK</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>XRP</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:23</span>", "Ethereum vs. Bitcoin: ETH price risks 20% drop if key support level breaks <a target='_blank' href='https://cointelegraph.com/news/ethereum-vs-bitcoin-eth-price-risks-20-drop-if-key-support-level-breaks'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn btn-warning p-05 mb-1 mr-1'>ETH</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:23</span>", "Audius\u2019 AUDIO Token Skyrockets 70% in Hours, Here\u2019s Reason <a target='_blank' href='https://u.today/audius-audio-token-skyrockets-70-in-hours-heres-reason'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-primary p-05 mb-1 mr-1'>ICO</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:20</span>", "Here\u2019s how to calculate your Bitcoin gains easily <a target='_blank' href='https://finbold.com/heres-how-to-calculate-your-bitcoin-gains-easily/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:20</span>", "CHZ Breaks Formidable Resistance at the Brim of the Cup Pattern <a target='_blank' href='https://coinedition.com/chz-breaks-formidable-resistance-at-the-brim-of-the-cup-pattern/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:16</span>", "More US Stores Add BTC Payments Via Bitcoin Depot <a target='_blank' href='https://thecryptobasic.com/2023/01/24/more-us-stores-add-btc-payments-via-bitcoin-depot/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=more-us-stores-add-btc-payments-via-bitcoin-depot'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:16</span>", "Axie Infinity Price Slips, But Play-to-Earn Meme Coin Tamadoge Pumps 20% on Super Doge Game Launch News <a target='_blank' href='https://cryptonews.com/news/axie-infinity-price-slips-but-play-earn-meme-coin-tamadoge-pumps-20-super-doge-game-launch-news.htm'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>AXS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>DOGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:11</span>", "Binance Accidentally Mixes Collateral with Customer Funds <a target='_blank' href='https://www.bitdegree.org/crypto/news/binance-accidentally-mixes-collateral-with-customer-funds'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:11</span>", "Metamask Casinos: Pros, Cons, Review & Rating <a target='_blank' href='https://timestabloid.com/metamask-casinos-pros-cons-review-rating/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BLOCKCHAIN</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:09</span>", "Bitfinex European Users Can Now Spend Bitcoin To Over 37M Worldwide Merchants <a target='_blank' href='https://thecryptobasic.com/2023/01/24/bitfinex-european-users-can-now-spend-bitcoin-to-over-37m-worldwide-merchants/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=bitfinex-european-users-can-now-spend-bitcoin-to-over-37m-worldwide-merchants'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:07</span>", "Bitcoin rally pushes BTC to surpass all global banks in market cap <a target='_blank' href='https://finbold.com/bitcoin-rally-pushes-btc-to-surpass-all-global-banks-in-market-cap/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:07</span>", "Nate\u2019s Food buys more bitcoin mining machines <a target='_blank' href='https://seekingalpha.com/news/3927195-nates-food-buys-more-bitcoin-mining-machines?utm_source=cryptocompare.com&utm_medium=referral'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MINING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:03</span>", "Binance Handled $346M In Bitcoin Transactions For Russian Exchange Bitzlato: Reuters <a target='_blank' href='https://en.ethereumworldnews.com/binance-bitcoin-transactions-bitzlato/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:02</span>", "Top 3 Reasons Attention Should be Paid to Real-World Assets (RWA) DeFi Tokens <a target='_blank' href='https://u.today/top-3-reasons-attention-should-be-paid-to-real-world-assets-rwa-defi-tokens'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-primary p-05 mb-1 mr-1'>ICO</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:01</span>", "Genesis Coin Inc, Powering 35% of Global Bitcoin ATM Transactions, Acquired by Bitstop Founders <a target='_blank' href='https://timestabloid.com/genesis-coin-inc-powering-35-of-global-bitcoin-atm-transactions-acquired-by-bitstop-founders/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BLOCKCHAIN</button><button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SPONSORED</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TECHNOLOGY</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "Some Want the Crypto Moratorium in New York to Last Longer <a target='_blank' href='https://www.livebitcoinnews.com/some-want-the-crypto-moratorium-in-new-york-to-last-longer/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MINING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "Genesis Coin Inc, Powering 35% of Global Bitcoin ATM Transactions, Acquired by Bitstop Founders <a target='_blank' href='https://www.cryptopolitan.com/genesis-coin-inc-powering-35-of-global-bitcoin-atm-transactions-acquired-by-bitstop-founders/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BLOCKCHAIN</button><button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SPONSORED</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TECHNOLOGY</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "Wormhole Attacker Moves $155 Million of Stolen Funds into Staked Ethereum (stETH) <a target='_blank' href='https://dailycoin.com/wormhole-attacker-moves-155-million-stolen-funds-to-staked-ethereum/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>ETH</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "EU lawmakers impose stringent measures for banks holding cryptocurrencies <a target='_blank' href='https://www.cryptopolitan.com/eu-lawmakers-impose-stringent-measures-for-banks/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>FIAT</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "Crypto Recovery Specialist Asset Reality Raises $4.91M to Hire Engineers, Expand Ops <a target='_blank' href='https://www.coindesk.com/business/2023/01/24/crypto-recovery-specialist-asset-reality-raises-491m-to-hire-engineers-expand-ops/?utm_medium=referral&utm_source=rss&utm_campaign=headlines'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "Threshold\u2019s Positive Market Sentiment Skyrockets Price by Over 80% <a target='_blank' href='https://coinedition.com/thresholds-positive-market-sentiment-skyrockets-price-by-over-80/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "World\u2019s Largest Bitcoin ATM Software Platform Acquired By Bitstop Founders <a target='_blank' href='https://bitcoinmagazine.com/business/bitcoin-atm-genesis-coin-acquired'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TECHNOLOGY</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 10:00</span>", "7 ways to address the dev talent shortage in the crypto industry <a target='_blank' href='https://cointelegraph.com/innovation-circle/7-ways-to-address-the-dev-talent-shortage-in-the-crypto-industry'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>OTHER</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 09:52</span>", "Solana price analysis: Can bulls defend the $24.00 support level? <a target='_blank' href='https://www.cryptopolitan.com/solana-price-analysis-2023-01-24/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>SOL</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 09:49</span>", "DOGE\u2019s Price Is Looking To Break Out of a Consolidation Channel <a target='_blank' href='https://coinedition.com/doges-price-is-looking-to-break-out-of-a-consolidation-channel/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>DOGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>MARKET</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 09:39</span>", "SHIB Takes over Dubai with Welly Burger Joint, XRP Soars, Whales Move 336 Million XRP, If SHIB Hits $0.01, David Gokhshtein Might Do This: Crypto News Digest by U.Today <a target='_blank' href='https://u.today/shib-takes-over-dubai-with-welly-burger-joint-xrp-soars-whales-move-336-million-xrp-if-shib-hits'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>SHIB</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>XRP</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 09:31</span>", "Nike .SWOOSH Web3 Studio Kicks Off with Polygon NFTs <a target='_blank' href='https://u.today/nike-swoosh-web3-studio-kicks-off-with-polygon-nfts'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>MATIC</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 09:30</span>", "Binance Coin repays investor confidence as it soars above $300, will $350 be next <a target='_blank' href='https://ambcrypto.com/binance-coin-repays-investor-confidence-as-it-soars-above-300-will-350-be-next/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>ALTCOIN</button><button class='btn btn-warning p-05 mb-1 mr-1'>BTC</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>BUSINESS</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>TRADING</button>"], ["<span class='text-muted' style='font-size: 13px;'>2023-01-24 09:30</span>", "Bitzlato Executives Arrested in Europe, Exchange Laundered \u20ac1 Billion, Europol Says <a target='_blank' href='https://news.bitcoin.com/bitzlato-executives-arrested-in-europe-exchange-laundered-e1-billion-europol-says/'><img src='static/assets/images/link.png' style='width: 16px; height: 16px;'></a>", "<button class='btn orange-btn-bg p-05 mb-1 mr-1'>EXCHANGE</button><button class='btn orange-btn-bg p-05 mb-1 mr-1'>REGULATION</button>"]], "market_treemap": {"children": [{"symbol": "BTC", "value": 27.13220993514062, "sentiment": "bullish", "change": 1.9519149, "opacity": 0.0529149316554683, "symbolname": "Bitcoin"}, {"symbol": "ETH", "value": 26.18187746048278, "sentiment": "bullish", "change": 0.34344444, "opacity": 0.009310518132758034, "symbolname": "Ethereum"}, {"symbol": "BNB", "value": 24.3684765947204, "sentiment": "bearish", "change": -0.65413428, "opacity": 0.017733083916567756, "symbolname": "BNB"}, {"symbol": "XRP", "value": 23.96023710969172, "sentiment": "bullish", "change": 1.05795675, "opacity": 0.028680404622502428, "symbolname": "XRP"}, {"symbol": "stETH", "value": 23.405763773518277, "sentiment": "bullish", "change": 0.35805268, "opacity": 0.009706536433149449, "symbolname": "Lido Staked ETH"}, {"symbol": "FGC", "value": 23.291251913937167, "sentiment": "bullish", "change": 36.88779025, "opacity": 1.0, "symbolname": "FantasyGold"}, {"symbol": "ADA", "value": 23.06230804332917, "sentiment": "bullish", "change": 1.66064025, "opacity": 0.045018696938616425, "symbolname": "Cardano"}, {"symbol": "DOGE", "value": 22.9781576581317, "sentiment": "bullish", "change": 0.21558196, "opacity": 0.005844263333177026, "symbolname": "Dogecoin"}, {"symbol": "WTRX", "value": 22.78654155156924, "sentiment": "bullish", "change": 1.93880696, "opacity": 0.05255958534951819, "symbolname": "Wrapped TRON"}, {"symbol": "LTC", "value": 22.773479206860543, "sentiment": "bearish", "change": -6.84327789, "opacity": 0.18551607032085637, "symbolname": "Litecoin"}, {"symbol": "SOL", "value": 22.769296962111515, "sentiment": "bearish", "change": -0.86365374, "opacity": 0.02341299747549936, "symbolname": "Solana"}, {"symbol": "TRX", "value": 22.6624476207467, "sentiment": "bullish", "change": 1.56198881, "opacity": 0.0423443312655466, "symbolname": "TRON"}, {"symbol": "DOT", "value": 22.635080040185084, "sentiment": "bearish", "change": -2.48277477, "opacity": 0.06730613986832674, "symbolname": "Polkadot"}, {"symbol": "MATIC", "value": 22.611875041870675, "sentiment": "bullish", "change": 3.51552226, "opacity": 0.09530314058321777, "symbolname": "Polygon"}, {"symbol": "TON", "value": 22.320405460796582, "sentiment": "bullish", "change": 0.62504862, "opacity": 0.016944593746707287, "symbolname": "Toncoin"}, {"symbol": "DAI", "value": 22.25778329207727, "sentiment": "bearish", "change": -0.08083598, "opacity": 0.0021914020723971125, "symbolname": "Dai"}, {"symbol": "SHIB", "value": 22.240259880949818, "sentiment": "bullish", "change": 0.7838889, "opacity": 0.02125063319562765, "symbolname": "Shiba Inu"}, {"symbol": "AVAX", "value": 22.23938683901399, "sentiment": "bearish", "change": -0.28521679, "opacity": 0.007732010729485212, "symbolname": "Avalanche"}, {"symbol": "LEO", "value": 22.034564552706392, "sentiment": "bullish", "change": 0.71278307, "opacity": 0.019323008105642758, "symbolname": "UNUS SED LEO"}, {"symbol": "LINK", "value": 21.98656053361768, "sentiment": "bullish", "change": 0.34266895, "opacity": 0.009289495187367587, "symbolname": "Chainlink"}, {"symbol": "ATOM", "value": 21.950628908405736, "sentiment": "bullish", "change": 2.00141019, "opacity": 0.05425671140601869, "symbolname": "Cosmos"}, {"symbol": "UNI", "value": 21.87592330703679, "sentiment": "bearish", "change": -2.56009671, "opacity": 0.06940227898308438, "symbolname": "Uniswap"}, {"symbol": "XMR", "value": 21.85282642968043, "sentiment": "bullish", "change": 0.7513054, "opacity": 0.020367319237833716, "symbolname": "Monero"}, {"symbol": "XLM", "value": 21.7713519423904, "sentiment": "bearish", "change": -1.91910789, "opacity": 0.05202555851119328, "symbolname": "Stellar"}, {"symbol": "ETC", "value": 21.770103945421916, "sentiment": "bearish", "change": -1.77727738, "opacity": 0.04818064101847358, "symbolname": "Ethereum Classic"}]}, "top_exchanges": [{"id": 270, "name": "Binance", "slug": "binance", "num_coins": 388, "num_market_pairs": 1714, "traffic_score": 1000, "rank": 1, "exchange_score": 9.9, "last_updated": "2023-07-04T04:02:11.000Z", "quote": {"USD": {"volume_24h": 44462643129.01122, "volume_24h_adjusted": 44462643129.01122, "volume_7d": 710221577455.4915, "volume_30d": 1727544909003.8743, "percent_change_volume_24h": 21.79410659, "percent_change_volume_7d": -0.31711203, "percent_change_volume_30d": 107.51567471, "effective_liquidity_24h": 860, "last_updated": "2023-07-04T04:02:11.000Z", "derivative_volume": 40556158286.44517, "open_interest": 10523938688.006838, "derivative_volume_usd": 40556158286.44517, "spot_volume": 9204686751.202686, "spot_volume_usd": 9204686751.202686}}}, {"id": 89, "name": "Coinbase Exchange", "slug": "coinbase-exchange", "num_coins": 244, "num_market_pairs": 530, "traffic_score": 885.1117, "rank": 2, "exchange_score": 8.6176, "last_updated": "2023-07-04T04:02:12.000Z", "quote": {"USD": {"volume_24h": 1082331441.2307215, "volume_24h_adjusted": 1082331441.2307215, "volume_7d": 6662648683.660276, "volume_30d": 16183061827.171684, "percent_change_volume_24h": 51.72400003, "percent_change_volume_7d": 10.26077768, "percent_change_volume_30d": 231.27918195, "effective_liquidity_24h": 794, "last_updated": "2023-07-04T04:02:12.000Z", "spot_volume": 1112697582.8648436, "derivative_volume_usd": null, "spot_volume_usd": 1112697582.8648436}}}, {"id": 24, "name": "Kraken", "slug": "kraken", "num_coins": 229, "num_market_pairs": 729, "traffic_score": 871.848, "rank": 3, "exchange_score": 8.2545, "last_updated": "2023-07-04T04:02:12.000Z", "quote": {"USD": {"volume_24h": 679215423.8916397, "volume_24h_adjusted": 679215423.8916397, "volume_7d": 3163914623.0641994, "volume_30d": 19848168596.442024, "percent_change_volume_24h": 126.52612517, "percent_change_volume_7d": 23.70057416, "percent_change_volume_30d": 255.4507766, "effective_liquidity_24h": 763, "last_updated": "2023-07-04T04:02:12.000Z", "derivative_volume": 84528830.405926, "open_interest": 163031629.8382924, "derivative_volume_usd": 84528830.405926, "spot_volume": 599237974.3390305, "spot_volume_usd": 599237974.3390305}}}, {"id": 311, "name": "KuCoin", "slug": "kucoin", "num_coins": 866, "num_market_pairs": 1542, "traffic_score": 814.0232, "rank": 4, "exchange_score": 7.5357, "last_updated": "2023-07-04T04:02:11.000Z", "quote": {"USD": {"volume_24h": 2084292861.8569102, "volume_24h_adjusted": 2084292861.8569102, "volume_7d": 7130594369.2650795, "volume_30d": 55163499402.36581, "percent_change_volume_24h": 13.19652972, "percent_change_volume_7d": 4.33627524, "percent_change_volume_30d": 70.60771763, "effective_liquidity_24h": 572, "last_updated": "2023-07-04T04:02:11.000Z", "derivative_volume": 1734005147.5179267, "open_interest": 1763653009.692372, "derivative_volume_usd": 1734005147.5179267, "spot_volume": 540924306.8206028, "spot_volume_usd": 540924306.8206028}}}, {"id": 1348, "name": "Uniswap v3 (Ethereum)", "slug": "uniswap-v3", "num_coins": 540, "num_market_pairs": -1, "traffic_score": null, "rank": 5, "exchange_score": 7.4312, "last_updated": "2023-07-04T04:02:11.000Z", "quote": {"USD": {"volume_24h": -1, "volume_24h_adjusted": -1, "volume_7d": -1, "volume_30d": -1, "percent_change_volume_24h": -1, "percent_change_volume_7d": -1, "percent_change_volume_30d": -1, "effective_liquidity_24h": null, "last_updated": "2023-07-04T04:02:11.000Z", "spot_volume": 641123517.4740474, "derivative_volume_usd": null, "spot_volume_usd": 641123517.4740474}}}], "ai_preds": {"BTC": 2.353777783926593, "ETH": 31.555292310960475, "SOL": -15.964199290046956, "ADA": -1.0791318520786568, "BNB": 45.289411116987125}, "airdrops": [{"id": "635facd06f4bfc7d9bee85d8", "project_name": "Astra Protocol x CoinMarketCap: The Mega Airdrop Campaign!", "description": "###How to Participate?\n\n1 - Follow Astra Protocol on the [CoinMarketCap Community](https://coinmarketcap.com/community/profile/AstraProtocol)\n\n2 - Add Astra Protocol to your [Watchlist](https://coinmarketcap.com/currencies/astra-protocol/)\n\n3 - Follow Astra on [Twitter](https://twitter.com/AstraProtocol)\n\n4 - Follow Astra on [Telegram Announcements Channel](https://t.me/Astra_ProtocolAnnouncements)\n\n5- Register with correct details on https://astraprotocol.com/register-for-interest/\n\nRead more about the Astra Protocol airdrop event here https://coinmarketcap.com/community/articles/41695\n\n###What is Astra Protocol?\n\nAstra Protocol is the next generation of compliance, a decentralized KYC Platform for Web3. Astra\u2019s mission is to provide a range of regulatory compliance tools for crypto applications, ensuring that \ufb01nancial compliance standards can be met across the Web3 industry.\nTheir application brings the \ufb01nancial regulatory standards for 155+ countries and over 300+ sanctions and watchlists to the crypto industry \u2013 without sacri\ufb01cing anonymization.  \n\n###What is ASTR?\n\n$ASTR is the native token of Astra Protocol serving various purposes, including prioritization and queuing, rewards distributed to the DLN, token lock-up rewards, non-transferable NFT, and ecosystem rewards.  The $ASTR tokens will also contribute significantly to the ecosystem growth by token burn and rewards distribution in the community. Their Globally patented technology includes a new professional service layer called the Decentralized Legal Network (DLN), bringing major legal and audit companies on-chain. Our simple plug-in technology ensures crypto remains compliant with AML and KYC standards determined by society.", "status": "ENDED", "coin": {"id": 18519, "name": "ASTRA Protocol", "slug": "astra-protocol", "symbol": "ASTRA"}, "start_date": "2022-11-01T10:00:00.000Z", "end_date": "2022-11-21T23:45:00.000Z", "total_prize": "100000", "winner_count": 5000, "link": "https://coinmarketcap.com/currencies/astra-protocol/airdrop"}, {"id": "6367987acd197958bb548509", "project_name": "OneRare - $75,000 Ingredient NFT Airdrop\ud83c\udf4e", "description": "**How to Participate?**\n\n###Complete 9 simple steps to participate in the $75,000 OneRare Ingredient AirDrop:\n\n1 \u2b50 Add OneRare ($ORARE) to your [CMC Watchlist](https://coinmarketcap.com/currencies/onerare/)\n\n2  \ud83c\udf4b Follow OneRare on [CMC Community](https://coinmarketcap.com/community/profile/onerare)\n\n3 \ud83c\udf5f Follow OneRareNFT on [Twitter](https://twitter.com/onerarenft)\n\n4 \ud83c\udf55 Tag 3 of your friends and retweet this [Pinned Tweet](https://rebrand.ly/292d5e)\n\n5 \ud83c\udf3f Follow our Founder on [Twitter](https://rebrand.ly/fb7142)\n\n6 \ud83c\udf49 Join OneRare on [Telegram](https://t.me/joinchat/pO88PtVrRQc3NWE9)\n\n7 \ud83c\udf4e Follow OneRare on [Instagram](https://instagram.com/onerarenft)\n\n8 \ud83e\uded0 Join us on [Discord](https://discord.gg/cnwkrvD58f)\n\n9 \ud83e\udd6d Join our [SubReddit](https://www.reddit.com/r/onerarefoodverse/)\n\n###Learn More About the Airdrop Campaign [Here!](https://coinmarketcap.com/community/articles/636635bf9c99f87393c2f727)\n\nThe winners will be announced here on CMC. They will be able to claim their NFTs via a special pool. \n\n###How It Works\n\n[OneRare](https://play.onerare.io/) is the world\u2019s first play to own web3 game for foodies on Polygon. \n\nThe objective of the game is to collect ingredients to make dishes. Eg \ud83d\udee2+\ud83e\udd54 + \ud83e\uddc2=\ud83c\udf5f\n\nThese ingredients can be procured from the [marketplace](https://play.onerare.io/farmersmarket) or harvested by staking $ORARE tokens at the farm. \n\nEvery time a Dish is minted in the [kitchen](https://play.onerare.io/recipes), the price of the next mint goes up by 2 ingredients each. Eg, now you will need 3 of each ingredient to mint the second french fries 3\ud83d\udee2+3\ud83e\udd54 +3\ud83e\uddc2=\ud83c\udf5f(2nd Mint)  \n\nThese dishes can be used to play food truck wars and win more $ORARE Tokens. \n\nUse the Marketplace to trade Dishes and make profits. Attractive Prizes for top gamers on the [Leaderboard.](https://play.onerare.io/season-1)", "status": "ENDED", "coin": {"id": 11309, "name": "OneRare", "slug": "onerare", "symbol": "ORARE"}, "start_date": "2022-11-08T12:00:00.000Z", "end_date": "2022-11-27T12:00:00.000Z", "total_prize": "10000", "winner_count": 2000, "link": "https://coinmarketcap.com/currencies/onerare/airdrop"}, {"id": "634d56a0a87185294752ebb7", "project_name": "$100,000+ USD Airdrop by SaTT", "description": "## How to participate?\n\n###Sign up on the [Airdrop page](https://coinmarketcap.com/currencies/satt/airdrop/) and check the steps below\n\n1 - Add SaTT to your [CoinMarketCap watchlist](https://coinmarketcap.com/currencies/satt/)\n\n2 - Follow SaTT's [CoinMarketCap community account](https://coinmarketcap.com/community/profile/SaTT)\n\n3 - Follow SaTT\u2019s [Twitter account](https://twitter.com/SaTT_Token)\n\n4 - Retweet SaTT's pinned tweet\n\n5 - Join SaTT\u2019s [Telegram group](https://t.me/satttoken)\n\n6 - Join SaTT\u2019s [Telegram channel](https://t.me/SaTTAnnouncements)\n\n7 - Sign Up to the [SaTT Wallet](https://dapp.satt.com/auth/registration)\n\n8 - Join SaTT's [YouTube channel ](https://www.youtube.com/channel/UCNSq8P6ZmrhF0Ft3fouqOTw)\n\n9 - Join SaTT\u2019s [Facebook page](https://www.facebook.com/SaTT.Token) (optional)\n\n###Dates and drops\n* Date: November 2nd, 2022 - December 1st, 2022\n* Airdrop: 100,000,000 SaTT for 25,000 Winners\n\n###Winner Announcement\nWinners will be announced on your Airdrop page: https://coinmarketcap.com/currencies/satt/airdrop/\n\n##What is SaTT?\n###SaTT leads the Multichain SocialFi revolution!\nThe web2 era, where YOU were the product, is definitely over.\n\nToday, web3 innovation offers a unique and groundbreaking opportunity, regardless of your audience, to earn a fair return by spreading the word and sharing what you love.\n\nNow SaTT allows anyone to be fairly rewarded for posting a message on social media for brands or any project or product, all in total transparency governed by smart contracts on the blockchain.\n\nSaTT Post2Earn is as simple as copying and pasting a link. Just post, exploit, harvest and enjoy your earnings.\n\nBy offering a simple and user-friendly solution enabling a direct relationship between brands, communities, and more importantly users, SaTT's MultiChain platform revolutionizes advertising on social media.\n\nSaTT is not a newcomer in this industry. Developed by some of the best Facebook developers and having already conquered 4 million brands, SaTT is now delivering a unique innovative solution that is going to revolutionize Web 2 and Web 3.\nIt's time to celebrate the launch of our web3 DApp with an incredible and massive Airdrop.\n\n###Join the Post2Earn revolution\nIf you have an account on Instagram, TikTok, LinkedIn, Facebook, Twitter or YouTube, you can start making money immediately without having to spend a tremendous amount of time and energy.\n\nThe SaTT smart contract is Multichain and MultiToken. It works with any coin or token on Ethereum, BNB Chain, Tron, BitTorrent Chain and Polygon so far.\n\nThe main goal of SaTT is to offer the benefit of this Post2Earn innovation to every user. Therefore, to ensure that SaTT's innovative product is accessible to everyone, SaTT will be reinforcing its multichain strategy. Thus, SaTT's top priority in the coming months is to integrate all the major blockchains.\n\nSo, no more time to lose, it's time to start monetizing your audience!\nLet's start your SaTT journey and create your SaTT wallet (https://satt-token.com/) and enjoy earning money in the easiest way.\nLeverage your social media. It's time to Post2Earn!", "status": "ENDED", "coin": {"id": 7244, "name": "SaTT", "slug": "satt", "symbol": "SATT"}, "start_date": "2022-11-02T10:00:00.000Z", "end_date": "2022-12-01T10:00:00.000Z", "total_prize": "100000000", "winner_count": 25000, "link": "https://coinmarketcap.com/currencies/satt/airdrop"}, {"id": "63738e674fca2a2835560daf", "project_name": "Bullieverse x CoinMarketCap Fresh Blood Tournament NFT Airdrop Campaign", "description": "###How to Participate?\nComplete the 10 steps to participate in a giveaway for $30,000 worth of NFT passes that gives you guaranteed access for the upcoming Necrodemic \u201cFresh Blood Tournament\u201d with a $25,000 prize pool!\n\nValue of 1 Fresh Blood NFT Pass = $2 USD (exclusively for CMC participants)\n\n- https://opensea.io/collection/bullieverseticket\n\n###Follow below instructions:\n\n1 - Sign up for Bullieverse using Web 3 Wallet and Create your [Game Account](https://app.bullieverse.com/auth/signup?utm_source=CMC)\n\n2 - Join the Waitlist for Bullieverse Necrodemic $25,000 Prize Pool Tournament\n\n3 - Add Bullieverse ($BULL) to your **[CMC Watchlist](https://coinmarketcap.com/currencies/bullieverse/)**\n\n4 - Follow Bullieverse on **[CMC Community](https://coinmarketcap.com/community/profile/Bullieverse)**\n\n5 - Follow Bullieverse on **[Twitter](https://twitter.com/bullieverse)** \n\n6 - Retweet & Tag 3 of your followers on the pinned **[Tweet](https://twitter.com/bullieverse) **\n\n7 - Join our ** [Discord](https://discord.gg/bullieverse)**\n\n8 - Join our **[Telegram Channel](https://t.me/Bullieverse)**\n\n9 - Join our **[Instagram](https://www.instagram.com/bullieverse/)**\n\n10 - Follow our latest videos on **[Youtube](https://www.youtube.com/channel/UCXHldSGC-wji2FS5LJLVZNw?sub_confirmation=1)**\n\nLearn more about Bullieverse NFT Pass **[HERE!](https://coinmarketcap.com/community/articles/636f45548b53221b1df86211)**\n\nThe winners will be announced here on CMC. They will be able to claim their NFTs via a special pool.\n\n###NFT AIRDROP: \n\nWe will airdrop 15,000 Fresh Blood Tournament Passes which give access to play the Necrodemic Web3 game by Bullieverse. Enter the $25,000 Tournament Prize Pool and rank in the leaderboard competitions. \n\n##Date: November 16th, 2022 - December 6th, 2022\n\n##About Bullieverse\n\nBullieverse is an Open Metaverse where NFTs come to life through an immersive gaming experience built on the Unreal engine. This ecosystem is rapidly expanding, with new players joining the community, and new games being created with in-game assets & fair incentives, aligned alongside Web3 ethos. Through Bullieverse DAO, Bullieverse will progressively decentralize to become a community-owned metaverse governed by the $BULL token holders.\n\nLearn more about Bullieverse NFT Pass **[HERE!](https://coinmarketcap.com/community/articles/636f45548b53221b1df86211)**", "status": "ENDED", "coin": {"id": 17343, "name": "Bullieverse", "slug": "bullieverse", "symbol": "$BULL"}, "start_date": "2022-11-16T12:00:00.000Z", "end_date": "2022-12-06T23:45:00.000Z", "total_prize": "15000", "winner_count": 15000, "link": "https://coinmarketcap.com/currencies/bullieverse/airdrop"}, {"id": "6368c40ecd197958bb54a02c", "project_name": "TokenBot x CoinMarketCap: $100,000 TKB Airdrop", "description": "###What is TokenBot?\nTokenBot is a web3 tokenized network for algorithmic and advanced traders \u2013 powered by **$TKB**, our native membership reward utility token. TokenBot is a social network of digital investment communities with membership/reward based copy trading powered by **$TKB**.\n\n###Mission: \nOur mission is to build the largest open social trading network powered by the best and brightest independent technical and algorithmic traders.\n\n* Go to **https://coinmarketcap.com/**\n\n* Search for **TokenBot** or **TKB**\n\n* Add TKB to your **[CoinMarketCap watchlist](https://coinmarketcap.com/currencies/tokenbot/)**\n\n* Follow TokenBot\u2019s **[CoinMarketCap profile](https://coinmarketcap.com/community/profile/TokenBot)**\n\n* Follow TokenBot\u2019s **[Twitter profile](https://twitter.com/tokenbot)**\n\n* Retweet TokenBot\u2019s pinned tweet and tag five (5) crypto friends\n\n* Join TokenBot\u2019s **[Telegram group](http://t.me/TokenBotOfficial)**\n\n* Join TokenBot\u2019s **[Discord server](https://discord.gg/4HaVWvFuwM)**\n\n* Sign Up to **[TokenBot.com](https://app.tokenbot.com)**\n\n* Read TokenBot\u2019s **[whitepaper](https://docs.tokenbot.com)**\n\n* Add **[Alpha Cart NFT](https://opensea.io/collection/alphacardnft)** to your watchlist on OpenSea.\n\n###Read more about the TokenBot (TKB) airdrop event [Here!](https://coinmarketcap.com/community/articles/63638ba0e0e9157c042f29ba)\n\n###How to submit \n**Date:** November 10th, 2022 - December 9th, 2022\nFill in the airdrop form and leave your BSC address. The form will be available on https://coinmarketcap.com/currencies/tokenbot once the event starts.\n\n###Reward\n\n- Prize Pool of 149,619,965 $TKB tokens worth $100,000 USD in total.\n\n- Each winner will receive 5000 $TKB tokens ( worth 3 USD )\n\n- 1000 winners will receive one (1) Alpha Card NFT ( worth 500 USD )\n\n###Note: \nCalculation based on the average price of TKB on Oct 28th - Nov 6th.\n\n###Distribution\nWinners will be announced via CoinMarketCap! Prizes will be airdropped by TokenBot to all winners after the event. Wishing you all the very best of luck!\n\n####The TokenBot DAO enables algo traders to submit grant proposals for funding of their strategies by the community.\n\n####The TokenBot Network connects the best and brightest quants and algo developers to the most liquid markets through a real-time trading engine publicly available to anyone. The TokenBot network ecosystem consists of Providers (AlgoTraders), Consumers (Copy Traders), Marketplaces (Exchanges), & Channels (Discord servers and Telegram groups).", "status": "ENDED", "coin": {"id": 21610, "name": "TokenBot", "slug": "tokenbot", "symbol": "TKB"}, "start_date": "2022-11-10T00:00:00.000Z", "end_date": "2022-12-09T00:00:00.000Z", "total_prize": "149619965", "winner_count": 29924, "link": "https://coinmarketcap.com/currencies/tokenbot/airdrop"}]};
+
+    // top symbol prices
+    try{
+      draw_top_market_symbol_prices(crypto_market_dashboard_data["top_symbol_prices"]);
+    } 
+    catch(e)
+    {
+      console.log(e);
+    }
+
+    // global metrics
+    var global_metrics;
+    try{
+      global_metrics = crypto_market_dashboard_data["global_metrics"];
+      draw_global_metrics(global_metrics, "total_market_cap", "Market Cap (Trillions)");
+    } 
+    catch(e)
+    {
+      console.log(e);
+    }
+    function change_global_metrics(key, label){
+      draw_global_metrics(global_metrics, key, label);
+    }
+
+    // gainers and losers
+    try{
+      draw_gainers_losers_table(crypto_market_dashboard_data["gainers_losers"], '#movers_table_gainers');
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    // most trending
+    try{
+      draw_gainers_losers_mcap_table(crypto_market_dashboard_data["trending_stocks"], '#most_trending_table');
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    // top categories
+    try{
+      add_top_categories(crypto_market_dashboard_data["top_categories"]);
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    try{
+      draw_largest_mcap_categories(crypto_market_dashboard_data["categories_largest_mcap"], 'largest_marketcap_category');
+      draw_largest_vol_categories(crypto_market_dashboard_data["categories_data_vol"], 'largest_vol_category');
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    // news
+    try{
+      draw_news_table(crypto_market_dashboard_data["news"]);
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    // treemaps
+    try{
+      draw_market_treemap('#market_overview', crypto_market_dashboard_data["market_treemap"]);
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    // top exchanges
+    try{
+      add_top_exchanges(crypto_market_dashboard_data["top_exchanges"]);
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    // airdrops
+    try{
+      add_airdrops(crypto_market_dashboard_data["airdrops"]);
+    }
+    catch(e){
+      console.log(e);
+    }
+
+    try{
+      add_market_predictions(crypto_market_dashboard_data["ai_preds"]);
+    }
+    catch(e){
+      console.log(e);
+    }
+
+
+  </script>
+
+</body>
+</html>    
