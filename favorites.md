@@ -101,12 +101,19 @@ Russian:
 * Миллион алых роз
 * And Алла Пугачева's other songs
 
+Hebrew:
+
+* ואני אבטח בך by Matt Dubb x Beri Weber x Shmueli Ungar 
+Yiddish:
+* Abi Gezunt
+* Chiribim Chiribom
+* Hava Nagila
+
 German:
 * Dich wird' ich nie vergessen
 * Liebesleid (Die Liebe kommt, die Liebe geht)
 * Ganz Paris träumt von der Liebe
 * Wenn es Nacht wird in Paris
-
 
 Arabic:
 * سالمة يا سلامة - Dalida
