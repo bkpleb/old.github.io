@@ -19,7 +19,7 @@ Telegram: [vintagemind](https://t.me/vintagemind)
 [Keybase](https://keybase.io/vintagemind/)
 
 
-[Twitter](https://twitter.com/Vintagemind07)
+[Twitter](https://twitter.com/0xBithiah)
 
 
 [Instagram](https://www.instagram.com/bitkoshy)
