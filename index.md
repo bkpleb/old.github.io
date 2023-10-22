@@ -43,7 +43,7 @@ I'm just a pleb but don't wish to just be a cog in the wheel :D
 ## Ideology.
 
 A pessimist and perfectionist when it comes to developing myself but optimistic of the future. 
-Liberalism runs through my viens, Elohim is my deliverer, and nyctophilia made me an Australian owlet-nightjar. 
+Liberalism runs through my viens and nyctophilia made me an Australian owlet-nightjar. 
 
 
 
