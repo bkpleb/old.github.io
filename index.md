@@ -33,6 +33,14 @@ Currently a junior at Texas Tech University K-12 interning at
 
 * Economics/Political Sciences: I'm a student memember at [Mises Institute](https://mises.org/) which favors the Austrian School of Economics (a school of thought). Though I favor this ideology the most, the understanding of markets and market dynamics has always been an interest to me from a young age. 
 
+## Aspirations.
+
+There are too many things to do, too many rabbit holes to jump into. End of the day, if I'm better than yesterday, I'm honestly happy.
+
+We live in a time where there is severe instability in society, politically and economically. My environment has made me a pessimist and perfectionist when it comes to developing myself but optimistic of the future.
+
+My aim is to contribute to blockchain-based financial infustructure with perspective from an objective reality and laissez-faire capitalism. 
+I'm just a pleb and don't wish to just be a cog in the wheel :D
 
 
 
