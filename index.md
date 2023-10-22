@@ -21,7 +21,7 @@ Currently a junior at Texas Tech University K-12 interning at
   
 * [Lightning Network](https://en.wikipedia.org/wiki/Lightning_Network): I have a personal
   [node](https://github.com/raspiblitz/raspiblitz) and wish to be a fulltime node runner (why not?). It is the next
-  payment system where anyone and anywhere can transact BTC in form of sats with _very minimal fees_. It has immense potential and more people hopping on board, the better.
+  payment system and you cannot convince me otherwise.
   
 * [Security engineering](https://pentesterlab.com/profile/3c9762377542915b2cc2fbdf94): Personally, security engineering isn't something I want to pursue but having
   the mindset is extremely vital. I like to do [CTFs](https://ctftime.org/team/226953) whenever I have time with tendency to solve OSINT, web, and misc challs.
@@ -31,11 +31,7 @@ Currently a junior at Texas Tech University K-12 interning at
 
 * Digital Signal Processing/Digital Image Processing: The mathematical rigor is on par with applied cryptography in all aspects. Just try it for yourself and you're smacked in the face with [linear system theory for continuous time systems, discrete time signals,](https://ece.uwaterloo.ca/~ssundara/courses/notes/linear_systems.pdf) systems theory, Z-transform, Laplace transform, Fourier transform, and down you go. Essentially engineering math. DSP is highly complementary to financial signal processing and can be even used to easily understand RF hacking.
 
-* Economics/Political Sciences: I'm a student memember at [Mises Institute](https://mises.org/) which favors the Austrian School of Economics (a school of thought). Though I favor this ideology
-  the most, the understanding of markets and market dynamics has always been an interest to me ever since I met a very knowledgable mentor who was the Vice President
-  of Citibank (Australia) in the 1980s to early 1990s. She asked me so many questions and made me ponder on what is fiat money, how can we change that, and so much more.
-  I'm forever grateful for her guidance and mentorship. Due to my notorious habit of reading, history classes were a breeze. Reading on systems of governance and power is always very enjoyable (don't confuse politics 
-  with understanding political behaviors, etc.). 
+* Economics/Political Sciences: I'm a student memember at [Mises Institute](https://mises.org/) which favors the Austrian School of Economics (a school of thought). Though I favor this ideology the most, the understanding of markets and market dynamics has always been an interest to me from a young age. 
 
 
 
