@@ -35,6 +35,7 @@ Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal
 * [Importance of Bitcoin Halving](https://marketmapper.io/post/bitcoin-halving-impacts)
 * [Management of Sorts: How Risk and Money Management Play a Key Role](https://marketmapper.io/post/management-of-sorts-how-risk-and-money-management-play-a-key-role)
 * [The Art of Trading Tactics](https://marketmapper.io/post/the-art-of-trading-tactics)
+* [Trading Bots: The Good, the Bad and the Ugly](https://marketmapper.io/post/trading-bots-the-good-the-bad-and-the-ugly)
 
 ## Firefox 
 I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 years where I did knowledge base writing and support (was [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)). Some may say I'm mentally ill but don't worry. I like what I do. For the entire list of docs, visit [here](https://support.mozilla.org/en-US/user/VintageMind/documents).
