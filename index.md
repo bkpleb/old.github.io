@@ -37,10 +37,13 @@ Currently a junior at Texas Tech University K-12 interning at
 
 There are too many things to do, too many rabbit holes to jump into. End of the day, if I'm better than yesterday, I'm honestly happy.
 
-We live in a time where there is severe instability in society, politically and economically. My environment has made me a pessimist and perfectionist when it comes to developing myself but optimistic of the future.
+My aim is to contribute to blockchain-based financial infustructure with the goal of strengthening the new wave of finance and financial markets.  
+I'm just a pleb but don't wish to just be a cog in the wheel :D
 
-My aim is to contribute to blockchain-based financial infustructure with perspective from an objective reality and laissez-faire capitalism. 
-I'm just a pleb and don't wish to just be a cog in the wheel :D
+## Ideology.
+
+A pessimist and perfectionist when it comes to developing myself but optimistic of the future. 
+Liberalism runs through my viens, Elohim is my deliverer, and nyctophilia made me an Australian owlet-nightjar. 
 
 
 
