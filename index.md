@@ -14,32 +14,26 @@ Currently a junior at Texas Tech University K-12 interning at
 
 ## Things I'm Interested In.
 
-* Technical analysis: Thanks to the current work I do, I very much wish to pursue computational finance which is a blend of computer science, finance, and economics.
-  It's a really unique field. I often see people mix trading with technical analysis and they're two different things. Trading without
-  having any knowledge of the markets whatsoever is very similar to Russian roulette in my kind opinion. Technical analysis gives you statistical based view of the markets which can help you make positions, etc.
+* Technical analysis: Enjoying the overlap of mathematics and financial markets.
   
 * [Lightning Network](https://en.wikipedia.org/wiki/Lightning_Network): I have a personal
   [node](https://github.com/raspiblitz/raspiblitz) and wish to be a fulltime node runner (why not?). It is the next
   payment system where anyone and anywhere can transact BTC in form of sats with _very minimal fees_. It has immense potential and more people hopping on board, the better.
   
-* Crypto wallets: The complex architecture of wallets regardless whether it's non-custodial, custodial, or browser wallet is a marvel. Having
-  used plenty of various kinds of wallets, thinking about security vulnerabilities is really fun for some reason. I highly recommend [Sparrow](https://sparrowwallet.com/),
-  [Electrum](https://electrum.org/), and [COLDCARD](https://coldcard.com/) as a basic setup. Always have backups (try [Cryptosteel](https://cryptosteel.com/)).
-  
 * [Security engineering](https://pentesterlab.com/profile/3c9762377542915b2cc2fbdf94): Personally, security engineering isn't something I want to pursue but having
   the mindset is extremely vital. I like to do [CTFs](https://ctftime.org/team/226953) whenever I have time with tendency to solve OSINT, web, and misc challs.
-  I would say security engineering on decentralized protocols/applications to be the highest of difficulty.
-  Smart contracts are a whole another monster.
+  I would say security engineering on decentralized protocols/applications to be the highest of difficulty. Smart contracts are a whole another monster.
   
-* Applied cryptography: This is a field with insane complexity just like other rabbit holes. Currently learning on [CryptoHack](https://cryptohack.org/) but it will take me years to really grasp the knowledge with tons
-  of practice. It's a very interesting topic with it being heavily tied to crypto wallets and protocols.
-  
+* Applied cryptography: This is a field with insane complexity just like other rabbit holes. Currently learning on [CryptoHack](https://cryptohack.org/) but it will take me years to really grasp the knowledge with tons of practice. It's a very interesting topic with it being heavily tied to crypto wallets and protocols.
+
+* Digital Signal Processing/Digital Image Processing: The mathematical rigor is on par with applied cryptography in all aspects. Just try it for yourself and you're smacked in the face with [linear system theory for continuous time systems, discrete time signals,](https://ece.uwaterloo.ca/~ssundara/courses/notes/linear_systems.pdf) systems theory, Z-transform, Laplace transform, Fourier transform, and down you go. Essentially engineering math. DSP is highly complementary to financial signal processing and can be even used to easily understand RF hacking.
+
 * Economics/Political Sciences: I'm a student memember at [Mises Institute](https://mises.org/) which favors the Austrian School of Economics (a school of thought). Though I favor this ideology
   the most, the understanding of markets and market dynamics has always been an interest to me ever since I met a very knowledgable mentor who was the Vice President
   of Citibank (Australia) in the 1980s to early 1990s. She asked me so many questions and made me ponder on what is fiat money, how can we change that, and so much more.
   I'm forever grateful for her guidance and mentorship. Due to my notorious habit of reading, history classes were a breeze. Reading on systems of governance and power is always very enjoyable (don't confuse politics 
   with understanding political behaviors, etc.). 
 
-* Digital Signal Processing/Digital Image Processing: The mathematical rigor is on par with applied cryptography in all aspects. Just try it for yourself and you're smacked in the face with [linear system theory for continuous time systems, discrete time signals,](https://ece.uwaterloo.ca/~ssundara/courses/notes/linear_systems.pdf) systems theory, Z-transform, Laplace transform, Fourier transform, and down you go. Studying really hard in theoretical and applied mathematics as much as I can but there's beauty in signal processing which is rather hard to comprehend. DSP is highly complementary to financial signal processing and can be even used to easily understand RF hacking.
+
 
 
