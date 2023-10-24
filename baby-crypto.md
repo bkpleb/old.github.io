@@ -22,7 +22,7 @@ for i in list:
 ```
 The first line of code is a list of all the numbers. We're simply iterating for each number within the list and converting them from an ASCII ordinal number to a character.
 
-After running the script, we will get the following output: crypto{ASCII_pr1nt4bl3}
+After running the script, we will get the following output which is the secret message/flag: _crypto{ASCII_pr1nt4bl3}_
 
 **Challenge #2**:
 
@@ -38,4 +38,4 @@ hex_string = "63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f68
 print(bytes.fromhex(hex_string))
 ```
 The first line is the hex string and we're essentially converting hex to bytes with the bytes.fromhex function.
-After running the script, we get: crypto{You_will_be_working_with_hex_strings_a_lot}
+After running the script, we get: _crypto{You_will_be_working_with_hex_strings_a_lot}_
