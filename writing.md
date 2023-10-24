@@ -7,8 +7,14 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 
 ## On life
-[How to balance work + school + extracurricular activity](https://devargnes.github.io/balancing-life)
+* [How to balance work + school + extracurricular activity](https://devargnes.github.io/balancing-life)
+  
 
+
+## Misc
+
+* [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
+  
 
 ## Cryptography
 
@@ -21,7 +27,6 @@ This page is a collection of my pieces of writing including full pieces and cont
 * [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
 * [UTXO & Account Models](https://devargnes.github.io/UTXO-and-Account-Models)
 * [Solidity/ETH Related Tools For CTFs](https://devargnes.github.io/solidity-tools)
-* [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
 
 
 ## Technical Analysis & Trading
