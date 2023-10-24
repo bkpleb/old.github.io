@@ -17,7 +17,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 ## Cryptography
 
-* [Baby crypto](https://devargnes.github.io/baby-crypto.md/)
+* [Baby crypto](https://devargnes.github.io/baby-crypto)
 
 ## TA & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
