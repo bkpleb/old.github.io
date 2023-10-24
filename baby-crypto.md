@@ -41,3 +41,20 @@ print(bytes.fromhex(hex_string))
 The first line is the hex string and we're essentially converting hex to bytes with the bytes.fromhex function.
 
 After running the script, we get: _crypto{You_will_be_working_with_hex_strings_a_lot}_
+
+**Challenge #3**
+
+You're given this string: 72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf
+
+This time we need to convert from hex → bytes (decoding) and then bytes → Base64 (encoding).
+
+```
+hex_string = "72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf"
+
+con_string = bytes.fromhex(hex_string)
+
+print(base64.b64encode(con_string))
+
+```
+
+After running the script, we get: _crypto/Base+64+Encoding+is+Web+Safe/_
