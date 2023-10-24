@@ -49,7 +49,7 @@ I really like this way of life. Friends my age are virtually non-existent and al
 
 ***Tips***
 
-If you are able to finish assignments faster or even work, it makes the situation much better. If the company you work for is flexible and only cares you finish the tasks on time and eosn't bother about your "attendance", make use of that. 
+If you are able to finish assignments faster or even work, it makes the situation much better. If the company you work for is flexible and only cares you finish the tasks on time and doesn't bother about your "attendance", make use of that. 
 
 Focus on the work at hand. This is super important as it speeds about everything you do!
 
