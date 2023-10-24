@@ -6,7 +6,16 @@ title: Writing
 This page is a collection of my pieces of writing including full pieces and contributions as well as writings for leisure. This page will keep updating and hopefully no link rot will occur. The below pieces that are "notes" in one way are in the blog posts and cryptography section.
 
 
-## Blog Posts
+## On life
+[How to balance work + school + extracurricular activity](https://devargnes.github.io/balancing-life)
+
+
+## Cryptography
+
+* [Baby crypto](https://devargnes.github.io/baby-crypto)
+
+
+## Distributed ledger
 
 * [Nostr - Decentralized Social Network](https://devargnes.github.io/2023-05-27-nostr)
 * [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
@@ -14,10 +23,6 @@ This page is a collection of my pieces of writing including full pieces and cont
 * [Solidity/ETH Related Tools For CTFs](https://devargnes.github.io/solidity-tools)
 * [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
 
-
-## Cryptography
-
-* [Baby crypto](https://devargnes.github.io/baby-crypto)
 
 ## Technical Analysis & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
