@@ -19,7 +19,6 @@ list = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 
 
 for i in list:
     print(chr(i))
-
 ```
 The first line of code is a list of all the numbers. We're simply iterating for each number within the list and converting them from an ASCII ordinal number to a character.
 
