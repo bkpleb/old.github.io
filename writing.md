@@ -3,7 +3,7 @@ layout: page
 title: Writing 
 ---
 
-This page is a collection of my pieces of writing including full pieces and contributions as well as writings for leisure. This page will keep updating and hopefully no link rot will occur.
+This page is a collection of my pieces of writing including full pieces and contributions as well as writings for leisure. This page will keep updating and hopefully no link rot will occur. The below pieces that are "notes" in one way are in the blog posts and cryptography section.
 
 
 ## Blog Posts
@@ -13,6 +13,11 @@ This page is a collection of my pieces of writing including full pieces and cont
 * [UTXO & Account Models](https://devargnes.github.io/UTXO-and-Account-Models)
 * [Solidity/ETH Related Tools For CTFs](https://devargnes.github.io/solidity-tools)
 * [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
+
+
+## Cryptography
+
+
 
 ## TA & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
