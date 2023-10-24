@@ -21,6 +21,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 ## Technical Analysis & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
+Documentatoin I mostly set up can be found [here](https://marketmapper.io/documentation).
 
 * [Trade Entry and Exit Points: How Can You Identify the Best Ones Using Technical Indicators](https://marketmapper.io/post/trade-entry-and-exit-points-how-can-you-identify-the-best-ones-using-technical-indicators) 
 * [The Importance of Understanding Indicators Disadvantages](https://marketmapper.io/post/the-importance-of-understanding-indicators-disadvantages)
