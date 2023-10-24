@@ -19,7 +19,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 * [Baby crypto](https://devargnes.github.io/baby-crypto)
 
-## TA & Trading
+## Technical Analysis & Trading
 Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
 
 * [Trade Entry and Exit Points: How Can You Identify the Best Ones Using Technical Indicators](https://marketmapper.io/post/trade-entry-and-exit-points-how-can-you-identify-the-best-ones-using-technical-indicators) 
