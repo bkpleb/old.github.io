@@ -7,7 +7,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 
 ## On life
-* [How to balance work + school + extracurricular activity](https://devargnes.github.io/balancing-life)
+* [How to balance work + school + extracurricular activities](https://devargnes.github.io/balancing-life)
   
 
 
