@@ -16,6 +16,7 @@ Work experience:
 - Technical Content Writer at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
   Doing all things content: blog posts, social media management, setting up docs
+  
 
 - NDA'd Contributor at [Mozilla](https://support.mozilla.org/en-US/user/VintageMind/) (Aug 2021 - Aug 2023)
 
