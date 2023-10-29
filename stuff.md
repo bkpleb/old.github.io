@@ -8,7 +8,7 @@ This page is a collection of stuff I've done or made in a miscellaneous sense. U
 
 ## Technical Indicators
 
-Making indicators with PineScript and publishing them on TradingView. Dedicated in mastering PineScript and just creating as many unique and creative indicators that solve different traders' requirements. Started officially in October and planning to continue doing so till May (let's see how it goes).
+Making indicators with PineScript and publishing them on TradingView. 
 
 [Two SMAs Simulatenously](https://www.tradingview.com/script/ltZt1zrj-Two-SMAs/)
 
