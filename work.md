@@ -4,14 +4,14 @@ title: CV
 ---
 
 
-Education:
+### Education:
 
 - Texas Tech University K-12. Class of 2024
 
    Coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Energy and Natural Resources Technology, Business and Industry track.
 
 
-Work experience:
+### Work experience:
 
 - Cyber Intelligence Analyst at [ENCRYPTED] (November 2023 - present)
 
@@ -47,7 +47,7 @@ Work experience:
   - Worked with issues on frontend web development involving Postgres and prod.
 
 
-Volunteering:
+### Volunteering:
 
 - MozFest Volunteer at Mozilla (March 2023)
 
