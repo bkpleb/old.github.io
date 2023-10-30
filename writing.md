@@ -30,7 +30,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 
 ## Technical Analysis & Trading
-Writing [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts since Aug 7 :D
+Wrote [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts from Aug 7 - Oct 29.
 
 Documentation I mostly set up can be found [here](https://marketmapper.io/documentation).
 
@@ -53,6 +53,8 @@ Documentation I mostly set up can be found [here](https://marketmapper.io/docume
 * [Management of Sorts: How Risk and Money Management Play a Key Role](https://marketmapper.io/post/management-of-sorts-how-risk-and-money-management-play-a-key-role)
 * [The Art of Trading Tactics](https://marketmapper.io/post/the-art-of-trading-tactics)
 * [Trading Bots: The Good, the Bad and the Ugly](https://marketmapper.io/post/trading-bots-the-good-the-bad-and-the-ugly)
+* [SEC and the Crypto World: The Gavel Drops](https://marketmapper.io/post/sec-and-the-crypto-world-the-gavel-drops)
+
 
 ## Firefox 
 I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 years where I did knowledge base writing and support (was [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)). Some may say I'm mentally ill but don't worry. I like what I do. For the entire list of docs, visit [here](https://support.mozilla.org/en-US/user/VintageMind/documents).
