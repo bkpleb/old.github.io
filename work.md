@@ -23,7 +23,7 @@ title: CV
 
   
 
--**Technical Content Writer** at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
+- **Technical Content Writer** at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
   Doing all things content: blog posts, social media management, setting up docs
 
