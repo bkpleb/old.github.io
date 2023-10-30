@@ -15,7 +15,7 @@ title: CV
 
 - Cyber Intelligence Analyst at [ENCRYPTED] (November 2023 - present)
 
-  Probation period for 3 months (ending in January)
+  Probation period for 3 months
 
 - Technical Content Writer at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
