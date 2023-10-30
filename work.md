@@ -6,7 +6,7 @@ title: CV
 
 ### Education:
 
-- Texas Tech University K-12. Class of 2024
+- **Texas Tech University K-12**. Class of 2024
 
    Coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Energy and Natural Resources Technology, Business and Industry track.
 
@@ -16,14 +16,14 @@ title: CV
 
 ### Work experience:
 
-- Cyber Intelligence Analyst at [ENCRYPTED] (November 2023 - present)
+- **Cyber Intelligence Analyst** at [ENCRYPTED] (November 2023 - present)
 
   Probation period for 3 months
 
 
   
 
-- Technical Content Writer at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
+-**Technical Content Writer** at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
   Doing all things content: blog posts, social media management, setting up docs
 
@@ -33,7 +33,7 @@ title: CV
 
 - NDA'd Contributor at [Mozilla](https://support.mozilla.org/en-US/user/VintageMind/) (Aug 2021 - Aug 2023)
 
-    - [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator) (July 2022 - Aug 2023)
+    - **[Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)** (July 2022 - Aug 2023)
 
       - Moderate behaviour of both Mozilla product users and other Social Support volunteers.
       - Drive volunteer motivation to participate in Mozilla’s initiatives.
@@ -42,7 +42,7 @@ title: CV
 
 
 
-    - Knowledge Base Writer (Aug 2021 - Aug 2023)
+    - **Knowledge Base Writer** (Aug 2021 - Aug 2023)
 
       - Write and maintain support articles, wikis, and official documentation for Mozilla products.
       - Have written and edited over 45 articles used by Firefox users daily for technical guidance.
@@ -52,7 +52,7 @@ title: CV
 
 
  
-    - SUMO contributor (Aug 2021 - Aug 2023)
+    - **SUMO contributor** (Aug 2021 - Aug 2023)
 
        - Resolved technical issues, consistently placing top in contributor rankings.
  
@@ -67,20 +67,20 @@ title: CV
 
 ### Volunteering:
 
-- MozFest Volunteer at Mozilla (March 2023)
+- **MozFest Volunteer at Mozilla** (March 2023)
 
   - Had the responsibility to give technical support for MozFest participants through Slack, SpatialChat, and Mozilla Hubs.
 
 
 
 
-- National Junior Honor Society (Jun 2021 - March 2022)
+- **National Junior Honor Society** (Jun 2021 - March 2022)
 
   - Donated clothing, etc. and did local volunteering
 
 
 
 
-- Group Leader at Crossway Baptist Church (Jan 2020 - Feb 2021)
+- **Group Leader at Crossway Baptist Church** (Jan 2020 - Feb 2021)
 
   - While at Crossway, I took care of young children from 7 to 9 years of age, with three other leaders, and helped them build confidence and self-esteem in a safe childcare atmosphere. I organized games, worship, devotion, and learning groups for the children.
