@@ -56,7 +56,7 @@ title: CV
 
        - Resolved technical issues, consistently placing top in contributor rankings.
  
-- Open Library Developer at Internet Archive (Jul 2021 - September 2021)
+- **Open Library Developer** at Internet Archive (Jul 2021 - September 2021)
 
   - Contributed as an Open Library developer.
   - Worked with issues on frontend web development involving Postgres and prod.
