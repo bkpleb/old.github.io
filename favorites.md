@@ -102,7 +102,7 @@ Russian:
 * And Алла Пугачева's other songs
 
 Hebrew:
-
+ ואני אבטח בך
 * ואני אבטח בך by Matt Dubb x Beri Weber x Shmueli Ungar 
 
 Yiddish:
