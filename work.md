@@ -13,9 +13,9 @@ Education:
 
 Work experience:
 
-- Cyber Intelligence Analyst at [ENCRYPTED] (present)
+- Cyber Intelligence Analyst at [ENCRYPTED] (November 2023 - present)
 
-  Probation period for 3 months
+  Probation period for 3 months (ending in January)
 
 - Technical Content Writer at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
