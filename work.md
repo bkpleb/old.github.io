@@ -11,15 +11,24 @@ title: CV
    Coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Energy and Natural Resources Technology, Business and Industry track.
 
 
+
+
+
 ### Work experience:
 
 - Cyber Intelligence Analyst at [ENCRYPTED] (November 2023 - present)
 
   Probation period for 3 months
 
+
+  
+
 - Technical Content Writer at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
   Doing all things content: blog posts, social media management, setting up docs
+
+
+
   
 
 - NDA'd Contributor at [Mozilla](https://support.mozilla.org/en-US/user/VintageMind/) (Aug 2021 - Aug 2023)
@@ -30,11 +39,17 @@ title: CV
       - Drive volunteer motivation to participate in Mozilla’s initiatives.
       - Make decisions and consider ideas for improvement for the platform.
 
+
+
+
     - Knowledge Base Writer (Aug 2021 - Aug 2023)
 
       - Write and maintain support articles, wikis, and official documentation for Mozilla products.
       - Have written and edited over 45 articles used by Firefox users daily for technical guidance.
       - Cover numerous topics such as the basics of Firefox, customizing Firefox with add-ons, plugins, and extensions, cookies and cache, controlling privacy and security settings, to advanced and experimental features and much more.
+
+
+
 
  
     - SUMO contributor (Aug 2021 - Aug 2023)
@@ -47,15 +62,24 @@ title: CV
   - Worked with issues on frontend web development involving Postgres and prod.
 
 
+
+
+
 ### Volunteering:
 
 - MozFest Volunteer at Mozilla (March 2023)
 
   - Had the responsibility to give technical support for MozFest participants through Slack, SpatialChat, and Mozilla Hubs.
 
+
+
+
 - National Junior Honor Society (Jun 2021 - March 2022)
 
   - Donated clothing, etc. and did local volunteering
+
+
+
 
 - Group Leader at Crossway Baptist Church (Jan 2020 - Feb 2021)
 
