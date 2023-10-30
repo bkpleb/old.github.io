@@ -31,7 +31,7 @@ title: CV
 
   
 
-- NDA'd Contributor at [Mozilla](https://support.mozilla.org/en-US/user/VintageMind/) (Aug 2021 - Aug 2023)
+- **NDA'd Contributor** at [Mozilla](https://support.mozilla.org/en-US/user/VintageMind/) (Aug 2021 - Aug 2023)
 
     - **[Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)** (July 2022 - Aug 2023)
 
