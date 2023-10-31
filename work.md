@@ -17,6 +17,11 @@ title: CV
 ### Work experience:
 
   
+- **Cyber Intelligence Analyst** at [ENCRYPTED] (November 2023 - January 2023)
+
+   - In probation of 3 months
+   - Will reveal company after 3 months!
+    
 
 - **Technical Content Writer** at [Market Mapper](https://marketmapper.io/) (August 2023 - October 2023)
 
