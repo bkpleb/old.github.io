@@ -14,7 +14,7 @@ read books, do [ornithology research](https://ebird.org/profile/MzQ1MjU0Mg), and
 
 Enjoys the interrelationship of security + blockchain + finance/economics.
 
-Currently a junior at Texas Tech University K-12 and [ENCRYPTED]. My other site can be found [here](https://vintagemind.github.io/).
+Currently a junior at Texas Tech University K-12 and cyber intelligence analyst at [ENCRYPTED]. My other site can be found [here](https://vintagemind.github.io/).
 
 ## Things I'm Interested In.
 
