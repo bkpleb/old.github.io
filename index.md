@@ -9,12 +9,12 @@ layout: page
 
 A tinkerer, pleb, old soul. 
 
-Known as vintagemind or devargnes or 0xBithiah on the World Wide Web. I like to fence, play chess, 
+Known as by many anons on the World Wide Web. I like to fence, play chess, 
 read books, do [ornithology research](https://ebird.org/profile/MzQ1MjU0Mg), and bush walking. 
 
 Enjoys the interrelationship of security + blockchain + finance/economics.
 
-Currently a junior at Texas Tech University K-12 and cyber intelligence analyst at [ENCRYPTED]. My other site can be found [here](https://vintagemind.github.io/).
+Currently a junior at Texas Tech University K-12 and cyber intelligence analyst at [ENCRYPTED]. 
 
 ## Things I'm Interested In.
 
