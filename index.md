@@ -5,12 +5,12 @@ layout: page
 
 <a rel="me" style="display:none;" href="https://mastodon.social/@tekknolagi">Mastodon</a>
 
-<h1>I'm Bithiah Koshy.</h1>
+<h1>I'm Bithiah കോശി.</h1>
 
 A tinkerer, pleb, old soul. 
 
 Known as by many anons on the World Wide Web. I like to fence, play chess, 
-read books, do [ornithology research](https://ebird.org/profile/MzQ1MjU0Mg), and bush walking. 
+read books, do ornithology research, and bush walking. 
 
 Enjoys the interrelationship of security + blockchain + finance/economics.
 
