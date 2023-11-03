@@ -20,35 +20,6 @@ Please, when contacting, state who you are, what you want, etc. I can't keep gue
 [InfosecExchange](https://infosec.exchange/@vintagemind)
 
 
-## Other places where I dwell:
-
-
-[Pentesterlab](https://pentesterlab.com/profile/vintagemind)
-
-
-
-[Kattis](https://open.kattis.com/users/vintagemind)
-
-
-
-[Trading View](https://www.tradingview.com/u/vintagemind/)
-
-
-
-[CTFtime](https://ctftime.org/user/160191)
-
-
-
-[Mozilla Support](https://support.mozilla.org/en-US/user/VintageMind/)
-
-
-
-[eBird](https://ebird.org/profile/MzQ1MjU0Mg)
-
-
-
-[Reddit](https://www.reddit.com/user/Vintage_Mind)
-
 
 
 [YouTube](https://www.youtube.com/@vintagemind/about)
