@@ -7,11 +7,6 @@ Please, when contacting, state who you are, what you want, etc. I can't keep gue
 
 ## DM:
 
-Telegram: [vintagemind](https://t.me/vintagemind)
-
-
-[LinkedIn](https://www.linkedin.com/in/vintagemind/)
-
 
 [Nostr](https://primal.net/profile/npub1nfjdhfl96sr7n84lrs2z86nltvry4eylf9x8qc7awlq7mxps8rls66qt7j)
 
@@ -22,15 +17,7 @@ Telegram: [vintagemind](https://t.me/vintagemind)
 [Twitter](https://twitter.com/0xBithiah)
 
 
-[Instagram](https://www.instagram.com/bitkoshy)
-
-
 [InfosecExchange](https://infosec.exchange/@vintagemind)
-
-
-Discord: vintagemind#2025
-
-Matrix: @vintagemind:mozilla.org 
 
 
 ## Other places where I dwell:
