@@ -5,7 +5,7 @@ layout: page
 
 <a rel="me" style="display:none;" href="https://mastodon.social/@tekknolagi">Mastodon</a>
 
-<h1>I'm Bithiah കോശി.</h1>
+<h1>I'm Bithiah.</h1>
 
 A tinkerer, pleb, old soul. 
 
