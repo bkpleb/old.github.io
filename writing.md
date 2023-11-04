@@ -3,7 +3,7 @@ layout: page
 title: Writing 
 ---
 
-This page is a collection of my pieces of writing including full pieces and contributions as well as writings for leisure. This page will keep updating and hopefully no link rot will occur. The below pieces that are "notes" in one way are in the blog posts and cryptography section.
+This page is a collection of my pieces of writing including full pieces and contributions as well as writings for leisure (random things). This page will keep updating and hopefully no link rot will occur.
 
 
 ## On life
