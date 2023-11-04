@@ -9,20 +9,15 @@ layout: page
 
 A tinkerer, pleb, old soul. 
 
-Known as by many anons on the World Wide Web. I like to fence, play chess, 
-read books, do ornithology research, and bush walking. 
+I like to fence, play chess & tetris, read books, do ornithology research, bush walking, watch b/w films, and having fun on minetest.
 
 Enjoys the interrelationship of security + blockchain + finance/economics.
 
-Currently a junior at Texas Tech University K-12 and threat analyst at [REDACTED]. 
+Currently a junior in high school and threat analyst at [REDACTED]. 
 
 ## Things I'm Interested In.
 
-* [Security engineering](https://pentesterlab.com/profile/3c9762377542915b2cc2fbdf94): I very interested specifically in browser security and opsec. In my free time, I like to do [CTFs](https://ctftime.org/team/226953) whenever I have time with tendency to solve OSINT, web, and misc challs. I would say security engineering on decentralized protocols/applications to be the highest of difficulty. Smart contracts are a whole another monster.
-
-* [Lightning Network](https://en.wikipedia.org/wiki/Lightning_Network): I have a personal
-  [node](https://github.com/raspiblitz/raspiblitz) and wish to be a fulltime node runner (why not?). It is the next
-  payment system and you cannot convince me otherwise.
+* [Security engineering](https://pentesterlab.com/profile/3c9762377542915b2cc2fbdf94): I very interested specifically in browser security, blockchain security, and opsec. In my free time, I like to do [CTFs](https://ctftime.org/team/226953) whenever I have time with tendency to solve OSINT, web, crypto, and misc challs. I would say security engineering on decentralized protocols/applications to be the highest of difficulty. Smart contracts are a whole another monster.
   
 * Applied cryptography: This is a field with insane complexity just like other rabbit holes. Currently learning on [CryptoHack](https://cryptohack.org/) but it will take me years to really grasp the knowledge with tons of practice. It's a very interesting topic with it being heavily tied to crypto wallets and protocols.
 
