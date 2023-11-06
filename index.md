@@ -3,8 +3,6 @@ title:
 layout: page
 ---
 
-<a rel="me" style="display:none;" href="https://mastodon.social/@tekknolagi">Mastodon</a>
-
 <h1>I'm Bithiah.</h1>
 
 Enjoys the interrelationship of security + blockchain + finance/economics.
