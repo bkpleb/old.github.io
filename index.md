@@ -7,13 +7,7 @@ layout: page
 
 <h1>I'm Bithiah.</h1>
 
-A tinkerer, pleb, old soul. 
-
-I like to fence, play chess & tetris, read books, do ornithology research, bush walking, watch b/w films, and having fun on minetest.
-
 Enjoys the interrelationship of security + blockchain + finance/economics.
-
-Currently a junior in high school and threat analyst at [REDACTED]. 
 
 ## Things I'm Interested In.
 
