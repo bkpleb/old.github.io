@@ -3,6 +3,13 @@ layout: page
 title: BYUCTF Writeup 2023
 ---
 
+**How it went:**
+156th place, 2557 points, 17 challenges solved - 34.3% (6) Crypto, 29.41% (5) OSINT, 29.41% (5) Misc, and 5.88% (1) Pwn.
+
+![image](https://github.com/DeVargnes/devargnes.github.io/assets/139235681/a33e45cc-f76b-4cda-8e15-5f32ea256285)
+
+
+
 
 **Sanity Check (50)**
 Who doesn't like the good ol' sanity check? Let me tell you, it took me a solid 5 mins to find the bloody flag!
