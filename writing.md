@@ -52,7 +52,7 @@ Documentation I mostly set up can be found [here](https://marketmapper.io/docume
 
 
 ## Firefox 
-I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 years where I did knowledge base writing and support (was [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)). Some may say I'm mentally ill but don't worry. I like what I do. For the entire list of docs, visit [here](https://support.mozilla.org/en-US/user/VintageMind/documents).
+I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 years where I did knowledge base writing and support (was [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)). For the entire list of docs, visit [here](https://support.mozilla.org/en-US/user/VintageMind/documents).
 
 * [Manage the devices linked to your Mozilla account](https://support.mozilla.org/en-US/kb/fxa-managing-devices)
 * [How to customize Firefox Suggest settings](https://support.mozilla.org/en-US/kb/firefox-suggest)
