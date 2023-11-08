@@ -45,7 +45,7 @@ Using CrackStation, we can extremely quickly solve this challenge.
 
 The flag is: byuctf{Arkhangelsk}
 
-
+ 
 **006 III (100)**
 Can't he live a normal life with all his hotties anyway somewhere in the nice British countryside? 😂
 
