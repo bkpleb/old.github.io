@@ -7,7 +7,7 @@ layout: page
 
 **name**: Bithiah ~ 比提雅 ~  ബിഥ്യ ~ בתיה ~ Бифья ~
 
-**organisation**: blockchain security startup
+**organisation**: Blockchain security startup
 
 **contact**: Pleb who is inactive on socials @0xBithiah (_only_ on Discord & Twitter)
 
