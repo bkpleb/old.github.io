@@ -7,7 +7,7 @@ layout: page
 
 name: Bithiah
 
-organisation: Tel-Aviv security blockchain startup
+organisation: TLV based security blockchain startup
 
 contact: Pleb who is inactive on socials
 
