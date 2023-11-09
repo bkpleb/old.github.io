@@ -6,6 +6,7 @@ layout: page
 <h1>I'm Bithiah.</h1>
 
 > Diving into various rabbit holes and breaking things
+>
 > Paid to be a tinkerer and OSINT analyst
 
 > Enjoys the interrelationship of security + blockchain + finance/economics.
