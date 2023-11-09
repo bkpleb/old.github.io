@@ -7,9 +7,9 @@ layout: page
 
 **name**: Bithiah
 
-**organisation**: TLV based security blockchain startup
+**organisation**: TLV blockchain security startup
 
-**contact**: Pleb who is inactive on socials
+**contact**: Pleb who is inactive on socials @0xBithiah (_only_ on Discord & Twitter)
 
 **education**: High school [ coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Business and Industry track]
 
