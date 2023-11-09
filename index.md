@@ -5,7 +5,7 @@ layout: page
 
 <h1>whois</h1>
 
-**name**: Bithiah ~ 比提雅 ~  ബിഥ്യ ~ בתיה ~ 
+**name**: Bithiah ~ 比提雅 ~  ബിഥ്യ ~ בתיה ~ Бифья ~
 
 **organisation**: TLV blockchain security startup
 
