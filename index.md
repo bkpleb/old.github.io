@@ -17,4 +17,14 @@ layout: page
 
 
 
+
+
+
+
+
+
+
+
+
+
 ~ _Ultimately enjoys the interrelationship of security + blockchain + finance/economics._ ~
