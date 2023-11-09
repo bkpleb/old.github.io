@@ -13,4 +13,4 @@ layout: page
 
 **education**: High school [ coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Business and Industry track]
 
-**hobbies**: Fencing, birding, playing piano, reading classics, watching b/w films, and playing chess, minetest & tetris. 
+**hobbies**: Doing CTF challs, fencing, birding, watching b/w film, playing minetest & tetris.
