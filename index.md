@@ -27,4 +27,4 @@ layout: page
 
 
 
-~ ଘ(੭ˊᵕˋ)੭ _Ultimately enjoys the interrelationship of security + blockchain + finance/economics._ ~
+ଘ(੭ˊᵕˋ)੭ _Ultimately enjoys the interrelationship of security + blockchain + finance/economics._ 
