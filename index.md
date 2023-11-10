@@ -11,12 +11,13 @@ layout: page
 
 **organisation**: TLV blockchain security startup
 
-**contact**: @0xBithiah (_only_ on Discord & Twitter) - inactive on socials 
+**areas of interest**: Security engineering, digital signal processing, decentralisation, and political economy.
 
 **education**: 11th grade - High school [coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Business and Industry track]
 
 **hobbies**: Doing CTF challs, fencing, birding, watching b/w films, playing minetest & tetris.
 
+**contact**: @0xBithiah (_only_ on Discord & Twitter) - inactive on socials 
 
 
 
