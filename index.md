@@ -7,9 +7,11 @@ layout: page
 
 **name**: Bithiah ~ 比提雅 ~  ബിഥ്യ ~ בתיה ~ Бифья ~
 
+**age**: {{5,1,5,4},{7,1,7,9},{7,8,3,6},{16,13,1,6}} - (1) find the determinant, (2) subtract 2 from the determinant
+
 **organisation**: TLV blockchain security startup
 
-**contact**: Pleb who is inactive on socials @0xBithiah (_only_ on Discord & Twitter)
+**contact**: @0xBithiah (_only_ on Discord & Twitter) - inactive on socials 
 
 **education**: 11th grade - High school [ coursework includes Computer Science 1A/1B & 2A/2B, Mathematical Economics, Forestry and Woodland Ecosystems, Business and Industry track]
 
