@@ -7,8 +7,6 @@ layout: page
 
 **name**: Bithiah ~ 比提雅 ~  ബിഥ്യ ~ בתיה ~ Бифья ~
 
-**age**: {{5,1,5,4},{7,1,7,9},{7,8,3,6},{16,13,1,6}} - (1) find the determinant [yes this is a silly matrix problem], (2) subtract 2 from the determinant (ie. determinant = 32, age = 30) 
-
 **organisation**: TLV blockchain security startup
 
 **areas of interest**: Security engineering, digital signal processing, decentralisation, and political economy.
