@@ -14,7 +14,7 @@ include: [.well-known]
 future: false
 
 twitter:
-  username: vintagemind07
+  username: 0xBithiah
 
 permalink: '/blog/:title/'
 post_dirs: false
