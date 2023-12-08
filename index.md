@@ -7,7 +7,7 @@ layout: page
 
 Interested in blockchain ecosystems, security, and threat research.
 
-16yo independent pleb, senior in hig school. 
+16yo independent pleb, senior in high school. 
 
 Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter](https://twitter.com/bkdoubleohseven)).
 
