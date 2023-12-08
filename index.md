@@ -6,6 +6,7 @@ layout: page
 <h1>I'm Bithiah</h1>
 
 Interested in blockchain ecosystems, security, and threat research.
+Gets paid full-time to be on-chain detective for demystification purposes & occasional writer.
 
 16yo independent pleb, senior in high school. 
 
@@ -23,10 +24,12 @@ Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 - A past intern at [Market Mapper](https://marketmapper.io/), where I helped build the [KB system](https://marketmapper.io/documentation) & write [weekly blog posts](https://marketmapper.io/blog)
 - Got a swe call from Google from apac technical recruiter (@15 by fluke ofc, foobar)
 
+<h2>Tech stack</h2>
+- [Arkham Intelligence](https://www.arkhamintelligence.com/)
 
 <h2>Learning at the moment</h2>
 - High school subjects (did 2 years of cs classes & silly [competitive programming](https://open.kattis.com/countries/AUS))
-- The fundamentals of blockchain (smart contracts? forget it, last thing to learn right now)
+- Blockchain analysis (smart contracts? forget it, last thing to learn right now)
 - Trying to have solid core in Python & Rust
 
 ଘ(੭ˊᵕˋ)੭ _Ultimately enjoys the interrelationship of security + blockchain + finance/economics._ 
