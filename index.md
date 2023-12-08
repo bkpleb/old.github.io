@@ -25,6 +25,7 @@ Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 
 <h2>Tech stack</h2>
 - [Arkham Intelligence](https://www.arkhamintelligence.com/)
+- [Parsec](https://parsec.fi/)
 
 <h2>Learning at the moment</h2>
 - High school subjects (did 2 years of cs classes & silly [competitive programming](https://open.kattis.com/countries/AUS))
