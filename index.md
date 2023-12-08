@@ -27,5 +27,6 @@ Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 <h2>Learning at the moment</h2>
 - High school subjects (did 2 years of cs classes & silly [competitive programming](https://open.kattis.com/countries/AUS))
 - The fundamentals of blockchain (smart contracts? forget it, last thing to learn right now)
+- Trying to have solid core in Python & Rust
 
 ଘ(੭ˊᵕˋ)੭ _Ultimately enjoys the interrelationship of security + blockchain + finance/economics._ 
