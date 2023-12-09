@@ -15,8 +15,7 @@ Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 
 - OSINT analyst at [Lionsgate Network](https://www.linkedin.com/company/lionsgate-network/)
 - Content gigs at [Pessimistic Security](https://pessimistic.io/)
-- Building my "consultancy" at [BK007](https://bkdoubleohseven.github.io/)
-  
+
 <h2>Other stuff</h2>
 
 - 0xE0F ctf team member (keep an eye on us, dark horse breach)
