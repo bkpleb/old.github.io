@@ -18,7 +18,7 @@ Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 
 <h2>Other stuff</h2>
 
-- 0xE0F ctf team member (keep an eye on us, dark horse breach)
+- [0xE0F](https://ctftime.org/team/271774) ctf team member (keep an eye on us, dark horse breach)
 - A past intern at [Market Mapper](https://marketmapper.io/), where I helped build the [KB system](https://marketmapper.io/documentation) & write [weekly blog posts](https://marketmapper.io/blog)
 - Got a swe call from Google from apac technical recruiter (@15 by fluke ofc, foobar)
 
