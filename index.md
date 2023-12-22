@@ -22,11 +22,7 @@ contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 - [0xE0F](https://ctftime.org/team/271774) ctf team member (keep an eye on us, dark horse breach)
 - past intern at [Market Mapper](https://marketmapper.io/), where I helped build the [KB system](https://marketmapper.io/documentation) & write [weekly blog posts](https://marketmapper.io/blog)
 - got a swe call from Google from apac technical recruiter (@15 by fluke ofc, foobar)
-
-<h3>tech stack</h3>
-
-- [arkham intelligence](https://www.arkhamintelligence.com/)
-- [parsec](https://parsec.fi/)
+  
 
 <h3>learning & interested in</h3>
 
