@@ -5,13 +5,13 @@ layout: page
 
 <h1>Bithiah</h1>
 
-16yo independent pleb interested in blockchain ecosystems, security, and threat research
+interested in blockchain ecosystems, security, and threat research
 
 contact me: [Telegram](https://t.me/bkdoubleohseven) ~ [Twitter](https://twitter.com/bkdoubleohseven)
 
 <h3>currently working on</h3>
 
-- building {redacted} (hobby project for now)
+- building in stealth
 - intel analyst at [Lionsgate Network](https://www.linkedin.com/company/lionsgate-network/)
 - content gigs at [Pessimistic Security](https://pessimistic.io/)
 
@@ -25,7 +25,6 @@ contact me: [Telegram](https://t.me/bkdoubleohseven) ~ [Twitter](https://twitter
 <h3>learning & interested in</h3>
 
 - rust
-- random protocols
 - security
 - biocomputing
 - digital image & signal processing
@@ -37,6 +36,7 @@ contact me: [Telegram](https://t.me/bkdoubleohseven) ~ [Twitter](https://twitter
 - bushwalking
 - stamp collecting
 - watching b/w films
+- ballet
 
 <h3>athletics:</h3>
 
