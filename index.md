@@ -3,7 +3,7 @@ title:
 layout: page
 ---
 
-<h1>I'm Bithiah</h1>
+<h1>Bithiah</h1>
 
 Interested in blockchain ecosystems, security, and threat research.
 
