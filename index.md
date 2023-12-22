@@ -13,7 +13,7 @@ Contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 
 <h2>Currently working on</h2>
 
-- OSINT analyst at [Lionsgate Network](https://www.linkedin.com/company/lionsgate-network/)
+- Intel analyst at [Lionsgate Network](https://www.linkedin.com/company/lionsgate-network/)
 - Content gigs at [Pessimistic Security](https://pessimistic.io/)
 
 <h2>Other stuff</h2>
