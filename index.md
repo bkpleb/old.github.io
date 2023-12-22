@@ -5,7 +5,9 @@ layout: page
 
 <h1>I'm Bithiah</h1>
 
-On-chain detective for demystification purposes & occasional writer. Interested in blockchain ecosystems, security, and threat research.
+On-chain detective for demystification purposes & occasional writer. 
+
+Interested in blockchain ecosystems, security, and threat research.
 
 16yo independent pleb, senior in high school. 
 
