@@ -45,5 +45,6 @@ contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 
 <h3>athletics:</h3>
 
-- fencing [resuming to pro level hopefully ~2024][2x aus national team medals in u20 + dozens of state medals in u15, u17, u20]
-- cross country [2x
+- fencing [resuming to pro level hopefully ~2024]: 2x aus national team medals in u20 + dozens of state medals in u15, u17, u20
+- cross country: 2x eastern metropolitan regionals top 30 (3km)
+- track: 2 x eastern metropolitan regionals top 7 (800m, 1500m)
