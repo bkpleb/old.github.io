@@ -24,21 +24,25 @@ contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 - got a swe call from Google from apac technical recruiter (@15 by fluke ofc, foobar)
 
 <h3>tech stack</h3>
+
 - [arkham intelligence](https://www.arkhamintelligence.com/)
 - [parsec](https://parsec.fi/)
 
 <h3>learning at the moment</h3>
+
 - rust
 - random protocols
 - security
 - blockchain shenanigans
 
 <h3>hobbies:</h3>
+
 - birding (not birdwatching)
 - bushwalking
 - stamp collecting
 - watching b/w films
 
 <h3>athletics:</h3>
+
 - fencing [resuming to pro level hopefully ~2024][2x aus national team medals in u20 + dozens of state medals in u15, u17, u20]
 - cross country [2x
