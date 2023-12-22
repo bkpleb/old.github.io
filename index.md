@@ -7,7 +7,7 @@ layout: page
 
 16yo independent pleb interested in blockchain ecosystems, security, and threat research
 
-contact me: [Telegram](https://t.me/bkdoubleohseven) ~ [Twitter](https://twitter.com/bkdoubleohseven)
+contact me: [telegram](https://t.me/bkdoubleohseven) ~ [twitter](https://twitter.com/bkdoubleohseven)
 
 <h3>currently working on</h3>
 
