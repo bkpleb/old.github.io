@@ -7,7 +7,7 @@ layout: page
 
 16yo independent pleb interested in blockchain ecosystems, security, and threat research
 
-contact me: [telegram](https://t.me/bkdoubleohseven) ~ [twitter](https://twitter.com/bkdoubleohseven)
+contact me: [Telegram](https://t.me/bkdoubleohseven) ~ [Twitter](https://twitter.com/bkdoubleohseven)
 
 <h3>currently working on</h3>
 
@@ -28,7 +28,8 @@ contact me: [telegram](https://t.me/bkdoubleohseven) ~ [twitter](https://twitter
 - random protocols
 - security
 - biocomputing
-
+- digital image & signal processing
+- geographic image systems
 
 <h3>hobbies:</h3>
 
