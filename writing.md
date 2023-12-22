@@ -8,12 +8,12 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 ## Misc
 
-* [Competitive Programming Resources](https://devargnes.github.io/2022-06-10-cp)
+* [Competitive Programming Resources](https://bkpleb.github.io/2022-06-10-cp)
   
 
 ## Cryptography
 
-* [Baby crypto](https://devargnes.github.io/baby-crypto)
+* [Baby crypto](https://bkpleb.github.io/baby-crypto)
 
 
 ## Distributed ledger
