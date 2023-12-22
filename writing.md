@@ -18,10 +18,10 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 ## Distributed ledger
 
-* [Nostr - Decentralized Social Network](https://devargnes.github.io/2023-05-27-nostr)
-* [Mining Basics](https://devargnes.github.io/2023-01-19-mining)
-* [UTXO & Account Models](https://devargnes.github.io/UTXO-and-Account-Models)
-* [Solidity/ETH Related Tools For CTFs](https://devargnes.github.io/solidity-tools)
+* [Nostr - Decentralized Social Network](https://bkpleb.github.io/2023-05-27-nostr)
+* [Mining Basics](https://bkpleb.github.io/2023-01-19-mining)
+* [UTXO & Account Models](https://bkpleb.github.io/UTXO-and-Account-Models)
+* [Solidity/ETH Related Tools For CTFs](https://bkpleb.github.io/solidity-tools)
 
 
 ## Technical Analysis & Trading
@@ -64,7 +64,6 @@ I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 year
 * [Add-on Badges](https://support.mozilla.org/en-US/kb/add-on-badges)
 * [What happened to my Live Bookmarks?](https://support.mozilla.org/en-US/kb/live-bookmarks-migration)
 * [How to restore a browsing session from backup](https://support.mozilla.org/en-US/kb/how-restore-browsing-session-backup)
-* [Utilizing Screeners for Your Trading Portfolio](https://marketmapper.io/post/utilizing-screeners-for-your-trading-portfolio)
 * [Utilizing Screeners for Your Trading Portfolio](https://marketmapper.io/post/utilizing-screeners-for-your-trading-portfolio)
 
 ### Browser Security Related
