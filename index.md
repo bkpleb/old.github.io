@@ -28,12 +28,13 @@ contact me @bkdoubleohseven ([Telegram](https://t.me/bkdoubleohseven) & [Twitter
 - [arkham intelligence](https://www.arkhamintelligence.com/)
 - [parsec](https://parsec.fi/)
 
-<h3>learning at the moment</h3>
+<h3>learning & interested in</h3>
 
 - rust
 - random protocols
 - security
-- blockchain shenanigans
+- biocomputing
+
 
 <h3>hobbies:</h3>
 
