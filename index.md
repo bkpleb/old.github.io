@@ -33,6 +33,7 @@ contact me: [Telegram](https://t.me/bkdoubleohseven) ~ [Twitter](https://twitter
 <h3>hobbies:</h3>
 
 - birding (not birdwatching)
+- piano (classical pieces)
 - bushwalking
 - stamp collecting
 - watching b/w films
