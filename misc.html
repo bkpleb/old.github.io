@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #FFF;
+        }
+
+        #container {
+            max-width: 670px;
+        }
+
+        header, main, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <title>Bithiah 'BK007'</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 540px;">
+                    <h3>Bithiah</h3>
+                    <a id="name" >pleb,</a>
+                    <a id="name" >explorer,</a>
+                    <a id="name" >philosopher,</a>
+                    <a id="name" >researcher</a>
+                    <br><br> <small>aka. BK007</small> <br><br>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 130px;">
+                    <div style="display: flex; flex-direction: column; align-content: flex-start; flex-flow: column wrap;">
+                        <div class="nav-item" onclick="changeSection('/');"> Now </div>
+                        <div class="nav-item" onclick="changeSection('past.html');"> Past </div>
+                        <div class="nav-item" onclick="changeSection('interests.html');"> Interests </div>
+                        <div class="nav-item" onclick="changeSection('writing');"> Writings </div>
+                        <div class="nav-item" onclick="changeSection('misc.html');"> Misc </div>
+                        <div class="nav-item" onclick="changeSection('contact.html');"> Contact </div>
+                    </div>
+                </div>
+                <div style="width: 540px; height: 800px;">
+                    <div>Personally a very multidisciplinary individual.                     
+                        <br><br>
+                        > web & smart contract security
+                        <br><br>
+                        > blockchain infrastructure
+                        <br><br>
+                        > digital image & signal processing 
+                        <br><br>
+                        > geographic image systems
+                        <br><br>
+                        Web3 and defense technology is going nowhere. Blockchain ecosystems will power the next-gen financial systems with complex mechanisms. Defense tech, particularly UAVs and UASs, will be in demand due to the world situation.
+                        From a young age, I've always focused on intelligence/security + finance/blockchain.
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="position: absolute; left: -99999px"></div>
+
+        <script>
+            function changeSection(url) {
+                // Remove 'active' class from all nav items
+                var navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => item.classList.remove('active'));
+
+                // Add 'active' class to the clicked item
+                event.target.classList.add('active');
+
+                // Navigate to the specified URL
+                window.location.href = url;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
