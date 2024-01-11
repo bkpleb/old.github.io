@@ -51,11 +51,12 @@
                 <div style="width: 130px;">
                     <div style="display: flex; flex-direction: column; align-content: flex-start; flex-flow: column wrap;">
                         <div id="currentnav"> Now </div>
-                        <div class="nav-item" onclick="changeSection('/past.html')"> Past </div>
-                        <div class="nav-item" onclick="changeSection('/interests.html')"> Interests </div>
-                        <div class="nav-item" onclick="changeSection('/media.html')"> Media </div>
-                        <div class="nav-item" onclick="changeSection('/misc.html')"> Misc </div>
-                        <div class="nav-item" onclick="changeSection('/contact.html')"> Contact </div>
+                        <div class="nav-item" onclick="changeSection('past.html')"> Past </div>
+                        <div class="nav-item" onclick="changeSection('interests.html')"> Interests </div>
+                        <div class="nav-item" onclick="changeSection('thoughts.html')"> Thoughts </div>
+                        <div class="nav-item" onclick="changeSection('media.html')"> Media </div>
+                        <div class="nav-item" onclick="changeSection('misc.html')"> Misc </div>
+                        <div class="nav-item" onclick="changeSection('contact.html')"> Contact </div>
                     </div>
                 </div>
                 <div id="content" style="width: 540px; height: 800px;">
@@ -83,12 +84,11 @@
                 // Add 'active' class to the clicked item
                 event.target.classList.add('active');
 
-                // Load content from the specified URL (you may need to implement this part)
-                // For example, you can use AJAX to fetch and display content
+                // Navigate to the specified URL
+                window.location.href = url;
             }
         </script>
     </div>
 </body>
 
 </html>
-
