@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #FFF;
+        }
+
+        #container {
+            max-width: 670px;
+        }
+
+        header, main, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <title>Bithiah 'BK007'</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 540px;">
+                    <h3>Bithiah</h3>
+                    <a id="name">pleb,</a>
+                    <a id="name">explorer,</a>
+                    <a id="name">philosopher,</a>
+                    <a id="name">researcher</a>
+                    <br><br> <small>aka. BK007</small> <br><br>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 130px;">
+                    <div style="display: flex; flex-direction: column; align-content: flex-start; flex-flow: column wrap;">
+                        <div id="currentnav"> Now </div>
+                        <div class="nav-item" onclick="changeSection('past.html')"> Past </div>
+                        <div class="nav-item" onclick="changeSection('interests.html')"> Interests </div>
+                        <div class="nav-item" onclick="changeSection('writing')"> Writings </div>
+                        <div class="nav-item" onclick="changeSection('misc.html')"> Misc </div>
+                        <div class="nav-item" onclick="changeSection('contact.html')"> Contact </div>
+                    </div>
+                </div>
+                <div id="content" style="width: 540px; height: 800px;">
+                    <div>My journey in life has and will always be non-linear. It's too short to waste.
+                        <br><br>
+                        I was attracted to security engineering and decentralized systems through CTFs
+                        and was fortunate to receive an LN node at a young age. I believe regardless of which system you work with, security always plays a fundamental role. I'm a member of <a href="https://ctftime.org/team/271774" target="_blank">0xE0F CTF team</a> and
+                        <a href="https://mises.org/" target="_blank">Mises Institute</a>.
+                        <br><br>
+                        I'm currently tinkering and learning some cool stuff. Also looking for new opportunities.
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="position: absolute; left: -99999px">
+        </div>
+
+        <script>
+            function changeSection(url) {
+                // Remove 'active' class from all nav items
+                var navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => item.classList.remove('active'));
+
+                // Add 'active' class to the clicked item
+                event.target.classList.add('active');
+
+                // Navigate to the specified URL
+                window.location.href = url;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
