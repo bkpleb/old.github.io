@@ -25,7 +25,7 @@ This page is a collection of my pieces of writing including full pieces and cont
 
 
 ## Technical Analysis & Trading
-Wrote [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts from Aug 7 - Oct 29.
+Wrote [Market Mapper](https://web.archive.org/web/20231109105454/https://marketmapper.io/) blog posts from Aug 7 - Oct 29.
 
 Documentation I mostly set up can be found [here](https://web.archive.org/web/20231109110812/https://marketmapper.io/documentation).
 
