@@ -27,29 +27,28 @@ This page is a collection of my pieces of writing including full pieces and cont
 ## Technical Analysis & Trading
 Wrote [Market Mapper](https://www.marketmapper.io/?utm_source=bithiah-personal-site) blog posts from Aug 7 - Oct 29.
 
-Documentation I mostly set up can be found [here](https://marketmapper.io/documentation).
+Documentation I mostly set up can be found [here](https://web.archive.org/web/20231109110812/https://marketmapper.io/documentation).
 
-* [Trade Entry and Exit Points: How Can You Identify the Best Ones Using Technical Indicators](https://marketmapper.io/post/trade-entry-and-exit-points-how-can-you-identify-the-best-ones-using-technical-indicators) 
-* [The Importance of Understanding Indicators Disadvantages](https://marketmapper.io/post/the-importance-of-understanding-indicators-disadvantages)
-* [What Is a Liquidity Gap?](https://marketmapper.io/post/what-is-a-liquidity-gap)
-* [Technical Indicators Cover Almost Every Aspect of an Asset’s Attributes. What Are the Categories?](https://marketmapper.io/post/technical-indicators-cover-almost-every-aspect-of-an-asset-s-attributes-what-are-the-categories)
-* [Identifying Major Reversal Patterns](https://marketmapper.io/post/identifying-major-reversal-patterns)
-* [The Art of Trading Psychology](https://marketmapper.io/post/trading-psychology)
-* [Art of Fibonacci: Retracements and Its Inner Workings](https://marketmapper.io/post/art-of-fibonacci-numbers-ratios-retracements-and-time)
-* [Market Cycles: Identification and Use](https://marketmapper.io/post/market-cycles-identification-and-use)
-* [Trading More Consistently With Indicators](https://marketmapper.io/post/trading-more-consistently-with-indicators)
-* [Bollinger Bands: What Are They and How to Use Them](https://marketmapper.io/post/bollinger-bands-what-are-they-and-how-to-use-them-in-your-trading-strategies)
-* [Point and Figure Charts: The Bare-Bones](https://marketmapper.io/post/point-and-figure-charts-the-bare-bones)
-* [Why Do You Even Need Technical Indicators?](https://marketmapper.io/post/why-do-you-even-need-technical-indicators)
-* [Is Crypto Trading Profitable?](https://marketmapper.io/post/is-crypto-trading-profitable)
-* [Are You a Lone-Wolf Trader? It’s Time to Leverage the Trading Community Power to Your Advantage](https://marketmapper.io/post/are-you-a-lone-wolf-trader-it-s-time-to-leverage-the-trading-community-power-to-your-advantage)
-* [Utilizing Screeners for Your Trading Portfolio](https://marketmapper.io/post/utilizing-screeners-for-your-trading-portfolio)
-* [Importance of Bitcoin Halving](https://marketmapper.io/post/bitcoin-halving-impacts)
-* [Management of Sorts: How Risk and Money Management Play a Key Role](https://marketmapper.io/post/management-of-sorts-how-risk-and-money-management-play-a-key-role)
-* [The Art of Trading Tactics](https://marketmapper.io/post/the-art-of-trading-tactics)
-* [Trading Bots: The Good, the Bad and the Ugly](https://marketmapper.io/post/trading-bots-the-good-the-bad-and-the-ugly)
-* [SEC and the Crypto World: The Gavel Drops](https://marketmapper.io/post/sec-and-the-crypto-world-the-gavel-drops)
-
+* [Trade Entry and Exit Points: How Can You Identify the Best Ones Using Technical Indicators](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [The Importance of Understanding Indicators Disadvantages](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [What Is a Liquidity Gap?](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Technical Indicators Cover Almost Every Aspect of an Asset’s Attributes. What Are the Categories?](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Identifying Major Reversal Patterns](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [The Art of Trading Psychology](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Art of Fibonacci: Retracements and Its Inner Workings](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Market Cycles: Identification and Use](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Trading More Consistently With Indicators](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Bollinger Bands: What Are They and How to Use Them](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Point and Figure Charts: The Bare-Bones](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Why Do You Even Need Technical Indicators?](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Is Crypto Trading Profitable?](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Are You a Lone-Wolf Trader? It’s Time to Leverage the Trading Community Power to Your Advantage](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Utilizing Screeners for Your Trading Portfolio](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Importance of Bitcoin Halving](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Management of Sorts: How Risk and Money Management Play a Key Role](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [The Art of Trading Tactics](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [Trading Bots: The Good, the Bad and the Ugly](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
+* [SEC and the Crypto World: The Gavel Drops](https://web.archive.org/web/20231109110408/https://marketmapper.io/blog)
 
 ## Firefox 
 I was an [NDA'd contributor](https://wiki.mozilla.org/NDA) at Mozilla for 2 years where I did knowledge base writing and support (was [Social Support Moderator](https://support.mozilla.org/en-US/kb/how-be-social-support-moderator)). For the entire list of docs, visit [here](https://support.mozilla.org/en-US/user/VintageMind/documents).
