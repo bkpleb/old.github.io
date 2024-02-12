@@ -27,6 +27,106 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        /* Added styles for the film and reading sections */
+        .sections-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            width: 48%; /* Adjust as needed */
+        }
+    </style>
+    <title>Bithiah 'BK007'</title>
+</head>
+
+<body>
+    <div id="container">
+        <div style="display: flex; flex-direction: row;">
+            <div style="width: 540px;">
+                <h3>Bithiah</h3>
+                <a id="name">pleb,</a>
+                <a id="name">explorer,</a>
+                <a id="name">writer</a>
+                <br><br> <small>aka. BK007</small> <br><br>
+            </div>
+        </div>
+        <main>
+            <br>[<a href="https://bithiah.koshy.au">Home</a>] [<a href="https://bithiah.koshy.au/writing.html">Writing</a>] [<a href="https://bithiah.koshy.au/past.html">Past</a>] [<a href="https://bithiah.koshy.au/misc.html">Misc</a>] [<a href="https://bithiah.koshy.au/contact.html">Contact</a>] <br>
+            <br><br>
+
+            <p>Below is a fairly complete catalog of the physical books I own as well as films I've watched.</p>
+
+            <!-- Updated structure for sections -->
+            <div class="sections-container">
+                <div class="section">
+                    <b>Reading</b>
+                    <ul>
+                        <li>Common Sense and Selected Works</li>
+                        <li>The Grapes of Wrath</li>
+                        <li>The Intelligent Investor</li>
+                        <li>The Origins of Totalitarianism</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <b>Film</b>
+                    <ul>
+                        <li><i>The Solid Gold Cadillac</i> (1956)</li>
+                        <li><i>Fourteen Hours</i> (1951)</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <div style="position: absolute; left: -99999px"></div>
+
+        <script>
+            function changeSection(url) {
+                // Remove 'active' class from all nav items
+                var navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => item.classList.remove('active'));
+
+                // Add 'active' class to the clicked item
+                event.target.classList.add('active');
+
+                // Navigate to the specified URL
+                window.location.href = url;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #FFF;
+        }
+
+        #container {
+            max-width: 670px;
+        }
+
+        header, main, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
     <title>Bithiah 'BK007'</title>
 </head>
