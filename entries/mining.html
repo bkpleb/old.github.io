@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #FFF;
+        }
+
+        #container {
+            max-width: 670px;
+        }
+
+        header, main, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <title>Bithiah 'BK007'</title>
+</head>
+
+<body>
+    <div id="container">
+
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 540px;">
+                    <h3>Bithiah</h3>
+                    <a id="name">pleb,</a>
+                    <a id="name">explorer,</a>
+                    <a id="name">writer</a>
+                    <br><br> <small>aka. BK007</small> <br><br>
+                </div>
+            </div>
+        <main>
+
+                <div id="content" style="width: 540px; height: 800px;">
+                   <br>Navigating the Arweave Ecosystem [Work in progress]<br>
+                    <div>
+                        Mining is the process of creating a block of transactions to be added to the Ethereum blockchain.
+
+                        Peers in the mining process are called "miners"
+
+                          a. To network
+
+                          b. Miners provide processing power to network in exchange for chance to get rewarded (incentivized)
+
+                        Mining is just an automated software that people run.
+
+                          a. There is no human element to mining except setup + maintenance
+                      
+                      
+                        <br><br>
+                        <br><br>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="position: absolute; left: -99999px">
+        </div>
+
+        <script>
+            function changeSection(url) {
+                // Remove 'active' class from all nav items
+                var navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => item.classList.remove('active'));
+
+                // Add 'active' class to the clicked item
+                event.target.classList.add('active');
+
+                // Navigate to the specified URL
+                window.location.href = url;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
