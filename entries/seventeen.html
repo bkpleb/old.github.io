@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #FFF;
+            font-family: 'Kode Mono', monospace;
+        }
+
+        #container {
+            max-width: 670px;
+        }
+
+        header, main, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <title>Bithiah 'BK007'</title>
+</head>
+
+<body>
+    <div id="container">
+
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 540px;">
+                    <h3>Bithiah</h3>
+                    <a id="name">pleb,</a>
+                    <a id="name">explorer,</a>
+                    <a id="name">writer</a>
+                    <br><br> <small>aka. BK007</small> <br><br>
+                </div>
+            </div>
+        <main>
+                <br>[<a href="https://bithiah.koshy.au">Home</a>] [<a href="https://bithiah.koshy.au/writing.html">Writing</a>] [<a href="https://bithiah.koshy.au/past.html">Past</a>] [<a href="https://bithiah.koshy.au/musings.html">Musings</a>] [<a href="https://bithiah.koshy.au/misc.html">Misc</a>] [<a href="https://bithiah.koshy.au/contact.html">Contact</a>] <br>
+          
+                <div id="content" style="width: 540px; height: 800px">
+                   <br><b>17 things I've learned by 17</b><br>
+                   <p></p>
+                   <div>
+                        1. Everything is a system, think like it
+                        <p>
+                          No, I'm not talking about systems engineering but I guess the same principles apply here. Everything is a system. The body, machines, society, companies, governments and so on. By seeing things from a system perspective, we find loopholes and bugs which either can be legally exploitable or patched. Let me tell you, you start to see a lot more and I do mean <i>a lot more</i> things.
+                        </p>
+                        2. 
+                        <p></p>
+                        3. 
+                        <p></p>
+                        4. Mentorship is essential
+                        <p>
+                          I'm very grateful to have met a few people who have heavily influenced my way of thinking and how I view the world. One in particular has shaped my very foundations. She was the vice president at Citibank (AUS) in the mid-1980s to early 90s. Specialized in corporate finance, reconstructions, and litigation, she made think in a similar direction. That comes to the next point.
+                        </p>
+                        5.
+                        <p>
+                          
+                        </p>
+                        6. Understanding physcology
+                        
+                        <p>
+                        What do I mean by that? Well, most people underestimate the power of physcology. Understanding an individual's intentions is very important in order to find out what their motivations are. You get to connect with the individual better for whatever selfish purpose you yourself have for whatever reason. 
+                        </p>
+                      
+                        <p></p>
+                        
+                      
+                        <br><br>
+                        <br><br>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="position: absolute; left: -99999px">
+        </div>
+
+        <script>
+            function changeSection(url) {
+                // Remove 'active' class from all nav items
+                var navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => item.classList.remove('active'));
+
+                // Add 'active' class to the clicked item
+                event.target.classList.add('active');
+
+                // Navigate to the specified URL
+                window.location.href = url;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
