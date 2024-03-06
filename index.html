@@ -1,93 +1,40 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #FFF;
-            font-family: 'Crimson Text', serif; /* Changed font-family */
-        }
-
-        #container {
-            max-width: 670px;
-        }
-
-        header, main, footer {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-        }
-
-        .nav-item:hover,
-        .nav-item.active {
-            font-weight: bold;
-            cursor: pointer;
-        }
-    </style>
-    <title>Bithiah 'BK007'</title>
+  <title>arete</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+    body {
+      background-color: #ebe6dc;
+      color: #000000;
+      font-family: 'Gilda Display', serif;
+      font-size: 17px;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+    }
+    .main-content {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    h1, p, a {
+      font-family: 'Gilda Display', serif;
+    }
+  </style>
 </head>
-
 <body>
-    <div id="container">
+  <div class="main-content">
+    <h1><i>diving into rabbit holes</i></h1>
+    <p>I'm a 17-year-old currently living in Melbourne.</p>
+      <p>Currently, I'm an intern at <a href="https://www.communitylabs.com/">Community Labs</a> where I focus on web3.
+</p>
+    <p>My other interests include UAVs, infosec, computational finance, and political science.</p>
+    
+    <p>Senior in high school, aspiring polymath, and optimistic pessimist.</p>
+    <hr>
+      Nec Dextrosum, Nec Sinistrosum ~ Neither to the right nor to the Left. 
+      <p>
 
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 540px;">
-                    <h3>Bithiah</h3>
-                    <a id="name">pleb,</a>
-                    <a id="name">explorer,</a>
-                    <a id="name">writer</a>
-                    <br><br> <small>also known as meydel</small> <br><br>
-                </div>
-            </div>
-        <main>
-
-                <div id="content" style="width: 540px; height: 800px;">
-                    <div>I'm a content writer intern at <a href="https://www.communitylabs.com/">Community Labs</a> where I focus on web3.<br><br>My other interests include UAVs, infosec, computational finance, and political science.<br><br>Senior in high school, aspiring polymath, and optimistic pessimist.<br>
-                        <hr>
-                            Nec Dextrosum, Nec Sinistrosum ~ Neither to the right nor to the Left. 
-                            <p>
-                        <br><br>
-                        <pre>37&#176; 48' 49" South</pre>
-                        <pre>144&#176;  57'  47" East</pre>
-                    <br>[<a href="https://bithiah.koshy.au/writing.html">Writing</a>] [<a href="https://bithiah.koshy.au/past.html">Past</a>] [<a href="https://bithiah.koshy.au/misc.html">Misc</a>] [<a href="https://bithiah.koshy.au/contact.html">Contact</a>] <br>
-                    <br><br>
-                    
-
-                      <div><b><i>Blog</i></b> 
-                        <br><br>
-                        <ul>
-                          <li><a href="https://bithiah.koshy.au/entries/mining">Mining - An Introduction</a></li>
-                           
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <div style="position: absolute; left: -99999px">
-        </div>
-
-        <script>
-            function changeSection(url) {
-                // Remove 'active' class from all nav items
-                var navItems = document.querySelectorAll('.nav-item');
-                navItems.forEach(item => item.classList.remove('active'));
-
-                // Add 'active' class to the clicked item
-                event.target.classList.add('active');
-
-                // Navigate to the specified URL
-                window.location.href = url;
-            }
-        </script>
-    </div>
-</body>
-
-</html>
