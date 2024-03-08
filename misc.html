@@ -1,86 +1,73 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #FFF;
-            font-family: 'Crimson Text', serif; /* Changed font-family */
-        }
-
-        #container {
-            max-width: 670px;
-        }
-
-        header, main, footer {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-        }
-
-        .nav-item:hover,
-        .nav-item.active {
-            font-weight: bold;
-            cursor: pointer;
-        }
-    </style>
-    <title>Bithiah 'BK007'</title>
+  <title>bithiah koshy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+    body {
+      background-color: #ebe6dc;
+      color: #000000;
+      font-family: 'Gilda Display', serif;
+      font-size: 17px;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+    }
+    .main-content {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    h1, p {
+      font-family: 'Gilda Display', serif;
+    }
+    .image-container {
+      text-align: center;
+      margin-top: 20px; 
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    .highlight {
+      color: inherit; 
+      text-decoration: underline; 
+      cursor: pointer; 
+    }
+    .highlight:hover {
+      color: #0000FF; 
+    }
+    a {
+      color: inherit;
+    }
+  </style>
 </head>
-
 <body>
-    <div id="container">
-
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 540px;">
-                    <h3>Bithiah</h3>
-                    <a id="name" >pleb,</a>
-                    <a id="name" >explorer,</a>
-                    <a id="name" >writer,</a>
-                    <br><br> <small>also known as meydel</small> <br><br>
-                </div>
-            </div>
-
-
-        <main>
-                <div style="width: 540px; height: 800px;">
-                    <div>Things outside of school and work.                     
-                        <br><br>
-                        <b><a href="https://www.ausfencing.org/biography/afb-2550/">Fencing</a></b>: 2x Australian national junior team foil finalist + dozens state individual medals in u15, u17, u20
-                        <br><br>
-                        <b>Cross country</b>: 2 x eastern metropolitan regionals top 30 (3km)
-                        <br><br>
-                        <b>Track</b>: 2 x eastern metropolitan regionals top 7 (800m, 1500m)
-                        <br><br>
-                        <b>Hobbies</b>: birding, piano (classical), bushwalking, stamp collecting, watching b/w films, ballet
-                        <br><br>
-                        <br>[<a href="https://bithiah.koshy.au">Home</a>] [<a href="https://bithiah.koshy.au/writing.html">Writing</a>] [<a href="https://bithiah.koshy.au/past.html">Past</a>] [<a href="https://bithiah.koshy.au/contact.html">Contact</a>] <br>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <div style="position: absolute; left: -99999px"></div>
-
-        <script>
-            function changeSection(url) {
-                // Remove 'active' class from all nav items
-                var navItems = document.querySelectorAll('.nav-item');
-                navItems.forEach(item => item.classList.remove('active'));
-
-                // Add 'active' class to the clicked item
-                event.target.classList.add('active');
-
-                // Navigate to the specified URL
-                window.location.href = url;
-            }
-        </script>
+  <div class="main-content">
+    <h1><i>diving into rabbit holes</i></h1>
+    <p>← <a href="https://bithiah.koshy.au/">back</a></p>
+    <br>
+    <div>
+        <b><a href="https://www.ausfencing.org/biography/afb-2550/">Fencing</a></b>: 2x Australian national junior team foil finalist + dozens state individual medals in u15, u17, u20
+        <br><br>
+        <b>Cross country</b>: 2 x eastern metropolitan regionals top 30 (3km)
+        <br><br>
+        <b>Track</b>: 2 x eastern metropolitan regionals top 7 (800m, 1500m)
+        <br><br>
+        <b>Hobbies</b>: birding, piano (classical), bushwalking, stamp collecting, watching b/w films, ballet
+        <br><br>
     </div>
-</body>
 
+    <hr>
+    <p style="text-align: center;">Nec Dextrosum, Nec Sinistrosum ~ Neither to the right nor to the Left.</p>
+    <div class="image-container">
+      <img src="https://i.pinimg.com/564x/f4/ca/50/f4ca5089c287ba30339acfd10d09ba0b.jpg" alt="Description of the image">
+    </div>
+  </div>
+</body>
 </html>
