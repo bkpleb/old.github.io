@@ -1,96 +1,75 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #FFF;
-        }
-
-        #container {
-            max-width: 670px;
-        }
-
-        header, main, footer {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-        }
-
-        .nav-item:hover,
-        .nav-item.active {
-            font-weight: bold;
-            cursor: pointer;
-        }
-    </style>
-    <title>Bithiah 'BK007'</title>
+  <title>bithiah koshy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+    body {
+      background-color: #ebe6dc;
+      color: #000000;
+      font-family: 'Gilda Display', serif;
+      font-size: 17px;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+    }
+    .main-content {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    h1, p {
+      font-family: 'Gilda Display', serif;
+    }
+    .image-container {
+      text-align: center;
+      margin-top: 20px; 
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    .highlight {
+      color: inherit; 
+      text-decoration: underline; 
+      cursor: pointer; 
+    }
+    .highlight:hover {
+      color: #0000FF; 
+    }
+    a {
+      color: inherit;
+    }
+  </style>
 </head>
-
 <body>
-    <div id="container">
-        <header>
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 540px;">
-                    <h3>Bithiah</h3>
-                    <a id="name">pleb,</a>
-                    <a id="name">explorer,</a>
-                    <a id="name">philosopher,</a>
-                    <a id="name">researcher</a>
-                    <br><br> <small>aka. BK007</small> <br><br>
-                </div>
-            </div>
-        </header>
+  <div class="main-content">
+    <h1><i>diving into rabbit holes</i></h1>
+    <p>I'm a 17 y/o based in Australia.</p>
+    <p>An intern at <a href="https://www.communitylabs.com/">Community Labs</a> where I focus on web3.</p>
+    <p>My other interests include UAVs, infosec, computational finance, and political science.</p>
+    <p>Aspiring polymath, optimistic pessimist, and e/acc.</p>
+    <br>
+    <p>
+      <a href="https://bithiah.koshy.au/writing.html">Writing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.oku.club/user/bkoshy">Reading</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/bkpleb">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="">Blog [WIP]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://bithiah.koshy.au/contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://read.cv/bkoshy">Resume</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://bithiah.koshy.au/misc.html">Misc</a>
+    </p>
 
-        <main>
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 130px;">
-                    <div style="display: flex; flex-direction: column; align-content: flex-start; flex-flow: column wrap;">
-                        <div id="currentnav"> Now </div>
-                        <div class="nav-item" onclick="changeSection('past.html')"> Past </div>
-                        <div class="nav-item" onclick="changeSection('interests.html')"> Interests </div>
-                        <div class="nav-item" onclick="changeSection('writing')"> Writings </div>
-                        <div class="nav-item" onclick="changeSection('misc.html')"> Misc </div>
-                        <div class="nav-item" onclick="changeSection('contact.html')"> Contact </div>
-                    </div>
-                </div>
-                <div id="content" style="width: 540px; height: 800px;">
-                    <div>My name's Bithiah, I'm based in Melbourne, AU and senior in high school (16yo). My journey in life has and will always be non-linear. It's too short to waste.
-                        <br><br>
-                        I was attracted to security engineering and decentralized systems through CTFs
-                        and was fortunate to receive a LN node at a young age. I believe regardless of which system you work with, security always plays a fundamental role. I'm play CTFs on 0xE0F team (still in training) and student member of
-                        <a href="https://mises.org/" target="_blank">Mises Institute</a>.
-                        <br><br>
-                        I'm currently tinkering and learning some cool stuff.
-                        <br><br>
-                        <pre>37&#176; 48' 49" South</pre>
-                        <pre>144&#176;  57'  47" East</pre>
-                    </div>
-                </div>
-            </div>
-        </main>
 
-        <div style="position: absolute; left: -99999px">
-        </div>
-
-        <script>
-            function changeSection(url) {
-                // Remove 'active' class from all nav items
-                var navItems = document.querySelectorAll('.nav-item');
-                navItems.forEach(item => item.classList.remove('active'));
-
-                // Add 'active' class to the clicked item
-                event.target.classList.add('active');
-
-                // Navigate to the specified URL
-                window.location.href = url;
-            }
-        </script>
+    <hr>
+    <p style="text-align: center;">Nec Dextrosum, Nec Sinistrosum ~ Neither to the right nor to the Left.</p>
+    <div class="image-container">
+      <img src="2024-03-07 16.28.15.jpg" alt="Description of the image">
     </div>
+  </div>
 </body>
-
 </html>
